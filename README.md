@@ -8,7 +8,7 @@ It's my working progress, it's not my work in progress since if my work on my pr
 <br/>
 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/upstash/clone?demo-title=Next.js%20Portfolio%20with%20Pageview%20Counter&demo-description=Portfolio%20site%20with%20pageview%20counter%2C%20built%20with%20Next.js%2013%20App%20Router%2C%20Contentlayer%2C%20and%20Upstash%20Redis.&demo-url=https%3A%2F%2Fchronark.com%2F&demo-image=%2F%2Fimages.ctfassets.net%2Fe5382hct74si%2F1DA8n5a6WaP9p1FXf9LmUY%2Fc6264fa2732355787bf657df92dda8a1%2FCleanShot_2023-04-17_at_14.17.37.png&project-name=Next.js%20Portfolio%20with%20Pageview%20Counter&repository-name=nextjs-portfolio-pageview-counter&repository-url=https%3A%2F%2Fgithub.com%2Fchronark%2Fchronark.com&from=templates&integration-ids=oac_V3R1GIpkoJorr6fqyiwdhl17)
+[![Deploy with Vercel](https://vercel.com/new/prof-nota/clone?teamCreateStatus=hidden&demo-title=Prof.+NOTA%27s+Working+Progress&demo-description=It%27s%20my%20working%20progress,%20it%27s%20not%20my%20work%20in%20progress%20since%20if%20my%20work%20on%20my%20project%20isn%E2%80%99t%20finished%20yet,%20it%E2%80%99s%20not%20my%20%E2%80%9Cworking%20progress%E2%80%9D%20but%20my%20%E2%80%9Cwork%20in%20progress.%E2%80%9D&demo-url=https%3A%2F%2Fwp.straight-line.org%2F&demo-image=https://prompt.straight-line.org/prof-nota-v.1.20.jpg&project-name=Prof.+NOTA's+Working+Progress&repository-name=working-progress&repository-url=https%3A%2F%2Fgithub.com%2Fmyreceiptt%2Fworking-progress&from=templates&integration-ids=oac_V3R1GIpkoJorr6fqyiwdhl17&teamSlug=clone)
 
 ## Running Locally
 
