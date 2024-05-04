@@ -14,12 +14,12 @@ It's my working progress, it's not my work in progress since if my work on my pr
 
 
 ```sh-session
-git clone https://github.com/chronark/chronark.com.git
-cd chronark.com
+git clone https://github.com/myreceiptt/working-progress.git
+cd working-progress
 ```
 
 
-Create a `.env` file similar to [`.env.example`](https://github.com/chronark/chronark.com/blob/main/.env.example).
+Create a `.env` file similar to [`.env.example`](https://github.com/myreceiptt/working-progress/blob/main/.env.example).
 
 Then install dependencies and run the development server:
 ```sh-session
