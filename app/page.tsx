@@ -3,8 +3,11 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  // { name: "My Works", href: "/projects" },
+  { name: "My Works", href: "#" },
+  // { name: "My Contact", href: "/contact" },
+  { name: "My Contact", href: "#" },
+
 ];
 
 export default function Home() {
@@ -35,14 +38,14 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          I'm building{" "}
+          It's my working progress, it's not my work in progress. If my work on{" "}
           <Link
             target="_blank"
-            href="https://unkey.dev"
+            href="https://iqraa.straight-line.org/the-kings"
             className="underline duration-500 hover:text-zinc-300"
           >
-            unkey.dev
-          </Link> to solve API authentication and authorization for developers.
+            The KING's NFTs
+          </Link> project isn’t finished yet, it’s not my “working progress” but my “work in progress.”
         </h2>
       </div>
     </div>
