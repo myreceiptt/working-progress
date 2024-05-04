@@ -1,7 +1,7 @@
 <div align="center">
     <a href="https://wp.straight-line.org"><h1 align="center">WORKING PROGRESS</h1></a>
 
-My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/), [Upstash](https://upstash.com?ref=chronark.com), [Contentlayer](https://www.contentlayer.dev/) and deployed to [Vercel](https://vercel.com/).
+It's my working progress, it's not my work in progress since if my work on my project isn’t finished yet, it’s not my “working progress” but my “work in progress.”
 
 </div>
 
