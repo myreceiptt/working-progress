@@ -3,20 +3,20 @@ import { Github, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
-import Particles from "./components/particles";
+import Particles from "../components/particles";
 
 const socials = [
+	{
+		icon: <Discord size={20} />,
+		href: "https://discord.gg/5KrsT6MbFm",
+		label: "Discord",
+		handle: "5KrsT6MbFm",
+	},
 	{
 		icon: <Twitter size={20} />,
 		href: "https://twitter.com/MyReceiptTT",
 		label: "Twitter",
 		handle: "@MyReceiptTT",
-	},
-	{
-		icon: <Mail size={20} />,
-		href: "mailto:nota@straight-line.org",
-		label: "Email",
-		handle: "nota@straight-line.org",
 	},
 	{
 		icon: <Github size={20} />,
