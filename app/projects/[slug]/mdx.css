@@ -1,10 +1,3 @@
-body {
-  background-image: url(https://prompt.straight-line.org/prof-nota-v.1.20.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-blend-mode: hue;
-}
 [data-rehype-pretty-code-fragment] code {
     @apply grid min-w-full break-words rounded-none border-0 bg-transparent p-0 text-sm text-black;
     counter-reset: line;
