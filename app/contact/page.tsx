@@ -1,5 +1,5 @@
 "use client";
-import { Github, Discord, Twitter } from "lucide-react";
+import { Github, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -7,16 +7,16 @@ import Particles from "../components/particles";
 
 const socials = [
 	{
-		icon: <Discord size={20} />,
-		href: "https://discord.gg/5KrsT6MbFm",
-		label: "Discord",
-		handle: "5KrsT6MbFm",
-	},
-	{
 		icon: <Twitter size={20} />,
 		href: "https://twitter.com/MyReceiptTT",
 		label: "Twitter",
 		handle: "@MyReceiptTT",
+	},
+	{
+		icon: <Mail size={20} />,
+		href: "mailto:nota@straight-line.org",
+		label: "Email",
+		handle: "nota@straight-line.org",
 	},
 	{
 		icon: <Github size={20} />,
@@ -51,7 +51,7 @@ export default function Example() {
 									{s.icon}
 								</span>{" "}
 								<div className="z-10 flex flex-col items-center">
-									<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
+									<span className="lg:text-lg font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
 										{s.handle}
 									</span>
 									<span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
