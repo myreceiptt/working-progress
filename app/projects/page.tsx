@@ -47,7 +47,7 @@ export default async function ProjectsPage() {
             Works
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of my works for The KING and
+            Some of my works for The KING and{" "}
             <Link
               target="_blank"
               href="https://iqraa.straight-line.org/the-kings"
@@ -84,7 +84,7 @@ export default async function ProjectsPage() {
                 </div>
 
                 <Image
-                  src="{featured.thumb}"
+                  src={`https://prompt.straight-line.org/${featured.thumb}`}
                   // width={474}
                   // height={474}
                   alt={featured.title}
