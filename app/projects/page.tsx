@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 import React from "react";
 import { allProjects } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
@@ -46,7 +47,14 @@ export default async function ProjectsPage() {
             Works
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of my works for The KING and The KING's NFTs project...
+            Some of my works for The KING and
+            <Link
+              target="_blank"
+              href="https://iqraa.straight-line.org/the-kings"
+              className="underline duration-500 hover:text-zinc-300"
+            >
+              The KING's NFTs
+            </Link> project...
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -74,6 +82,13 @@ export default async function ProjectsPage() {
                     )}
                   </span>
                 </div>
+
+                <Image
+                  src={featured.thumb}
+                  // width={474}
+                  // height={474}
+                  alt={featured.title}
+                />
 
                 <h2
                   id="featured-post"
