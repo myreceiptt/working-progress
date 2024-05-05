@@ -18,6 +18,13 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 	const ref = useRef<HTMLElement>(null);
 	const [isIntersecting, setIntersecting] = useState(true);
 
+	const images: { alt: string; src: string }[] = [];
+	if (project.thumb) {
+		images.push({
+			alt: project.title,
+			src: `https://prompt.straight-line.org/${project.thumb}`,
+		});
+	}
 	const links: { label: string; href: string }[] = [];
 	if (project.repository) {
 		links.push({
@@ -107,12 +114,14 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 							{project.title}
 						</h1>
 						
-						<Image
-							src={`https://prompt.straight-line.org/${project.thumb}`}
-							// width={474}
-							// height={474}
-							alt={project.title}
-						/>
+						{images.map((image) => (
+								<Image
+									src={image.src}
+									// width={474}
+									// height={474}
+									alt={image.alt}
+							  	/>
+						))}
 
 						<p className="mt-6 text-lg leading-8 text-zinc-300">
 							{project.description}
