@@ -84,7 +84,7 @@ export default async function ProjectsPage() {
                 </div>
 
                 <Image
-                  src={featured.thumb}
+                  src="{featured.thumb}"
                   // width={474}
                   // height={474}
                   alt={featured.title}
