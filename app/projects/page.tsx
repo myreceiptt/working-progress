@@ -83,13 +83,6 @@ export default async function ProjectsPage() {
                   </span>
                 </div>
 
-                <Image
-                  src={`https://prompt.straight-line.org/${featured.thumb}`}
-                  // width={474}
-                  // height={474}
-                  alt={featured.title}
-                />
-
                 <h2
                   id="featured-post"
                   className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"

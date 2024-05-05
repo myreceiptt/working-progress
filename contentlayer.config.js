@@ -25,9 +25,6 @@ export const Project = defineDocumentType(() => ({
 		published: {
 			type: "boolean",
 		},
-		thumb: {
-			type: "string",
-		},
 		title: {
 			type: "string",
 			required: true,
