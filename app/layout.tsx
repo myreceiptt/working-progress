@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Prof. NOTA's Working Progress",
+    template: "%s | wp.straight-line.org",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "It's my working progress, it's not my work in progress.",
   openGraph: {
-    title: "chronark.com",
+    title: "Prof. NOTA's Working Progress",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
-    url: "https://chronark.com",
-    siteName: "chronark.com",
+      "It's my working progress, it's not my work in progress.",
+    url: "https://wp.straight-line.org",
+    siteName: "Prof. NOTA's Working Progress",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://prompt.straight-line.org/prof-nota-v.1.20.jpg",
         width: 1920,
         height: 1080,
       },
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Prof. NOTA's Working Progress",
     card: "summary_large_image",
   },
   icons: {
