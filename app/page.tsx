@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 import React from "react";
 import Particles from "./components/particles";
 
@@ -33,7 +34,10 @@ export default function Home() {
       />
       
       <Image
-        url="https://prompt.straight-line.org/prof-nota-v.1.20.jpg"
+        src="/favicon.png"
+        width={111}
+        height={111}
+        alt="Hi, I'm Prof. NOTA!"
       />
 
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
