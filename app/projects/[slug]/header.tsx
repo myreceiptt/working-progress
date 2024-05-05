@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 
 type Props = {
 	project: {
+		thumb: string;
 		url?: string;
 		title: string;
 		description: string;
