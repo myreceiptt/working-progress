@@ -26,7 +26,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 	}
 	if (project.url) {
 		links.push({
-			label: "On Market",
+			label: "Buy Now",
 			href: project.url,
 		});
 	}
@@ -76,7 +76,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 								} `}
 							/>
 						</Link>
-						<Link target="_blank" href="https://deeplinks.straight-line.org/the-kings-nfts-mapping-waivfves-full.svg">
+						<Link target="_blank" href="https://github.com/myreceiptt">
 							<Github
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
