@@ -34,7 +34,7 @@ export const Navigation: React.FC = () => {
 
 							className="duration-200 text-zinc-400 hover:text-zinc-100"
 						>
-							Works
+							Progress
 						</Link>
 						<Link
 							href="/contact"
