@@ -26,7 +26,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 	}
 	if (project.url) {
 		links.push({
-			label: "Buy Now",
+			label: "Buy NFTs",
 			href: project.url,
 		});
 	}
