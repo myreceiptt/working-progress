@@ -11,7 +11,7 @@ import { Eye } from "lucide-react";
 const redis = Redis.fromEnv();
 
 export const revalidate = 60;
-export default async function ProjectsPage() {
+export default async function ZeroOnePage() {
   const views = (
     await redis.mget<number[]>(
       ...allProjects.map((p) => ["pageviews", "projects", p.slug].join(":")),
@@ -21,9 +21,9 @@ export default async function ProjectsPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProjects.find((project) => project.slug === "7.74")!;
-  const top2 = allProjects.find((project) => project.slug === "7.47")!;
-  const top3 = allProjects.find((project) => project.slug === "4.74")!;
+  const featured = allProjects.find((project) => project.slug === "0003")!;
+  const top2 = allProjects.find((project) => project.slug === "0002")!;
+  const top3 = allProjects.find((project) => project.slug === "0001")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
@@ -44,24 +44,24 @@ export default async function ProjectsPage() {
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-            Our Progress
+            0101 init Stories
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of our progress in{" "}
+            Some init stories in{" "}
             <Link
               target="_blank"
-              href="https://iqraa.straight-line.org/the-kings"
+              href="#"
               className="underline duration-500 hover:text-zinc-300"
             >
-              The KING's NFTs
-            </Link> project...
+              The KING's Story
+            </Link>, our origin receipts...
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
-            <Link href={`/projects/${featured.slug}`}>
+            <Link href={`/0101/${featured.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-zinc-100">

@@ -4,9 +4,9 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  { name: "My Progress", href: "/projects" },
-  // { name: "My Works", href: "#" },
-  { name: "My Contact", href: "/contact" },
+  { name: "Our 0101", href: "/0101" },
+  { name: "Our Progress", href: "/projects" },
+  { name: "Our Contact", href: "/contact" },
   // { name: "My Contact", href: "#" },
 
 ];
@@ -41,20 +41,20 @@ export default function Home() {
       />
 
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-        Prof. NOTA's WP
+        Prof. NOTA
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          It's my working progress, it's not my work in progress. If my work for{" "}
+          It's our working progress, it's not our work in progress. If our work for{" "}
           <Link
             target="_blank"
             href="https://iqraa.straight-line.org/the-kings"
             className="underline duration-500 hover:text-zinc-300"
           >
             The KING's NFTs
-          </Link> project isn’t finished yet, it’s not my “working progress” but my “work in progress.”
+          </Link> project isn’t finished yet, it’s not our working progress but our work in progress.
         </h2>
       </div>
     </div>

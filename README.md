@@ -1,7 +1,7 @@
 <div align="center">
     <a href="https://wp.straight-line.org"><h1 align="center">WORKING PROGRESS</h1></a>
 
-It's my working progress, it's not my work in progress since if my work on my project isn’t finished yet, it’s not my “working progress” but my “work in progress.”
+It's our working progress, it's not our work in progress since if our work on our project isn’t finished yet, it’s not our working progress but out work in progress.
 
 </div>
 
@@ -30,4 +30,4 @@ pnpm dev
 
 ## Cloning / Forking
 
-Please remove all of my personal information (projects, images, etc.) before deploying your own version of this site.
+Please remove all of our personal information (projects, images, etc.) before deploying your own version of this site.

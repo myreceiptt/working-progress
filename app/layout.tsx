@@ -8,14 +8,14 @@ import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: {
     default: "Prof. NOTA's Working Progress",
-    template: "%s | wp.straight-line.org",
+    template: "%s | nota.straight-line.org",
   },
-  description: "It's my working progress, it's not my work in progress.",
+  description: "It's our working progress, it's not our work in progress.",
   openGraph: {
     title: "Prof. NOTA's Working Progress",
     description:
-      "It's my working progress, it's not my work in progress.",
-    url: "https://wp.straight-line.org",
+      "It's our working progress, it's not our work in progress.",
+    url: "https://nota.straight-line.org",
     siteName: "Prof. NOTA's Working Progress",
     images: [
       {
@@ -65,7 +65,7 @@ export default function RootLayout({
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
         <Analytics />
-        <link rel="canonical" href="https://wp.straight-line.org/" />
+        <link rel="canonical" href="https://nota.straight-line.org/" />
       </head>
       <body
         className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
