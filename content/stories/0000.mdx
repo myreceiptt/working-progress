@@ -7,6 +7,8 @@ published: true
 repository: working-progress/blob/main/content/stories/0000.mdx
 ---
 
+## 0101 init...
+
 In computer programming, **initialization** (or **initialisation**) is the assignment of an initial value for a data object or variable. The manner in which initialization is performed depends on the programming language, as well as the type, storage class, etc., of an object to be initialized.
 
 ![](https://ipfs.io/ipfs/QmVs3kS4AqBGeu3ST5K2RRZMm6bitBLtqy1HaNVJyK6xvh)
@@ -16,116 +18,33 @@ In computer programming, **initialization** (or **initialisation**) is the assig
 - Procreate hand drawings by [Retired Satan](https://objkt.com/@mrsatan).
 - VisualVisual Studio Code description writing by Prof. NOTA.
 
-So, 0101 init...  
-...is the assignment of an initial value for all the next 1-on-1 artwork in this collection. What kind of 1-on-1 artwork will be presented in this collection? Shush, it's probably something, probably nothing, it depends on the algorithm of your brain, not Prof. NOTA's brain.
-
 ## Install
 
 ```sh-session
+git clone https://github.com/myreceiptt/myreceiptt.git
 npm i --force
 ```
 
-## Initialization
+### Initialization
 
 ```ts
-{
-  "name": "0101-init",
-  "version": "0.1.0",
-  "description": "Receipt of Initialization",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "keywords": [],
-  "author": "Prof. NOTA",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/myreceiptt/myreceiptt.git"
-  },
-  "bugs": {
-    "url": "https://github.com/myreceiptt/myreceiptt/issues"
-  },
-  "homepage": "https://github.com/myreceiptt/myreceiptt#readme",
-  "dependencies": {
-    "next": "^10.0.3",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+import React, { Component } from "react"
+
+export default class extends Component {
+  render () {
+    return (
+      <div><h4>0101: Initialization Page!</h4></div>
+      <div>
+        <p>Please visit this link: <a href="https://deeplinks.straight-line.org/" target="_blank" rel="noreferrer">Prof. NOTA's Deep Links</a></p>
+        <p><i>Please note that this link merely provide list of <a href="https://deeplinks.straight-line.org/" target="_blank" rel="noreferrer">Prof. NOTA's Deep Links</a> and does not facilitate the access to or use of the Deep Links.</i></p>
+      </div>
+    )
   }
 }
 ```
 
-## Querying Endpoints
+#### So, 0101 init...
 
-```ts
-// lib/tinybird.ts
-import { Tinybird } from "./client";
-import { z } from "zod";
-
-const tb = new Tinybird({ token: process.env.TINYBIRD_TOKEN! });
-
-export const getChannelActivity = tb.buildPipe({
-  pipe: "get_channel_activity__v1",
-  parameters: z.object({
-    tenantId: z.string(),
-    channelId: z.string().optional(),
-    start: z.number(),
-    end: z.number().optional(),
-    granularity: z.enum(["1m", "1h", "1d", "1w", "1M"]),
-  }),
-  data: z.object({
-    time: z.string().transform((t) => new Date(t).getTime()),
-    count: z
-      .number()
-      .nullable()
-      .optional()
-      .transform((v) => (typeof v === "number" ? v : 0)),
-  }),
-});
-```
-
-`res` is the response from the tinybird endpoint, but now fully typed and the data has been parsed according to the schema defined in `data`.
-
-## Advanced
-
-### Caching
-
-You can add cache directives to each pipe.
-
-#### Disable caching (useful in Next.js where everything is cached by default)
-
-```ts
-tb.buildPipe({
-  pipe: "some_pipe__v1",
-  parameters: z.object({
-   hello: z.string()
-  }),
-  data: z.object({
-    response: z.string()
-  }),
-   opts: {
-      cache: "no-store" // <-------- Add this
-   };
-});
-```
-
-#### Cache for 15 minutes
-
-```ts
-tb.buildPipe({
-  pipe: "some_pipe__v1",
-  parameters: z.object({
-   hello: z.string()
-  }),
-  data: z.object({
-    response: z.string()
-  }),
-   opts: {
-      revalidate: 900 ;// <-------- Add this
-    };
-});
-```
+...is the assignment of an initial value for all the next `1-on-1` artwork in this collection. What kind of `1-on-1` artwork will be presented in this collection? Shush, it's probably something, probably nothing, it depends on the algorithm of your brain, not **Prof. NOTA's brain**.
 
 See you in the next drop!
