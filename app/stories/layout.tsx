@@ -1,4 +1,4 @@
-export default function ProjectsLayout({
+export default function StoriesLayout({
 	children,
 }: { children: React.ReactNode }) {
 	return (
