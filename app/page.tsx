@@ -5,12 +5,12 @@ import Particles from "./components/particles";
 
 const navigation = [
   // { name: "Profile", href: "/profile" },
-  { name: "Profile", href: "/#" },
+  // { name: "Profile", href: "/#" },
   // { name: "Logs", href: "/logs" },
-  { name: "Logs", href: "/#" },
+  // { name: "Logs", href: "/#" },
   { name: "Progress", href: "/progresses" },
   // { name: "Projects", href: "/projects" },
-  { name: "Projects", href: "/#" },
+  // { name: "Projects", href: "/#" },
   { name: "0101", href: "/stories" },
   { name: "Contact", href: "/contact" },
 ];
