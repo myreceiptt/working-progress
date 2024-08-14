@@ -6,7 +6,8 @@ import { Analytics } from "@vercel/analytics/react";
 // import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
-  title: {
+  metadataBase: new URL('https://nota.straight-line.org'),
+title: {
     default: "Prof. NOTA's Working Progress",
     template: "%s | nota.straight-line.org",
   },
