@@ -11,80 +11,50 @@ In computer programming, **initialization** (or **initialisation**) is the assig
 
 ![](https://ipfs.io/ipfs/QmVs3kS4AqBGeu3ST5K2RRZMm6bitBLtqy1HaNVJyK6xvh)
 
-So, 0101 init...  
-...is the assignment of an initial value for all the next 1-on-1 artwork in this collection. What kind of 1-on-1 artwork will be presented in this collection? Shush, it's probably something, probably nothing, it depends on the algorithm of your brain, not Prof. NOTA's brain.
-
-See you in the next drop!
-
 ## Built with
 
 - Procreate hand drawings by [Retired Satan](https://objkt.com/@mrsatan).
 - VisualVisual Studio Code description writing by Prof. NOTA.
 
-```ts
-import { Tinybird } from "@chronark/zod-bird";
-import { z } from "zod";
-
-const tb = new Tinybird({ token: "token" });
-
-export const getEvents = tb.buildPipe({
-  pipe: "get_events__v1",
-  parameters: z.object({
-    tenantId: z.string(),
-  }),
-  data: z.object({
-    event: z.string(),
-    time: z.number().transform((t) => new Date(t)),
-  }),
-});
-
-const res = await getEvents({ tenantId: "chronark" })
-
-// res.data = {event: string, time: Date}[]
-```
+So, 0101 init...  
+...is the assignment of an initial value for all the next 1-on-1 artwork in this collection. What kind of 1-on-1 artwork will be presented in this collection? Shush, it's probably something, probably nothing, it depends on the algorithm of your brain, not Prof. NOTA's brain.
 
 ## Install
 
 ```sh-session
-npm i @chronark/zod-bird
+npm i --force
 ```
 
-## Ingesting Data
+## Initialization
 
 ```ts
-// lib/tinybird.ts
-import { Tinybird } from "./client";
-import { z } from "zod";
-
-const tb = new Tinybird({ token: process.env.TINYBIRD_TOKEN! });
-
-export const publishEvent = tb.buildIngestEndpoint({
-  datasource: "events__v1",
-  event: z.object({
-    id: z.string(),
-    tenantId: z.string(),
-    channelId: z.string(),
-    time: z.number().int(),
-    event: z.string(),
-    content: z.string().optional().default(""),
-    metadata: z.string().optional().default(""),
-  }),
-});
-```
-
-```ts
-// somewhere.ts
-import { publishEvent } from "./lib/tinybird";
-
-await publishEvent({
-  id: "1",
-  tenantId: "1",
-  channelId: "1",
-  time: Date.now(),
-  event: "test",
-  content: "test",
-  metadata: JSON.stringify({ test: "test" }),
-});
+{
+  "name": "0101-init",
+  "version": "0.1.0",
+  "description": "Receipt of Initialization",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "Prof. NOTA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myreceiptt/myreceiptt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/myreceiptt/myreceiptt/issues"
+  },
+  "homepage": "https://github.com/myreceiptt/myreceiptt#readme",
+  "dependencies": {
+    "next": "^10.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
 ```
 
 ## Querying Endpoints
@@ -116,19 +86,6 @@ export const getChannelActivity = tb.buildPipe({
 });
 ```
 
-```ts
-// somewhere.ts
-import { getChannelActivity } from "./lib/tinybird";
-
-const res = await getChannelActivity({
-   tenantId: "1",
-   channelId: "1",
-   start: 123,
-   end: 1234,
-   granularity: "1h"
-})
-
-```
 `res` is the response from the tinybird endpoint, but now fully typed and the data has been parsed according to the schema defined in `data`.
 
 ## Advanced
@@ -170,3 +127,5 @@ tb.buildPipe({
     };
 });
 ```
+
+See you in the next drop!
