@@ -21,7 +21,7 @@ export default async function StoriesPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allStories.find((story) => story.slug === "0003")!;
+  const featured = allStories.find((story) => story.slug === "0000")!;
   const top2 = allStories.find((story) => story.slug === "0002")!;
   const top3 = allStories.find((story) => story.slug === "0001")!;
   const sorted = allStories
