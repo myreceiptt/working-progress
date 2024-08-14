@@ -1,10 +1,10 @@
 ---
-title: "Zod Bird"
-description: Zodbird is an e2e typed tinybird.co client library for typescript, leveraging zod for type safety and transformations
-date: "2023-09-19"
-url: https://upstash.com/redis
+title: "0101 init"
+description: The manner in which initialization is performed depends on the type, storage class, etc., of an object to be initialized.
+date: "2022-05-07"
+url: https://objkt.com/tokens/KT18taVYgQ35rcuCca5QN7uq5EsFxKJyJvRT/0
 published: true
-repository: chronark/zod-bird
+repository: working-progress/blob/main/content/stories/0000.mdx
 ---
 
 - typesafe
@@ -31,7 +31,6 @@ export const getEvents = tb.buildPipe({
   }),
 });
 
-
 const res = await getEvents({ tenantId: "chronark" })
 
 // res.data = {event: string, time: Date}[]
@@ -39,10 +38,9 @@ const res = await getEvents({ tenantId: "chronark" })
 
 ## Install
 
-```
+```sh-session
 npm i @chronark/zod-bird
 ```
-
 
 ## Ingesting Data
 
@@ -82,8 +80,6 @@ await publishEvent({
 });
 ```
 
-
-
 ## Querying Endpoints
 
 ```ts
@@ -117,7 +113,6 @@ export const getChannelActivity = tb.buildPipe({
 // somewhere.ts
 import { getChannelActivity } from "./lib/tinybird";
 
-
 const res = await getChannelActivity({
    tenantId: "1",
    channelId: "1",
@@ -135,7 +130,6 @@ const res = await getChannelActivity({
 
 You can add cache directives to each pipe.
 
-
 #### Disable caching (useful in Next.js where everything is cached by default)
 
 ```ts
@@ -151,13 +145,11 @@ tb.buildPipe({
       cache: "no-store" // <-------- Add this
    };
 });
-
 ```
 
 #### Cache for 15 minutes
 
 ```ts
-
 tb.buildPipe({
   pipe: "some_pipe__v1",
   parameters: z.object({
@@ -170,3 +162,4 @@ tb.buildPipe({
       revalidate: 900 ;// <-------- Add this
     };
 });
+```
