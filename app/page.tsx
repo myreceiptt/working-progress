@@ -4,11 +4,15 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  { name: "Our 0101", href: "/0101" },
-  { name: "Our Progress", href: "/projects" },
-  { name: "Our Contact", href: "/contact" },
-  // { name: "My Contact", href: "#" },
-
+  // { name: "Profile", href: "/profile" },
+  { name: "Profile", href: "/#" },
+  // { name: "Logs", href: "/logs" },
+  { name: "Logs", href: "/#" },
+  { name: "Progress", href: "/progresses" },
+  // { name: "Projects", href: "/projects" },
+  { name: "Projects", href: "/#" },
+  { name: "Stories", href: "/stories" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export default function Home() {
@@ -35,9 +39,9 @@ export default function Home() {
       
       <Image
         src="/favicon.png"
-        width={474}
-        height={474}
-        alt="Hi, I'm Prof. NOTA!"
+        width={111}
+        height={111}
+        alt="Hi, We are Prof. NOTA!"
       />
 
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
