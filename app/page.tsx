@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 import React from "react";
 import Particles from "./components/particles";
 
@@ -36,7 +36,7 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={747}
       />
-      
+
       <Image
         src="/favicon.png"
         width={111}
@@ -51,17 +51,32 @@ export default function Home() {
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          It's our working progress, it's not our work in progress. If our work for{" "}
+          It's our working progress, it's not our work in progress. If our work
+          for{" "}
           <Link
             target="_blank"
             href="https://iqraa.straight-line.org/the-kings"
             className="underline duration-500 hover:text-zinc-300"
           >
             The KING's NFTs
-          </Link> project isn’t finished yet, it’s not our working progress but our work in progress.
+          </Link>{" "}
+          project isn’t finished yet, it’s not our working progress but our work
+          in progress.
         </h2>
       </div>
+      <nav className="my-16 animate-fade-in">
+        <ul className="flex items-center justify-center gap-4">
+          {navigation.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </ul>
+      </nav>
     </div>
   );
-
 }
