@@ -5,13 +5,16 @@ import Particles from "./components/particles";
 
 const navigation = [
   // { name: "Profile", href: "/profile" },
-  // { name: "Profile", href: "/#" },
-  // { name: "Logs", href: "/logs" },
-  // { name: "Logs", href: "/#" },
-  { name: "Progress", href: "/progresses" },
-  // { name: "Projects", href: "/projects" },
-  // { name: "Projects", href: "/#" },
+  { name: "Profile", href: "#" },
   { name: "0101", href: "/stories" },
+  { name: "Progress", href: "/progresses" },
+];
+
+const bottomnav = [
+  // { name: "Projects", href: "/projects" },
+  { name: "Projects", href: "#" },
+  // { name: "Logs", href: "/logs" },
+  { name: "Logs", href: "#" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -66,7 +69,7 @@ export default function Home() {
       </div>
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
-          {navigation.map((item) => (
+          {bottomnav.map((item) => (
             <Link
               key={item.href}
               href={item.href}
