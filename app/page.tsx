@@ -62,7 +62,7 @@ export default function Home() {
           ))}
         </ul>
       </nav>
-      <div className="mb-16 text-center animate-fade-in">
+      <div className="text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 px-11 md:px-44">
           It's our working progress, it's not our work in progress. If our work
           for{" "}
@@ -77,7 +77,7 @@ export default function Home() {
           in progress.
         </h2>
       </div>
-      <nav className="animate-fade-in">
+      <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           <li className="text-sm font-semibold duration-500 text-zinc-500 hover:text-zinc-300">Copyleft (ɔ) since 1980 Prof. NOTA Inc.</li>
         </ul>
