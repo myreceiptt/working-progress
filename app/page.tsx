@@ -5,17 +5,17 @@ import Particles from "./components/particles";
 
 const navigation = [
   // { name: "Profile", href: "/profile" },
-  { name: "Profile", href: "#" },
+  { name: "prof", href: "#" },
   { name: "0101", href: "/stories" },
-  { name: "Progress", href: "/progresses" },
+  { name: "prog", href: "/progresses" },
 ];
 
 const bottomnav = [
   // { name: "Projects", href: "/projects" },
-  { name: "Projects", href: "#" },
+  { name: "proj", href: "#" },
   // { name: "Logs", href: "/logs" },
-  { name: "Logs", href: "#" },
-  { name: "Contact", href: "/contact" },
+  { name: "logs", href: "#" },
+  { name: "cont", href: "/contact" },
 ];
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 underline underline-offset-4"
             >
               {item.name}
             </Link>
@@ -39,21 +39,31 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={747}
       />
-
       <Image
         src="/favicon.png"
         width={111}
         height={111}
         alt="Hi, We are Prof. NOTA!"
       />
-
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
         Prof. NOTA
       </h1>
-
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 ">
+      <nav className="my-16 animate-fade-in">
+        <ul className="flex items-center justify-center gap-4">
+          {bottomnav.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 underline underline-offset-4"
+            >
+              {item.name}
+            </Link>
+          ))}
+        </ul>
+      </nav>
+      <div className="mb-16 text-center animate-fade-in">
+        <h2 className="text-sm text-zinc-500 px-11 md:px-44">
           It's our working progress, it's not our work in progress. If our work
           for{" "}
           <Link
@@ -67,17 +77,9 @@ export default function Home() {
           in progress.
         </h2>
       </div>
-      <nav className="my-16 animate-fade-in">
+      <nav className="animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
-          {bottomnav.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
-            >
-              {item.name}
-            </Link>
-          ))}
+          <li className="text-sm font-semibold duration-500 text-zinc-500 hover:text-zinc-300">Copyleft (ɔ) since 1980 Prof. NOTA Inc.</li>
         </ul>
       </nav>
     </div>

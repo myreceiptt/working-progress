@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from "react";
 import { allStories } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
+import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
@@ -141,6 +142,7 @@ export default async function StoriesPage() {
           </div>
         </div>
       </div>
+      <BottomNavigation />
     </div>
   );
 }

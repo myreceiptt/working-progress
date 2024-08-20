@@ -2,6 +2,7 @@
 import { Github, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
+import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 
 const socials = [
@@ -58,6 +59,7 @@ export default function Example() {
 					))}
 				</div>
 			</div>
+			<BottomNavigation />
 		</div>
 	);
 }
