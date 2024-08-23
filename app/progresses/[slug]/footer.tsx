@@ -18,8 +18,8 @@ export const Footer: React.FC<Props> = ({ views }) => {
       <div
         className={`fixed inset-x-0 bottom-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-t-2 lg:bg-transparent ${
           isIntersecting
-            ? "bg-zinc-900/0 border-zinc-800 lg:border-transparent"
-            : "bg-white/10 border-transparent"
+            ? "bg-white/10 border-zinc-800 lg:border-transparent"
+            : "bg-zinc-900/0 border-transparent"
         }`}
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
@@ -27,8 +27,8 @@ export const Footer: React.FC<Props> = ({ views }) => {
             href="/progresses"
             className={`duration-200 hover:font-medium ${
               isIntersecting
-                ? " text-zinc-400 hover:text-zinc-100"
-                : "text-zinc-600 hover:text-zinc-900"
+                ? "text-zinc-600 hover:text-zinc-900"
+                : "text-zinc-400 hover:text-zinc-100"
             } `}
           >
             <ArrowLeft className="w-6 h-6 " />
@@ -39,8 +39,8 @@ export const Footer: React.FC<Props> = ({ views }) => {
               title="View counter for this page"
               className={`duration-200 hover:font-medium flex items-center gap-1 ${
                 isIntersecting
-                  ? " text-zinc-400 hover:text-zinc-100"
-                  : "text-zinc-600 hover:text-zinc-900"
+                  ? "text-zinc-600 hover:text-zinc-900"
+                  : "text-zinc-400 hover:text-zinc-100"
               } `}
             >
               <Eye className="w-5 h-5" />{" "}
@@ -52,8 +52,8 @@ export const Footer: React.FC<Props> = ({ views }) => {
               <Twitter
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
-                    ? " text-zinc-400 hover:text-zinc-100"
-                    : "text-zinc-600 hover:text-zinc-900"
+                    ? "text-zinc-600 hover:text-zinc-900"
+                    : "text-zinc-400 hover:text-zinc-100"
                 } `}
               />
             </Link>
@@ -61,8 +61,8 @@ export const Footer: React.FC<Props> = ({ views }) => {
               <Github
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
-                    ? " text-zinc-400 hover:text-zinc-100"
-                    : "text-zinc-600 hover:text-zinc-900"
+                    ? "text-zinc-600 hover:text-zinc-900"
+                    : "text-zinc-400 hover:text-zinc-100"
                 } `}
               />
             </Link>
