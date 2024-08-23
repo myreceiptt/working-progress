@@ -18,8 +18,8 @@ export const Footer: React.FC<Props> = ({ views }) => {
       <div
         className={`fixed inset-x-0 bottom-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-t-2 lg:bg-transparent ${
           isIntersecting
-            ? "bg-zinc-900/0 border-transparent"
-            : "bg-white/10  border-zinc-800 lg:border-transparent"
+            ? "bg-white/10  border-zinc-800 lg:border-transparent"
+            : "bg-zinc-900/0 border-transparent"
         }`}
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
