@@ -122,13 +122,24 @@ export const Header: React.FC<Props> = ({ progress, views }) => {
         </div>
       </div>
       <div
-        className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent ${
+        className={`fixed inset-x-0 bottom-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-t lg:bg-transparent ${
           isIntersecting
             ? "bg-zinc-900/0 border-transparent"
             : "bg-white/10  border-zinc-200 lg:border-transparent"
         }`}
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
+          <Link
+            href="/progresses"
+            className={`duration-200 hover:font-medium ${
+              isIntersecting
+                ? " text-zinc-400 hover:text-zinc-100"
+                : "text-zinc-600 hover:text-zinc-900"
+            } `}
+          >
+            <ArrowLeft className="w-6 h-6 " />
+          </Link>
+		  
           <div className="flex justify-between gap-8">
             <span
               title="View counter for this page"
@@ -162,17 +173,6 @@ export const Header: React.FC<Props> = ({ progress, views }) => {
               />
             </Link>
           </div>
-
-          <Link
-            href="/progresses"
-            className={`duration-200 hover:font-medium ${
-              isIntersecting
-                ? " text-zinc-400 hover:text-zinc-100"
-                : "text-zinc-600 hover:text-zinc-900"
-            } `}
-          >
-            <ArrowLeft className="w-6 h-6 " />
-          </Link>
         </div>
       </div>
     </header>
