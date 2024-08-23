@@ -16,10 +16,10 @@ export const Footer: React.FC<Props> = ({ views }) => {
       className="relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black"
     >
       <div
-        className={`fixed inset-x-0 bottom-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-t lg:bg-transparent ${
+        className={`fixed inset-x-0 bottom-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-t-2 lg:bg-transparent ${
           isIntersecting
             ? "bg-zinc-900/0 border-transparent"
-            : "bg-white/10  border-zinc-200 lg:border-transparent"
+            : "bg-white/10  border-zinc-800 lg:border-transparent"
         }`}
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
@@ -33,7 +33,7 @@ export const Footer: React.FC<Props> = ({ views }) => {
           >
             <ArrowLeft className="w-6 h-6 " />
           </Link>
-          
+
           <div className="flex justify-between gap-8">
             <span
               title="View counter for this page"
