@@ -1,47 +1,17 @@
 "use client";
 import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
 import Link from "next/link";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 type Props = {
-  progress: {
-    url?: string;
-    title: string;
-    description: string;
-    documentation?: string;
-  };
-
   views: number;
 };
-export const Header: React.FC<Props> = ({ progress, views }) => {
+export const Footer: React.FC<Props> = ({ views }) => {
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
 
-  const links: { label: string; href: string }[] = [];
-  if (progress.documentation) {
-    links.push({
-      label: "GitBook",
-      href: `https://iqraa.straight-line.org/the-kings/${progress.documentation}`,
-    });
-  }
-  if (progress.url) {
-    links.push({
-      label: "Buy NFTs",
-      href: progress.url,
-    });
-  }
-  useEffect(() => {
-    if (!ref.current) return;
-    const observer = new IntersectionObserver(([entry]) =>
-      setIntersecting(entry.isIntersecting)
-    );
-
-    observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-
   return (
-    <header
+    <footer
       ref={ref}
       className="relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black"
     >
@@ -99,28 +69,6 @@ export const Header: React.FC<Props> = ({ progress, views }) => {
           </Link>
         </div>
       </div>
-      <div className="container mx-auto relative isolate overflow-hidden  py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col items-center">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
-              {progress.title}
-            </h1>
-            <p className="mt-6 text-lg leading-8 text-zinc-300">
-              {progress.description}
-            </p>
-          </div>
-
-          <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div className="grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-              {links.map((link) => (
-                <Link target="_blank" key={link.label} href={link.href}>
-                  {link.label} <span aria-hidden="true">&rarr;</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+    </footer>
   );
 };
