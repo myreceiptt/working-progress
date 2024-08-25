@@ -46,10 +46,10 @@ export const Header: React.FC<Props> = ({ progress, views }) => {
       className="relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black"
     >
       <div
-        className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b-2 lg:bg-transparent ${
+        className={`fixed inset-x-0 top-0 z-50 backdrop-blur duration-200 border-b-2 ${
           isIntersecting
             ? "bg-zinc-900/0 border-transparent"
-            : "bg-white/10  border-zinc-800 lg:border-transparent"
+            : "bg-white/10 border-zinc-800"
         }`}
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">

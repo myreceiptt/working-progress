@@ -14,8 +14,7 @@ export default function OurProfile() {
             </h2>
             <p className="mt-4 text-zinc-400">
               We were born in the 0101 Universe. We exist in the digital realm
-              of the Internet. Stay alert! Beware of scams! Hack them all,
-              ethically!
+              of the Internet.
             </p>
           </div>
           <div className="w-full h-px bg-zinc-800" />

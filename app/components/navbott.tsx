@@ -20,10 +20,10 @@ export const BottomNavigation: React.FC = () => {
   return (
     <header ref={ref}>
       <div
-        className={`fixed inset-x-0 bottom-0 z-50 backdrop-blur  duration-200 border-b  ${
+        className={`fixed inset-x-0 bottom-0 z-50 backdrop-blur duration-200 border-t-2 ${
           isIntersecting
             ? "bg-zinc-900/0 border-transparent"
-            : "bg-zinc-900/500  border-zinc-800 "
+            : "bg-zinc-900/500 border-zinc-800"
         }`}
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
@@ -37,21 +37,21 @@ export const BottomNavigation: React.FC = () => {
           <div className="flex justify-between gap-8">
             <Link
               href="/progresses"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-zinc-400 hover:text-zinc-100 underline underline-offset-4 text-sm"
             >
-              prog.
+              &#123; prog. &#125;
             </Link>
             <Link
               href="/projects"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-zinc-400 hover:text-zinc-100 underline underline-offset-4 text-sm"
             >
-              proj.
+              &#123; proj. &#125;
             </Link>
             <Link
               href="/logs"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
+              className="duration-200 text-zinc-400 hover:text-zinc-100 underline underline-offset-4 text-sm"
             >
-              logs
+              &#123; logs &#125;
             </Link>
           </div>
         </div>
