@@ -33,27 +33,25 @@ export const BottomNavigation: React.FC = () => {
           >
             <ArrowLeft className="w-6 h-6 " />
           </Link>
-          
+
           <div className="flex justify-between gap-8">
             <Link
-              // href="/projects"
-              href="#"
+              href="/progresses"
               className="duration-200 text-zinc-400 hover:text-zinc-100"
             >
-              proj
+              prog.
             </Link>
             <Link
-              // href="/logs"
-              href="#"
+              href="/projects"
+              className="duration-200 text-zinc-400 hover:text-zinc-100"
+            >
+              proj.
+            </Link>
+            <Link
+              href="/logs"
               className="duration-200 text-zinc-400 hover:text-zinc-100"
             >
               logs
-            </Link>
-            <Link
-              href="/contact"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
-            >
-              cont
             </Link>
           </div>
         </div>

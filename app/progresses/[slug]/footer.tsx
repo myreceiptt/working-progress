@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
+import { ArrowLeft, Eye, Github, Twitter, Mail } from "lucide-react";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
 
@@ -48,8 +48,8 @@ export const Footer: React.FC<Props> = ({ views }) => {
                 views
               )}
             </span>
-            <Link target="_blank" href="https://twitter.com/MyReceiptTT">
-              <Twitter
+            <Link target="_blank" href="https://github.com/myreceiptt">
+              <Github
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
                     ? "text-zinc-600 hover:text-zinc-900"
@@ -57,8 +57,17 @@ export const Footer: React.FC<Props> = ({ views }) => {
                 } `}
               />
             </Link>
-            <Link target="_blank" href="https://github.com/myreceiptt">
-              <Github
+            <Link target="_blank" href="mailto:nota@straight-line.org">
+              <Mail
+                className={`w-6 h-6 duration-200 hover:font-medium ${
+                  isIntersecting
+                    ? "text-zinc-600 hover:text-zinc-900"
+                    : "text-zinc-400 hover:text-zinc-100"
+                } `}
+              />
+            </Link>
+            <Link target="_blank" href="https://twitter.com/MyReceiptTT">
+              <Twitter
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
                     ? "text-zinc-600 hover:text-zinc-900"

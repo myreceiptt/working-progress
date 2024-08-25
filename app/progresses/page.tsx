@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from 'next/image';
 import React from "react";
 import { allProgresses } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
@@ -15,7 +14,7 @@ export const revalidate = 60;
 export default async function ProgressesPage() {
   const views = (
     await redis.mget<number[]>(
-      ...allProgresses.map((p) => ["pageviews", "progresses", p.slug].join(":")),
+      ...allProgresses.map((p) => ["pageviews", "progresses", p.slug].join(":"))
     )
   ).reduce((acc, v, i) => {
     acc[allProgresses[i].slug] = v ?? 0;
@@ -31,12 +30,12 @@ export default async function ProgressesPage() {
       (progress) =>
         progress.slug !== featured.slug &&
         progress.slug !== top2.slug &&
-        progress.slug !== top3.slug,
+        progress.slug !== top3.slug
     )
     .sort(
       (a, b) =>
         new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
-        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime(),
+        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime()
     );
 
   return (
@@ -55,7 +54,8 @@ export default async function ProgressesPage() {
               className="underline duration-500 hover:text-zinc-300"
             >
               The KING's NFTs
-            </Link> project...
+            </Link>{" "}
+            project...
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -79,7 +79,7 @@ export default async function ProgressesPage() {
                   <span className="flex items-center gap-1 text-xs text-zinc-500">
                     <Eye className="w-4 h-4" />{" "}
                     {Intl.NumberFormat("en-US", { notation: "compact" }).format(
-                      views[featured.slug] ?? 0,
+                      views[featured.slug] ?? 0
                     )}
                   </span>
                 </div>
@@ -105,7 +105,10 @@ export default async function ProgressesPage() {
           <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
             {[top2, top3].map((progress) => (
               <Card key={progress.slug}>
-                <Article progress={progress} views={views[progress.slug] ?? 0} />
+                <Article
+                  progress={progress}
+                  views={views[progress.slug] ?? 0}
+                />
               </Card>
             ))}
           </div>
@@ -118,7 +121,10 @@ export default async function ProgressesPage() {
               .filter((_, i) => i % 3 === 0)
               .map((progress) => (
                 <Card key={progress.slug}>
-                  <Article progress={progress} views={views[progress.slug] ?? 0} />
+                  <Article
+                    progress={progress}
+                    views={views[progress.slug] ?? 0}
+                  />
                 </Card>
               ))}
           </div>
@@ -127,7 +133,10 @@ export default async function ProgressesPage() {
               .filter((_, i) => i % 3 === 1)
               .map((progress) => (
                 <Card key={progress.slug}>
-                  <Article progress={progress} views={views[progress.slug] ?? 0} />
+                  <Article
+                    progress={progress}
+                    views={views[progress.slug] ?? 0}
+                  />
                 </Card>
               ))}
           </div>
@@ -136,7 +145,10 @@ export default async function ProgressesPage() {
               .filter((_, i) => i % 3 === 2)
               .map((progress) => (
                 <Card key={progress.slug}>
-                  <Article progress={progress} views={views[progress.slug] ?? 0} />
+                  <Article
+                    progress={progress}
+                    views={views[progress.slug] ?? 0}
+                  />
                 </Card>
               ))}
           </div>

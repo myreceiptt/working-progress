@@ -41,7 +41,7 @@ export default async function PostPage({ params }: Props) {
       <Header story={story} views={views} />
       <ReportView slug={story.slug} />
 
-      <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
+      <article className="px-4 pt-12 pb-24 mx-auto prose prose-zinc prose-quoteless">
         <Mdx code={story.body.code} />
       </article>
       <Footer views={views} />

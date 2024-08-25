@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from 'next/image';
+import Image from "next/image";
 import React from "react";
 import { allStories } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
@@ -15,28 +15,28 @@ export const revalidate = 60;
 export default async function StoriesPage() {
   const views = (
     await redis.mget<number[]>(
-      ...allStories.map((p) => ["pageviews", "stories", p.slug].join(":")),
+      ...allStories.map((p) => ["pageviews", "stories", p.slug].join(":"))
     )
   ).reduce((acc, v, i) => {
     acc[allStories[i].slug] = v ?? 0;
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allStories.find((story) => story.slug === "0000")!;
-  const top2 = allStories.find((story) => story.slug === "0002")!;
-  const top3 = allStories.find((story) => story.slug === "0001")!;
+  const featured = allStories.find((story) => story.slug === "0002")!;
+  const top2 = allStories.find((story) => story.slug === "0001")!;
+  const top3 = allStories.find((story) => story.slug === "0000")!;
   const sorted = allStories
     .filter((p) => p.published)
     .filter(
       (story) =>
         story.slug !== featured.slug &&
         story.slug !== top2.slug &&
-        story.slug !== top3.slug,
+        story.slug !== top3.slug
     )
     .sort(
       (a, b) =>
         new Date(b.date ?? Number.POSITIVE_INFINITY).getTime() -
-        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime(),
+        new Date(a.date ?? Number.POSITIVE_INFINITY).getTime()
     );
 
   return (
@@ -48,14 +48,15 @@ export default async function StoriesPage() {
             0101 Stories
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some 0101 stories in{" "}
+            Some of the 0101 stories in{" "}
             <Link
               target="_blank"
               href="#"
               className="underline duration-500 hover:text-zinc-300"
             >
               The KING's Story
-            </Link>, are our origin receipts...
+            </Link>
+            . These are our original receipts...
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
@@ -79,7 +80,7 @@ export default async function StoriesPage() {
                   <span className="flex items-center gap-1 text-xs text-zinc-500">
                     <Eye className="w-4 h-4" />{" "}
                     {Intl.NumberFormat("en-US", { notation: "compact" }).format(
-                      views[featured.slug] ?? 0,
+                      views[featured.slug] ?? 0
                     )}
                   </span>
                 </div>

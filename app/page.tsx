@@ -4,18 +4,15 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  // { name: "Profile", href: "/profile" },
-  { name: "prof", href: "#" },
-  { name: "0101", href: "/stories" },
-  { name: "prog", href: "/progresses" },
+  { name: "{ prof. }", href: "/profile" },
+  { name: "{ 0101 }", href: "/stories" },
+  { name: "{ cont. }", href: "/contact" },
 ];
 
 const bottomnav = [
-  // { name: "Projects", href: "/projects" },
-  { name: "proj", href: "#" },
-  // { name: "Logs", href: "/logs" },
-  { name: "logs", href: "#" },
-  { name: "cont", href: "/contact" },
+  { name: "{ prog. }", href: "/progresses" },
+  { name: "{ proj. }", href: "/projects" },
+  { name: "{ logs }", href: "/logs" },
 ];
 
 export default function Home() {
@@ -79,7 +76,9 @@ export default function Home() {
       </div>
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
-          <li className="text-sm font-semibold duration-500 text-zinc-500 hover:text-zinc-300">Copyleft (ɔ) since 1980 Prof. NOTA Inc.</li>
+          <li className="text-sm font-semibold duration-500 text-zinc-500 hover:text-zinc-300">
+            Copyleft (ɔ) since 1980 Prof. NOTA Inc.
+          </li>
         </ul>
       </nav>
     </div>
