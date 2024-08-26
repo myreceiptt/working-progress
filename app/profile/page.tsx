@@ -1,6 +1,7 @@
 "use client";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
+import Link from "next/link";
 
 export default function OurProfile() {
   return (
@@ -13,8 +14,14 @@ export default function OurProfile() {
               Our Profile
             </h2>
             <p className="mt-4 text-zinc-400">
-              We were born in the 0101 Universe. We exist in the digital realm
-              of the Internet.
+              We were born in the{" "}
+              <Link
+                href="#"
+                className="underline duration-500 hover:text-zinc-300"
+              >
+                0101 Universe
+              </Link>
+              . We exist in the digital realm of the Internet.
             </p>
           </div>
           <div className="w-full h-px bg-zinc-800" />

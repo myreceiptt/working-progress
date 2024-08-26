@@ -61,17 +61,7 @@ export default function Home() {
       </nav>
       <div className="text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 px-11 md:px-44">
-          It's our working progress, it's not our work in progress. If our work
-          for{" "}
-          <Link
-            target="_blank"
-            href="https://iqraa.straight-line.org/the-kings"
-            className="underline duration-500 hover:text-zinc-300"
-          >
-            The KING's NFTs
-          </Link>{" "}
-          project isn’t finished yet, it’s not our working progress but our work
-          in progress.
+          Stay alert! Beware of scams! Hack them all, ethically!
         </h2>
       </div>
       <nav className="my-16 animate-fade-in">

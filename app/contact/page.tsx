@@ -83,7 +83,14 @@ export default function OurContact() {
               Our Contact
             </h2>
             <p className="mt-4 text-zinc-400">
-              Check out our awesome social media links in this 0101 Universe!
+              Links to our existence in{" "}
+              <Link
+                href="#"
+                className="underline duration-500 hover:text-zinc-300"
+              >
+                0101 Universe
+              </Link>
+              .
             </p>
           </div>
           <div className="w-full h-px bg-zinc-800" />

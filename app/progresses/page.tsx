@@ -47,15 +47,8 @@ export default async function ProgressesPage() {
             Our Progress
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of our version progress in{" "}
-            <Link
-              target="_blank"
-              href="https://iqraa.straight-line.org/the-kings"
-              className="underline duration-500 hover:text-zinc-300"
-            >
-              The KING's NFTs
-            </Link>{" "}
-            project...
+            It's our version progress. It's our working progress, not our
+            work in progress.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />

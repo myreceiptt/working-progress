@@ -47,8 +47,7 @@ export default async function LoggersPage() {
             Our Logs
           </h2>
           <p className="mt-4 text-zinc-400">
-            Records of some events occurring in our company, in our system, on
-            each of our products and services management.
+            Junk records of events occurring in our management system...
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />

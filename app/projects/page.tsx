@@ -47,7 +47,7 @@ export default async function ProjectsPage() {
             Our Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            We're excited to work and be involved in these projects since we get paid...
+            Who doesn't like getting paid? We're excited when get paid...
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
