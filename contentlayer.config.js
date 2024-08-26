@@ -27,6 +27,7 @@ export const Logger = defineDocumentType(() => ({
     },
     description: {
       type: "string",
+      required: true,
     },
     date: {
       type: "date",
