@@ -12,7 +12,7 @@ const navigation = [
 const bottomnav = [
   { name: "{ prog. }", href: "/progresses" },
   { name: "{ proj. }", href: "/projects" },
-  { name: "{ logs }", href: "/logs" },
+  { name: "{ logs }", href: "/loggers" },
 ];
 
 export default function Home() {

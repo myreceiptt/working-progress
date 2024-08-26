@@ -1,22 +1,22 @@
-import type { Log } from "@/.contentlayer/generated";
+import type { Logger } from "@/.contentlayer/generated";
 import Link from "next/link";
 import { Eye } from "lucide-react";
 
 type Props = {
-  log: Log;
+  logger: Logger;
   views: number;
 };
 
-export const Article: React.FC<Props> = ({ log, views }) => {
+export const Article: React.FC<Props> = ({ logger, views }) => {
   return (
-    <Link href={`/logs/${log.slug}`}>
+    <Link href={`/loggers/${logger.slug}`}>
       <article className="p-4 md:p-8">
         <div className="flex justify-between gap-2 items-center">
           <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-            {log.date ? (
-              <time dateTime={new Date(log.date).toISOString()}>
+            {logger.date ? (
+              <time dateTime={new Date(logger.date).toISOString()}>
                 {Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(
-                  new Date(log.date)
+                  new Date(logger.date)
                 )}
               </time>
             ) : (
@@ -29,10 +29,10 @@ export const Article: React.FC<Props> = ({ log, views }) => {
           </span>
         </div>
         <h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
-          {log.title}
+          {logger.title}
         </h2>
         <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-          {log.description}
+          {logger.description}
         </p>
       </article>
     </Link>

@@ -48,7 +48,7 @@ export const BottomNavigation: React.FC = () => {
               &#123; proj. &#125;
             </Link>
             <Link
-              href="/logs"
+              href="/loggers"
               className="duration-200 text-zinc-400 hover:text-zinc-100 underline underline-offset-4 text-sm"
             >
               &#123; logs &#125;

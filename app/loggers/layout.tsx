@@ -1,4 +1,4 @@
-export default function LogsLayout({
+export default function LoggersLayout({
   children,
 }: {
   children: React.ReactNode;

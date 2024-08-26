@@ -16,9 +16,9 @@ const computedFields = {
   },
 };
 
-export const Log = defineDocumentType(() => ({
-  name: "Log",
-  filePathPattern: "./logs/**/*.mdx",
+export const Logger = defineDocumentType(() => ({
+  name: "Logger",
+  filePathPattern: "./loggers/**/*.mdx",
   contentType: "mdx",
   fields: {
     title: {
@@ -133,7 +133,7 @@ export const Story = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "./content",
-  documentTypes: [Log, Progress, Project, Story],
+  documentTypes: [Logger, Progress, Project, Story],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

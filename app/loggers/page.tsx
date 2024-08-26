@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { allLogs } from "contentlayer/generated";
+import { allLoggers } from "contentlayer/generated";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
@@ -11,26 +11,26 @@ import { Eye } from "lucide-react";
 const redis = Redis.fromEnv();
 
 export const revalidate = 60;
-export default async function LogsPage() {
+export default async function LoggersPage() {
   const views = (
     await redis.mget<number[]>(
-      ...allLogs.map((p) => ["pageviews", "logs", p.slug].join(":"))
+      ...allLoggers.map((p) => ["pageviews", "loggers", p.slug].join(":"))
     )
   ).reduce((acc, v, i) => {
-    acc[allLogs[i].slug] = v ?? 0;
+    acc[allLoggers[i].slug] = v ?? 0;
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allLogs.find((log) => log.slug === "20240824")!;
-  const top2 = allLogs.find((log) => log.slug === "19920229")!;
-  const top3 = allLogs.find((log) => log.slug === "20160229")!;
-  const sorted = allLogs
+  const featured = allLoggers.find((logger) => logger.slug === "20240824")!;
+  const top2 = allLoggers.find((logger) => logger.slug === "19920229")!;
+  const top3 = allLoggers.find((logger) => logger.slug === "20160229")!;
+  const sorted = allLoggers
     .filter((p) => p.published)
     .filter(
-      (log) =>
-        log.slug !== featured.slug &&
-        log.slug !== top2.slug &&
-        log.slug !== top3.slug
+      (logger) =>
+        logger.slug !== featured.slug &&
+        logger.slug !== top2.slug &&
+        logger.slug !== top3.slug
     )
     .sort(
       (a, b) =>
@@ -47,15 +47,15 @@ export default async function LogsPage() {
             Our Logs
           </h2>
           <p className="mt-4 text-zinc-400">
-            Records of some events occurring in our company, in our system,
-            on each of our products and services management.
+            Records of some events occurring in our company, in our system, on
+            each of our products and services management.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
-            <Link href={`/logs/${featured.slug}`}>
+            <Link href={`/loggers/${featured.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-zinc-100">
@@ -96,9 +96,9 @@ export default async function LogsPage() {
           </Card>
 
           <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
-            {[top2, top3].map((log) => (
-              <Card key={log.slug}>
-                <Article log={log} views={views[log.slug] ?? 0} />
+            {[top2, top3].map((logger) => (
+              <Card key={logger.slug}>
+                <Article logger={logger} views={views[logger.slug] ?? 0} />
               </Card>
             ))}
           </div>
@@ -109,27 +109,27 @@ export default async function LogsPage() {
           <div className="grid grid-cols-1 gap-4">
             {sorted
               .filter((_, i) => i % 3 === 0)
-              .map((log) => (
-                <Card key={log.slug}>
-                  <Article log={log} views={views[log.slug] ?? 0} />
+              .map((logger) => (
+                <Card key={logger.slug}>
+                  <Article logger={logger} views={views[logger.slug] ?? 0} />
                 </Card>
               ))}
           </div>
           <div className="grid grid-cols-1 gap-4">
             {sorted
               .filter((_, i) => i % 3 === 1)
-              .map((log) => (
-                <Card key={log.slug}>
-                  <Article log={log} views={views[log.slug] ?? 0} />
+              .map((logger) => (
+                <Card key={logger.slug}>
+                  <Article logger={logger} views={views[logger.slug] ?? 0} />
                 </Card>
               ))}
           </div>
           <div className="grid grid-cols-1 gap-4">
             {sorted
               .filter((_, i) => i % 3 === 2)
-              .map((log) => (
-                <Card key={log.slug}>
-                  <Article log={log} views={views[log.slug] ?? 0} />
+              .map((logger) => (
+                <Card key={logger.slug}>
+                  <Article logger={logger} views={views[logger.slug] ?? 0} />
                 </Card>
               ))}
           </div>

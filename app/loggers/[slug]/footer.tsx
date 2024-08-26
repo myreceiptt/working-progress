@@ -24,7 +24,7 @@ export const Footer: React.FC<Props> = ({ views }) => {
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <Link
-            href="/logs"
+            href="/loggers"
             className={`duration-200 hover:font-medium ${
               isIntersecting
                 ? "text-zinc-600 hover:text-zinc-900"
