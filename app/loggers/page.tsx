@@ -21,9 +21,9 @@ export default async function LoggersPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allLoggers.find((logger) => logger.slug === "20240824")!;
-  const top2 = allLoggers.find((logger) => logger.slug === "19920229")!;
-  const top3 = allLoggers.find((logger) => logger.slug === "20160229")!;
+  const featured = allLoggers.find((logger) => logger.slug === "19920229")!;
+  const top2 = allLoggers.find((logger) => logger.slug === "20160229")!;
+  const top3 = allLoggers.find((logger) => logger.slug === "20200229")!;
   const sorted = allLoggers
     .filter((p) => p.published)
     .filter(
