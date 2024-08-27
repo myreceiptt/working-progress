@@ -61,7 +61,13 @@ export default function Home() {
       </nav>
       <div className="text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 px-11 md:px-44">
-          Stay alert! Beware of scams! Hack them all, ethically!
+          Stay alert!
+        </h2>
+        <h2 className="text-sm text-zinc-500 px-11 md:px-44">
+          Beware of scams!
+        </h2>
+        <h2 className="text-sm text-zinc-500 px-11 md:px-44">
+          Hack them all, ethically!
         </h2>
       </div>
       <nav className="my-16 animate-fade-in">
