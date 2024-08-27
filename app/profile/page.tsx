@@ -135,11 +135,14 @@ export default function OurProfile() {
                   of us can claim it as the sharing profits, and proof that The
                   12th Stage is in its continued execution.
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
+                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                   There are many things to be done and completed by us. All of
                   them require hard work, smart work, and of course, energy and
                   time. So, expect us, and please stay alert! Beware of scams!
                   Hack them all, ethically!
+                </p>
+                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
+                  ==== 47 =======
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">
                   <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
