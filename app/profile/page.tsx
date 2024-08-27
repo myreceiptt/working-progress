@@ -98,7 +98,7 @@ export default function OurProfile() {
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                   Hello everyone, we are{" "}
                   <Link
-                    targer="_blank"
+                    target="_blank"
                     href="https://prompt.straight-line.org/"
                     className="underline duration-500 hover:text-zinc-300"
                   >
@@ -112,7 +112,7 @@ export default function OurProfile() {
                   group of people authorized to act as a single entity (legally
                   is{" "}
                   <Link
-                    targer="_blank"
+                    target="_blank"
                     href="https://prompt.straight-line.org/"
                     className="underline duration-500 hover:text-zinc-300"
                   >
@@ -143,7 +143,7 @@ export default function OurProfile() {
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                   We are continuously incubated in{" "}
                   <Link
-                    targer="_blank"
+                    target="_blank"
                     href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-7th-stage-the-sanctuary-of-the-kings-world-postponed"
                     className="underline duration-500 hover:text-zinc-300"
                   >
@@ -151,7 +151,7 @@ export default function OurProfile() {
                   </Link>{" "}
                   to execute{" "}
                   <Link
-                    targer="_blank"
+                    target="_blank"
                     href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-12th-stage-keep-playing-learning-and-working-47-on-web3-for-the-king-and-so-on"
                     className="underline duration-500 hover:text-zinc-300"
                   >
@@ -183,7 +183,7 @@ export default function OurProfile() {
                   value into our treasury as the profits. From this treasury,
                   all of us can claim it as the sharing profits, proof that{" "}
                   <Link
-                    targer="_blank"
+                    target="_blank"
                     href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-12th-stage-keep-playing-learning-and-working-47-on-web3-for-the-king-and-so-on"
                     className="underline duration-500 hover:text-zinc-300"
                   >
