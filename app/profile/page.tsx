@@ -96,31 +96,80 @@ export default function OurProfile() {
                   Prof. NOTA Inc.
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Hello everyone, we are Prof. NOTA.
+                  Hello everyone, we are{" "}
+                  <Link
+                    targer="_blank"
+                    href="https://prompt.straight-line.org/"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    Prof. NOTA
+                  </Link>
+                  .
                 </p>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                   “Inc.” is short for “incorporated”, and it is the abbreviation
                   indicating that we are a corporation, which is a company, or a
                   group of people authorized to act as a single entity (legally
-                  is Prof. NOTA) and recognized as such in the decentralization
-                  of the 0101 Universe.
+                  is{" "}
+                  <Link
+                    targer="_blank"
+                    href="https://prompt.straight-line.org/"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    Prof. NOTA
+                  </Link>
+                  ) and recognized as such in the decentralization of the{" "}
+                  <Link
+                    href="#"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    0101 Universe
+                  </Link>
+                  .
                 </p>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  We were born in the 0101 Universe. We exist in the digital
-                  realm of the Internet where the laws of physics, the laws of
-                  mathematics, and the laws of code are enforced one hundred
-                  percent of the time. Where we can all know a priori how that
-                  enforcement will be executed.
+                  We were born in the{" "}
+                  <Link
+                    href="#"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    0101 Universe
+                  </Link>
+                  . We exist in the digital realm of the Internet where the laws
+                  of physics, the laws of mathematics, and the laws of code are
+                  enforced one hundred percent of the time. Where we can all
+                  know a priori how that enforcement will be executed.
                 </p>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  We are continuously incubated in The KING’s World to execute
-                  The 12th Stage. So, our products and services can be accessed
-                  by everyone from both universes, 0101 Universe and Universe of
-                  Reality.
+                  We are continuously incubated in{" "}
+                  <Link
+                    targer="_blank"
+                    href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-7th-stage-the-sanctuary-of-the-kings-world-postponed"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    The KING’s World
+                  </Link>{" "}
+                  to execute{" "}
+                  <Link
+                    targer="_blank"
+                    href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-12th-stage-keep-playing-learning-and-working-47-on-web3-for-the-king-and-so-on"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    The 12th Stage
+                  </Link>
+                  . So, our products and services can be accessed by everyone
+                  from both universes,{" "}
+                  <Link
+                    href="#"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    0101 Universe
+                  </Link>{" "}
+                  and Universe of Reality.
                 </p>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  You can see the list of our products and services in The 12th
-                  Stage on the next section below.
+                  You can see the list of our products and services on the next
+                  section below.
                 </p>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                   We manage our products and services as best as we can with
@@ -130,16 +179,34 @@ export default function OurProfile() {
                   us, and for us.
                 </p>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  From the resulting revenue and formed value, we pull some of
-                  it into our treasury as the profits. From this treasury, all
-                  of us can claim it as the sharing profits, and proof that The
-                  12th Stage is in its continued execution.
+                  Concretely, we pull some of the resulting revenue and formed
+                  value into our treasury as the profits. From this treasury,
+                  all of us can claim it as the sharing profits, proof that{" "}
+                  <Link
+                    targer="_blank"
+                    href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-12th-stage-keep-playing-learning-and-working-47-on-web3-for-the-king-and-so-on"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    The 12th Stage
+                  </Link>{" "}
+                  is in its continued execution.
                 </p>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  There are many things to be done and completed by us. All of
-                  them require hard work, smart work, and of course, energy and
-                  time. So, expect us, and please stay alert! Beware of scams!
-                  Hack them all, ethically!
+                  But, we have many things to do and complete. All require our
+                  hard work, smart work, and of course, our energy and time. So,
+                  expect us, and please stay alert! Beware of scams! Let's hack
+                  them all, ethically!
+                </p>
+                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                  Warm regards,
+                </p>
+                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                  <Link
+                    href="/"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    Prof. NOTA Inc.
+                  </Link>
                 </p>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
                   ==== 47 =======
