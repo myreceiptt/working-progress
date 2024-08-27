@@ -47,7 +47,14 @@ export default async function LoggersPage() {
             Our Logs
           </h2>
           <p className="mt-4 text-zinc-400">
-            Junk records of events occurring in our management system...
+            Glitchy records of our events occurring in{" "}
+            <Link
+              href="#"
+              className="underline duration-500 hover:text-zinc-300"
+            >
+              0101 Universe
+            </Link>
+            ...
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
