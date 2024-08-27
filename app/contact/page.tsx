@@ -80,7 +80,7 @@ export default function OurContact() {
         <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
           <div className="max-w-2xl mx-auto lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-              Our Contact
+              Track Us
             </h2>
             <p className="mt-4 text-zinc-400">
               Links to our existence in{" "}
