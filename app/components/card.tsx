@@ -1,6 +1,5 @@
 "use client";
 import { motion, useMotionTemplate, useSpring } from "framer-motion";
-
 import { PropsWithChildren } from "react";
 
 export const Card: React.FC<PropsWithChildren> = ({ children }) => {

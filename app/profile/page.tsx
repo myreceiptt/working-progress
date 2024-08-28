@@ -12,41 +12,42 @@ import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 import { Eye } from "lucide-react";
+import Modal from "../components/modal";
 
 const products = [
   {
     icon: <Receipt size={20} />,
-    href: "#",
+    href: "/profile/currencies",
     label: "$HAIL $OiOi $NOTA",
     handle: "The Currencies",
   },
   {
     icon: <Factory size={20} />,
-    href: "#",
+    href: "/profile/breads",
     label: "PabrikRoti.IDN",
     handle: "Breads Factory",
   },
   {
     icon: <GraduationCap size={20} />,
-    href: "#",
+    href: "/profile/nota",
     label: "Prof. NOTA",
     handle: "Professor NOTA",
   },
   {
     icon: <Warehouse size={20} />,
-    href: "#",
+    href: "/profile/endhonesa",
     label: "#ENDHONESA",
     handle: "ENDHONESA.COM",
   },
   {
     icon: <Store size={20} />,
-    href: "#",
+    href: "/profile/skateshop",
     label: "#hailskateboarding",
     handle: "SKATESHOP.ID",
   },
   {
     icon: <Skull size={20} />,
-    href: "#",
+    href: "/profile/dethwish",
     label: "/ˈdeTH ˌwiSH/",
     handle: "deTH wiSH",
   },
@@ -208,20 +209,28 @@ export default function OurProfile() {
                     Prof. NOTA Inc.
                   </Link>
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
+                <p className="z-20 mt-4 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
                   ==== 47 =======
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">
-                  <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
-                    Our products and services...{" "}
-                    <span aria-hidden="true">&darr;&darr;&darr;&darr;</span>
-                  </p>
+                  <Link
+                    href="#prodserv"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    <p className="block text-zinc-200 hover:text-zinc-50 text-sm">
+                      <span aria-hidden="true">&darr;</span> Products and
+                      Services <span aria-hidden="true">&darr;</span>
+                    </p>
+                  </Link>
                 </div>
               </article>
             </Card>
           </div>
           <div className="w-full h-px bg-zinc-800" />
-          <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+          <div
+            id="prodserv"
+            className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16"
+          >
             {products.map((s) => (
               <Card key={s.label}>
                 <Link

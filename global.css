@@ -7,3 +7,7 @@
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
 }
+
+* {
+  scroll-behavior: smooth;
+}
