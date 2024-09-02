@@ -4,7 +4,7 @@ import { Eye } from "lucide-react";
 
 export default function ProfessorNOTA() {
   return (
-    <div className="bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900">
+    <div className="relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900">
       <div className="relative pb-16">
         <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
           <div className="w-full mx-auto lg:mx-0">

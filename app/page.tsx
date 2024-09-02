@@ -38,6 +38,7 @@ export default function Home() {
       />
       <Image
         src="/favicon.png"
+        priority={true}
         width={111}
         height={111}
         alt="Hi, We are Prof. NOTA!"

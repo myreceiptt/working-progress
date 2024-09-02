@@ -26,7 +26,7 @@ const socials = [
     icon: <Mail size={20} />,
     href: "mailto:nota@straight-line.org",
     label: "Email",
-    handle: "nota@straight-line.org",
+    handle: "nota@",
   },
   {
     icon: <Twitter size={20} />,
@@ -74,7 +74,7 @@ const socials = [
 
 export default function OurContact() {
   return (
-    <div className="bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900">
+    <div className="relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900">
       <div className="relative pb-16">
         <Navigation />
         <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
