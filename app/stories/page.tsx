@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import React from "react";
 import { allStories } from "contentlayer/generated";
 import { Navigation } from "../components/nav";

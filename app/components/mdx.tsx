@@ -108,7 +108,10 @@ const components = {
     <span>
       <span>
         <img
-          className={clsx("rounded-md border border-zinc-200 bg-black", className)}
+          className={clsx(
+            "rounded-md border border-zinc-200 bg-black",
+            className
+          )}
           alt={alt}
           {...props}
         />
