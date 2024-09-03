@@ -34,7 +34,7 @@ export default function SkateShopDotID() {
                   <Link
                     href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../skateshop.id"
                     target="_blank"
-                    className="hover:underline duration-500 hover:text-zinc-300"
+                    className="underline duration-500 hover:text-zinc-300"
                   >
                     All Hail Skateboarding!!!!
                   </Link>
@@ -72,7 +72,7 @@ export default function SkateShopDotID() {
                 <div className="absolute bottom-4 md:bottom-8">
                   <Link
                     href="/profile#prodserv"
-                    className="underline duration-500 hover:text-zinc-300"
+                    className="hover:underline duration-500 hover:text-zinc-300"
                   >
                     <p className="block text-zinc-200 hover:text-zinc-50 text-sm">
                       <span aria-hidden="true">&larr;</span> Back to Profile
