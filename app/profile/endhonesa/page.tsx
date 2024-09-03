@@ -12,10 +12,10 @@ export default function ENDHONESAdotCom() {
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex justify-between gap-2 items-center">
                   <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                    <time dateTime={new Date("2024-08-24").toISOString()}>
+                    <time dateTime={new Date("2024-08-28").toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: "medium",
-                      }).format(new Date("2024-08-24"))}
+                      }).format(new Date("2024-08-28"))}
                     </time>
                   </span>
                   <span className="text-zinc-500 text-xs  flex items-center gap-1">
@@ -29,40 +29,45 @@ export default function ENDHONESAdotCom() {
                   ENDHONESA.COM
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Hello everyone, Happy Independence Day!
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Warm regards,
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                  Trade would always proceed properly and as well as possible
+                  according to the resulting revenue and formed value by
+                  respective residents of{" "}
                   <Link
-                    href="/"
+                    href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../endhonesa.com"
+                    target="_blank"
                     className="underline duration-500 hover:text-zinc-300"
                   >
-                    Prof. NOTA Inc.
+                    ENDHONESA
                   </Link>
+                  .
                 </p>
+                <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-decimal">
+                  <li className="mt-2">
+                    Physical good stuff online store dApp.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Currencies for transaction using $OiOi, $HAIL, $NOTA,
+                        $MATIC, $XTZ, $ETH, $BTC, and FIAT with 11.1111% fee per
+                        transaction, and 47.4747% of the fee, per transaction,
+                        goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Digital good stuff online store dApp.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Currencies for transaction using $OiOi, $HAIL, $NOTA,
+                        $MATIC, $XTZ, $ETH, $BTC, and FIAT with 11.1111% fee per
+                        transaction, and 47.4747% of the fee, per transaction,
+                        goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Subdomain provider for any Breads Factory dApp projects.
+                  </li>
+                </ul>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
                   ==== 47 =======
                 </p>

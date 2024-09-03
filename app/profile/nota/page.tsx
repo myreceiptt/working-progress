@@ -12,10 +12,10 @@ export default function ProfessorNOTA() {
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex justify-between gap-2 items-center">
                   <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                    <time dateTime={new Date("2024-08-24").toISOString()}>
+                    <time dateTime={new Date("2024-08-27").toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: "medium",
-                      }).format(new Date("2024-08-24"))}
+                      }).format(new Date("2024-08-27"))}
                     </time>
                   </span>
                   <span className="text-zinc-500 text-xs  flex items-center gap-1">
@@ -29,40 +29,70 @@ export default function ProfessorNOTA() {
                   Professor NOTA
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Hello everyone, pay and use us!
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Warm regards,
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                  Get the best help, support, and advice from{" "}
                   <Link
-                    href="/"
+                    href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../professor-nota"
+                    target="_blank"
                     className="underline duration-500 hover:text-zinc-300"
                   >
-                    Prof. NOTA Inc.
-                  </Link>
+                    Prof. NOTA
+                  </Link>{" "}
+                  about this{" "}
+                  <Link
+                    href="#"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    0101 Universe
+                  </Link>{" "}
+                  as long as utilize the Web3 technology.
                 </p>
+                <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-decimal">
+                  <li className="mt-2">
+                    Paid board seats, where Prof. NOTA will play, learn, and
+                    work together with you on the board.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Flat fee per seat. Only 1 $OiOi, or 999 $HAIL, or 909
+                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        11.1111% of the fee, per seat, goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Create educational materials to be used by tutors or
+                    educators like Prof. NOTA.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Flat fee per material. Only 1 $OiOi, or 999 $HAIL, or
+                        909 $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH,
+                        and 11.1111% of the fee, per material, goes to the
+                        treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Paid education speaker, where Prof. NOTA will liven up your
+                    M.I.C.E events.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Flat fee per session. Only 1 $OiOi, or 999 $HAIL, or 909
+                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        11.1111% of the fee, per session, goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Solution development and operation for your products and
+                    services business.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Min. fee per project only 1 $OiOi, or 999 $HAIL, or 909
+                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        11.1111% of the fee, per project, goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
                   ==== 47 =======
                 </p>

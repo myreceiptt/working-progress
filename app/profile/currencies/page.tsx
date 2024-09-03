@@ -1,14 +1,30 @@
 import Link from "next/link";
 import { Card } from "../../components/card";
+import { Eye } from "lucide-react";
 
 export default function TheCurrencies() {
   return (
     <div className="relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900">
-      <div className="relative">
-        <div className="px-6 lg:px-8 py-6 lg:py-8 space-y-6 lg:space-y-8 mx-auto max-w-2xl">
+      <div className="relative pb-16">
+        <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
           <div className="w-full mx-auto lg:mx-0">
             <Card>
               <article className="relative w-full h-full p-4 md:p-8">
+                <div className="flex justify-between gap-2 items-center">
+                  <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
+                    <time dateTime={new Date("2024-08-25").toISOString()}>
+                      {Intl.DateTimeFormat(undefined, {
+                        dateStyle: "medium",
+                      }).format(new Date("2024-08-25"))}
+                    </time>
+                  </span>
+                  <span className="text-zinc-500 text-xs  flex items-center gap-1">
+                    <Eye className="w-4 h-4" />{" "}
+                    {Intl.NumberFormat("en-US", {
+                      notation: "compact",
+                    }).format(11111111111)}
+                  </span>
+                </div>
                 <h1 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
                   The Currencies
                 </h1>
@@ -44,10 +60,7 @@ export default function TheCurrencies() {
                     Polygon $OiOi fungible tokens.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Max. supply: 47,474,747 $OiOi
-                      </li>
-                      <li className="mt-2 ml-4">
-                        No pre-sale, airdropped, no LP on release.
+                        Max. supply is 47,474,747 $OiOi. No pre-sale, only airdropped or rewarded, and no LP on release.
                       </li>
                     </ul>
                   </li>
@@ -55,10 +68,7 @@ export default function TheCurrencies() {
                     Tezos $HAIL fungible tokens.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Max. supply: 47,000,000,000 $HAIL
-                      </li>
-                      <li className="mt-2 ml-4">
-                        Some pre-sale, airdropped, some LP on release.
+                        Max. supply is 47,000,000,000 $HAIL. Some pre-sale, some airdropped or rewarded, and some LP on release.
                       </li>
                     </ul>
                   </li>
@@ -66,10 +76,7 @@ export default function TheCurrencies() {
                     Tezos $OiOi fungible tokens.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Max. supply: 47,474,747 $OiOi
-                      </li>
-                      <li className="mt-2 ml-4">
-                        No pre-sale, airdropped, no LP on release.
+                        Max. supply is 47,474,747 $OiOi. No pre-sale, only airdropped or rewarded, and no LP on release.
                       </li>
                     </ul>
                   </li>
@@ -77,10 +84,7 @@ export default function TheCurrencies() {
                     Tezos $NOTA fungible tokens.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Max. supply: 74,747,474,747 $NOTA
-                      </li>
-                      <li className="mt-2 ml-4">
-                        No pre-sale, airdropped, no LP on release.
+                        Max. supply is 74,747,474,747 $NOTA. No pre-sale, only airdropped or rewarded, and no LP on release.
                       </li>
                     </ul>
                   </li>
@@ -88,10 +92,7 @@ export default function TheCurrencies() {
                     Ethereum L2 $OiOi fungible tokens.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Max. supply: 47,474,747 $OiOi
-                      </li>
-                      <li className="mt-2 ml-4">
-                        No pre-sale, airdropped, no LP on release.
+                        Max. supply is 47,474,747 $OiOi. No pre-sale, only airdropped or rewarded, and no LP on release.
                       </li>
                     </ul>
                   </li>

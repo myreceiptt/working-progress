@@ -12,10 +12,10 @@ export default function SkateShopDotID() {
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex justify-between gap-2 items-center">
                   <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                    <time dateTime={new Date("2024-08-24").toISOString()}>
+                    <time dateTime={new Date("2024-08-29").toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: "medium",
-                      }).format(new Date("2024-08-24"))}
+                      }).format(new Date("2024-08-29"))}
                     </time>
                   </span>
                   <span className="text-zinc-500 text-xs  flex items-center gap-1">
@@ -29,40 +29,43 @@ export default function SkateShopDotID() {
                   SKATESHOP.ID
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Hello everyone, Happy Skateboarding Every Day!
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Warm regards,
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                  Our skateboarding life will be free since we are anonymous. We
+                  will be a legion if we do not forgive and we do not forget.{" "}
                   <Link
-                    href="/"
+                    href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../skateshop.id"
+                    target="_blank"
                     className="underline duration-500 hover:text-zinc-300"
                   >
-                    Prof. NOTA Inc.
+                    All Hail Skateboarding!!!!
                   </Link>
                 </p>
+                <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-decimal">
+                  <li className="mt-2">
+                    Online skateboard shop multi-vendor.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Currencies for transaction using $OiOi, $HAIL, $NOTA,
+                        $MATIC, $XTZ, $ETH, $BTC, and FIAT with 7.4747% fee per
+                        transaction, and 47.4747% of the fee, per transaction,
+                        goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Online skateboard shop development and operation.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Min. fee per project only 1 $OiOi, or 999 $HAIL, or 909
+                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        11.1111% of the fee, per project, goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Subdomain provider for all online skateboard shop in
+                    ENDHONESA.
+                  </li>
+                </ul>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
                   ==== 47 =======
                 </p>

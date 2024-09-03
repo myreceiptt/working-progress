@@ -12,10 +12,10 @@ export default function OurDethWish() {
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex justify-between gap-2 items-center">
                   <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                    <time dateTime={new Date("2024-08-24").toISOString()}>
+                    <time dateTime={new Date("2022-09-30").toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: "medium",
-                      }).format(new Date("2024-08-24"))}
+                      }).format(new Date("2022-09-30"))}
                     </time>
                   </span>
                   <span className="text-zinc-500 text-xs  flex items-center gap-1">
@@ -31,38 +31,158 @@ export default function OurDethWish() {
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                   Hello everyone, this is our deTH wiSH series...
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Warm regards,
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  <Link
-                    href="/"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
-                    Prof. NOTA Inc.
-                  </Link>
-                </p>
+                <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-disc">
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/21.-deth-wish"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      /ˈdeTH ˌwiSH/
+                    </Link>{" "}
+                    SOLD OUT in Two Weeks.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/13.-2nd-deth-wish"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      2nd /ˈdeTH ˌwiSH/
+                    </Link>{" "}
+                    Currently Suspended.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/12.-3rd-deth-wish"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      3rd /ˈdeTH ˌwiSH/
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/11.-4th-deth-wish"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      4th /ˈdeTH ˌwiSH/
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/10.-5th-deth-wish"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      5th /ˈdeTH ˌwiSH/
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/09.-6th-deth-wish"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      6th /ˈdeTH ˌwiSH/
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/08.-deth-wish-x"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      /ˈdeTH ˌwiSH/ -X-
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/07.-deth-wish-y"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      /ˈdeTH ˌwiSH/ -Y-
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/06.-deth-wish-z"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      /ˈdeTH ˌwiSH/ -Z-
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/05.-deth-wish-body"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      /ˈdeTH ˌwiSH/ BODY
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/04.-deth-wish-mind"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      /ˈdeTH ˌwiSH/ MIND
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/03.-deth-wish-hearth"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      /ˈdeTH ˌwiSH/ HEARTH
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/02.-deth-wish-soul"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      /ˈdeTH ˌwiSH/ SOUL
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/01.-last-deth-wish"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      LAST /ˈdeTH ˌwiSH/
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                  <li className="mt-2">
+                    <Link
+                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/00.-final-deth-wish"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      FINAL /ˈdeTH ˌwiSH/
+                    </Link>{" "}
+                    Too Early Now.
+                  </li>
+                </ul>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
                   ==== 47 =======
                 </p>

@@ -12,7 +12,6 @@ import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 import { Eye } from "lucide-react";
-import { useState } from "react";
 
 const products = [
   {
@@ -21,47 +20,41 @@ const products = [
     // href: "#prodserv",
     label: "$HAIL $OiOi $NOTA",
     handle: "The Currencies",
-    // modchild: "The Currencies",
   },
   {
     icon: <Factory size={20} />,
-    // href: "/profile/breads",
-    href: "#prodserv",
+    href: "/profile/breads",
+    // href: "#prodserv",
     label: "PabrikRoti.IDN",
     handle: "Breads Factory",
-    // modchild: "Breads Factory",
   },
   {
     icon: <GraduationCap size={20} />,
-    // href: "/profile/nota",
-    href: "#prodserv",
+    href: "/profile/nota",
+    // href: "#prodserv",
     label: "Prof. NOTA",
     handle: "Professor NOTA",
-    // modchild: "Professor NOTA",
   },
   {
     icon: <Warehouse size={20} />,
-    // href: "/profile/endhonesa",
-    href: "#prodserv",
+    href: "/profile/endhonesa",
+    // href: "#prodserv",
     label: "#ENDHONESA",
     handle: "ENDHONESA.COM",
-    // modchild: "DHONESA.COM",
   },
   {
     icon: <Store size={20} />,
-    // href: "/profile/skateshop",
-    href: "#prodserv",
+    href: "/profile/skateshop",
+    // href: "#prodserv",
     label: "#hailskateboarding",
     handle: "SKATESHOP.ID",
-    // modchild: "SKATESHOP.ID",
   },
   {
     icon: <Skull size={20} />,
-    // href: "/profile/dethwish",
-    href: "#prodserv",
+    href: "/profile/dethwish",
+    // href: "#prodserv",
     label: "/ˈdeTH ˌwiSH/",
     handle: "deTH wiSH",
-    // modchild: "deTH wiSH",
   },
 ];
 
@@ -262,6 +255,12 @@ export default function OurProfile() {
                     </span>
                     <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
                       {s.label}
+                    </span>
+                    <span className="text-zinc-500 text-xs  flex items-center gap-1">
+                      <Eye className="w-4 h-4" />{" "}
+                      {Intl.NumberFormat("en-US", {
+                        notation: "compact",
+                      }).format(11111111111)}
                     </span>
                   </div>
                 </Link>

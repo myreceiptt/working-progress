@@ -6,16 +6,15 @@ import { Analytics } from "@vercel/analytics/react";
 // import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nota.straight-line.org'),
-title: {
+  metadataBase: new URL("https://nota.straight-line.org"),
+  title: {
     default: "Prof. NOTA's Working Progress",
     template: "%s | nota.straight-line.org",
   },
   description: "It's our working progress, it's not our work in progress.",
   openGraph: {
     title: "Prof. NOTA's Working Progress",
-    description:
-      "It's our working progress, it's not our work in progress.",
+    description: "It's our working progress, it's not our work in progress.",
     url: "https://nota.straight-line.org",
     siteName: "Prof. NOTA's Working Progress",
     images: [
@@ -69,8 +68,9 @@ export default function RootLayout({
         <link rel="canonical" href="https://nota.straight-line.org/" />
       </head>
       <body
-        className={`bg-black ${process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-          }`}
+        className={`bg-black ${
+          process.env.NODE_ENV === "development" ? "debug-screens" : undefined
+        }`}
       >
         {children}
       </body>

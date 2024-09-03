@@ -12,10 +12,10 @@ export default function BreadsFactory() {
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex justify-between gap-2 items-center">
                   <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                    <time dateTime={new Date("2024-08-24").toISOString()}>
+                    <time dateTime={new Date("2024-08-26").toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: "medium",
-                      }).format(new Date("2024-08-24"))}
+                      }).format(new Date("2024-08-26"))}
                     </time>
                   </span>
                   <span className="text-zinc-500 text-xs  flex items-center gap-1">
@@ -29,40 +29,97 @@ export default function BreadsFactory() {
                   Breads Factory
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Hello everyone, please eat our loaves of bread if you are hungry.
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  init...
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Warm regards,
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                   <Link
-                    href="/"
+                    href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../breads-factory"
+                    target="_blank"
                     className="underline duration-500 hover:text-zinc-300"
                   >
-                    Prof. NOTA Inc.
-                  </Link>
+                    The Breads Factory
+                  </Link>{" "}
+                  is a factory that produces Programmed Bread (tokenized assets)
+                  with a Framework of Playing, Learning, and Working or PLW.
+                  Here's what's trying to be provided and built in:
                 </p>
+                <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-decimal">
+                  <li className="mt-2">
+                    Token deployer service, on any blockchain with any
+                    implementation.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Flat fee per project. Only 1 $OiOi, or 999 $HAIL, or 909
+                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        11.1111% of the fee, per project, goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Token dExchange dApp only between Polygon $OiOi, and Polygon
+                    $MATIC.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Only 0.1111% fee per transaction, and 100% of the fee,
+                        per transaction, goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Token dExchange dApp only between Tezos $HAIL, Tezos $OiOi,
+                    Tezos $NOTA, and Tezos $XTZ.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Only 0.1111% fee per transaction, and 100% of the fee,
+                        per transaction, goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Token dExchange dApp only between Ethereum L2 $OiOi and
+                    Ethereum L2 $ETH.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Only 0.1111% fee per transaction, and 100% of the fee,
+                        per transaction, goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    Token dExchange dApp only between Polygon $OiOi, Tezos
+                    $OiOi, and Ethereum L2 $OiOi.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Only 0.1111% fee per transaction, and 100% of the fee,
+                        per transaction, goes to the treasury.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    OiOi decision power dApp using Ethereum L2 $OiOi to vote.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Token-gated dApp using Ethereum L2 $OiOi, and voting to
+                        propose to Prof. NOTA Inc. to share the profits.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    OiOi decision power dApp using Tezos $NOTA to vote.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Token-gated dApp using Tezos $NOTA, and voting to
+                        determine whether, when, and by who the profit share is
+                        claimable.
+                      </li>
+                    </ul>
+                  </li>
+                  <li className="mt-2">
+                    OiOi treasury profits share claim dApp, from us, by us, and for us.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Based on OiOi decision power, dApp provide monthly and annually claimable profits share for all holders of the ROTY BASE dETH NFTs (staked), The Melting Land NFTs (staked), the Amanda Wives NFTs (staked), and the FINAL /ˈdeTH ˌwiSH/ NFTs (staked).
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
                   ==== 47 =======
                 </p>
