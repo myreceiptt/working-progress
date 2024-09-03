@@ -43,7 +43,7 @@ export default function Home() {
         height={111}
         alt="Hi, We are Prof. NOTA!"
       />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+      <h1 className="z-10 text-5xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl whitespace-nowrap bg-clip-text ">
         Prof. NOTA
       </h1>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
@@ -61,13 +61,11 @@ export default function Home() {
         </ul>
       </nav>
       <div className="text-center animate-fade-in">
-        <h2 className="text-sm text-zinc-500 px-11 md:px-44">
-          Stay alert!
-        </h2>
-        <h2 className="text-sm text-zinc-500 px-11 md:px-44">
+        <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">Stay alert!</h2>
+        <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">
           Beware of scams!
         </h2>
-        <h2 className="text-sm text-zinc-500 px-11 md:px-44">
+        <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">
           Hack them all, ethically!
         </h2>
       </div>

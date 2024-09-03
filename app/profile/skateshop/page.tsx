@@ -34,7 +34,7 @@ export default function SkateShopDotID() {
                   <Link
                     href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../skateshop.id"
                     target="_blank"
-                    className="underline duration-500 hover:text-zinc-300"
+                    className="hover:underline duration-500 hover:text-zinc-300"
                   >
                     All Hail Skateboarding!!!!
                   </Link>

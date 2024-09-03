@@ -118,6 +118,7 @@ const components = {
       </span>
     </span>
   ),
+
   hr: ({ ...props }) => (
     <hr className="my-4 border-zinc-200 md:my-8" {...props} />
   ),

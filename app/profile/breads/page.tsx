@@ -112,10 +112,44 @@ export default function BreadsFactory() {
                     </ul>
                   </li>
                   <li className="mt-2">
-                    OiOi treasury profits share claim dApp, from us, by us, and for us.
+                    OiOi treasury profits share claim dApp, from us, by us, and
+                    for us.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Based on OiOi decision power, dApp provide monthly and annually claimable profits share for all holders of the ROTY BASE dETH NFTs (staked), The Melting Land NFTs (staked), the Amanda Wives NFTs (staked), and the FINAL /ˈdeTH ˌwiSH/ NFTs (staked).
+                        Based on OiOi decision power, dApp provide monthly and
+                        annually claimable profits share for all holders of{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/16.-roty-base-deth"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          the ROTY BASE dETH NFTs
+                        </Link>{" "}
+                        (staked),{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/15.-the-melting-land"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          The Melting Land NFTs
+                        </Link>{" "}
+                        (staked),{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/14.-amanda-wives"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          the Amanda Wives NFTs
+                        </Link>{" "}
+                        (staked), and{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/00.-final-deth-wish"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          the FINAL /ˈdeTH ˌwiSH/ NFTs
+                        </Link>{" "}
+                        (staked).
                       </li>
                     </ul>
                   </li>
@@ -126,7 +160,7 @@ export default function BreadsFactory() {
                 <div className="absolute bottom-4 md:bottom-8">
                   <Link
                     href="/profile#prodserv"
-                    className="underline duration-500 hover:text-zinc-300"
+                    className="duration-500 hover:underline hover:text-zinc-300"
                   >
                     <p className="block text-zinc-200 hover:text-zinc-50 text-sm">
                       <span aria-hidden="true">&larr;</span> Back to Profile

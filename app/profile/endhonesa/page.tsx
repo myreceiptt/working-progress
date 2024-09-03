@@ -74,7 +74,7 @@ export default function ENDHONESAdotCom() {
                 <div className="absolute bottom-4 md:bottom-8">
                   <Link
                     href="/profile#prodserv"
-                    className="underline duration-500 hover:text-zinc-300"
+                    className="hover:underline duration-500 hover:text-zinc-300"
                   >
                     <p className="block text-zinc-200 hover:text-zinc-50 text-sm">
                       <span aria-hidden="true">&larr;</span> Back to Profile
