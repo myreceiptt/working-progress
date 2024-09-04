@@ -1,6 +1,53 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://nota.straight-line.org/profile/breads"),
+  title: {
+    template: "%s | nota.straight-line.org",
+    default: "Breads Factory of Prof. NOTA Inc.",
+  },
+  description:
+    "A factory that produces Programmed Bread (tokenized assets) with a Framework of Playing, Learning, and Working or PLW.",
+  openGraph: {
+    title: "Breads Factory of Prof. NOTA Inc.",
+    description:
+      "A factory that produces Programmed Bread (tokenized assets) with a Framework of Playing, Learning, and Working or PLW.",
+    url: "https://nota.straight-line.org/profile/breads",
+    siteName: "Prof. NOTA Inc.",
+    images: [
+      {
+        url: "/images/breads-factory-of-prof-nota-inc.jpg",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Breads Factory of Prof. NOTA Inc.",
+    images: "/images/breads-factory-of-prof-nota-inc.jpg",
+  },
+  icons: {
+    shortcut: "/favicon.ico",
+  },
+};
 
 export default function BreadsFactory() {
   return (

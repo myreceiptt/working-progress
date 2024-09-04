@@ -81,7 +81,7 @@ export default function OurProfile() {
             </p>
           </div>
           <div className="w-full h-px bg-zinc-800" />
-          <div className="grid- grid-cols-1 mx-auto xl:px-44">
+          <div className="grid grid-cols-1 mx-auto xl:px-44">
             <Card>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
@@ -195,17 +195,14 @@ export default function OurProfile() {
                   </Link>{" "}
                   is in its continued execution.
                 </p>
-                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                <p className="my-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   But, we have many things to do and complete. All require our
                   hard work, smart work, and of course, our energy and time. So,
                   expect us, and please stay alert! Beware of scams! Let's hack
                   them all, ethically!
                 </p>
-                <p className="my-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                  Warm regards,
-                </p>
                 <Image
-                  src={"/images/prog/0.00.jpg"}
+                  src={"/images/about-prof-nota-inc.jpg"}
                   width={2000}
                   height={1333}
                   alt={"Hi, we are Prof. NOTA!"}
@@ -215,6 +212,9 @@ export default function OurProfile() {
                   }}
                   className="rounded-lg"
                 />
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                  Warm regards,
+                </p>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   <Link
                     href="/"
@@ -240,13 +240,13 @@ export default function OurProfile() {
           <div className="w-full h-px bg-zinc-800" />
           <div
             id="prodserv"
-            className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16"
+            className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-3 lg:gap-16"
           >
             {products.map((s) => (
               <Card key={s.label}>
                 <Link
                   href={s.href}
-                  className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8"
+                  className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 sm:py-8 md:pt-12 md:pb-16 lg:pb-28 xl:pb-44"
                 >
                   <span
                     className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
@@ -261,12 +261,6 @@ export default function OurProfile() {
                     </span>
                     <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
                       {s.label}
-                    </span>
-                    <span className="text-zinc-500 text-xs  flex items-center gap-1">
-                      <Eye className="w-4 h-4" />{" "}
-                      {Intl.NumberFormat("en-US", {
-                        notation: "compact",
-                      }).format(11111111111)}
                     </span>
                   </div>
                 </Link>

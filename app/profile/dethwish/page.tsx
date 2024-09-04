@@ -1,6 +1,53 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://nota.straight-line.org/profile/dethwish"),
+  title: {
+    template: "%s | nota.straight-line.org",
+    default: "/ˈdeTH ˌwiSH/ Series by Prof. NOTA",
+  },
+  description:
+    "Hello everyone, this is our deTH wiSH series...",
+  openGraph: {
+    title: "/ˈdeTH ˌwiSH/ Series by Prof. NOTA",
+    description:
+      "Hello everyone, this is our deTH wiSH series...",
+    url: "https://nota.straight-line.org/dethwish",
+    siteName: "Prof. NOTA Inc.",
+    images: [
+      {
+        url: "/images/dethwish-series-by-prof-nota.jpg",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "/ˈdeTH ˌwiSH/ Series by Prof. NOTA",
+    images: "/images/dethwish-series-by-prof-nota.jpg",
+  },
+  icons: {
+    shortcut: "/favicon.ico",
+  },
+};
 
 export default function OurDethWish() {
   return (

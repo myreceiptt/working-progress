@@ -1,6 +1,53 @@
 import Link from "next/link";
+import { Metadata } from "next";
 import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://nota.straight-line.org/profile/nota"),
+  title: {
+    template: "%s | nota.straight-line.org",
+    default: "Professor NOTA Just for You",
+  },
+  description:
+    "Get the best help, support, and advice from Prof. NOTA about this 0101 Universe as long as utilize the Web3 technology.",
+  openGraph: {
+    title: "Professor NOTA Just for You",
+    description:
+      "Get the best help, support, and advice from Prof. NOTA about this 0101 Universe as long as utilize the Web3 technology.",
+    url: "https://nota.straight-line.org/profile/nota",
+    siteName: "Prof. NOTA Inc.",
+    images: [
+      {
+        url: "/images/prof-nota-inc.jpg",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Professor NOTA Just for You",
+    images: "/images/prof-nota-inc.jpg",
+  },
+  icons: {
+    shortcut: "/favicon.ico",
+  },
+};
 
 export default function ProfessorNOTA() {
   return (

@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "/images/prog/0.00.jpg",
+        url: "/images/about-prof-nota-inc.jpg",
         width: 1920,
         height: 1080,
       },
@@ -109,7 +109,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Contact Prof. NOTA Inc.",
-    images: "/images/prog/0.00.jpg",
+    images: "/images/about-prof-nota-inc.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",
@@ -138,13 +138,13 @@ export default function OurContact() {
             </p>
           </div>
           <div className="w-full h-px bg-zinc-800" />
-          <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+          <div className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-3 lg:gap-16">
             {socials.map((s) => (
               <Card key={s.label}>
                 <Link
                   href={s.href}
                   target="_blank"
-                  className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+                  className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 sm:py-8 md:pt-12 md:pb-16 lg:pb-28 xl:pb-44"
                 >
                   <span
                     className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"

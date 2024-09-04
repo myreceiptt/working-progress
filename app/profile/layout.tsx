@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "/images/prog/0.00.jpg",
+        url: "/images/about-prof-nota-inc.jpg",
         width: 1920,
         height: 1080,
       },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Prof. NOTA Inc.",
-    images: "/images/prog/0.00.jpg",
+    images: "/images/about-prof-nota-inc.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",
