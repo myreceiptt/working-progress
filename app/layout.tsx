@@ -8,14 +8,14 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nota.straight-line.org"),
   title: {
     template: "%s | nota.straight-line.org",
-    default: "Prof. NOTA's Working Progress",
+    default: "Prof. NOTA Inc.",
   },
   description: "It's our working progress, it's not our work in progress.",
   openGraph: {
-    title: "Prof. NOTA's Working Progress",
+    title: "Prof. NOTA Inc.",
     description: "It's our working progress, it's not our work in progress.",
     url: "https://nota.straight-line.org",
-    siteName: "Prof. NOTA's Working Progress",
+    siteName: "Prof. NOTA Inc.",
     images: [
       {
         url: "/images/prog/1.20.jpg",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Prof. NOTA's Working Progress",
+    title: "Prof. NOTA Inc.",
     images: "/images/prog/1.20.jpg",
   },
   icons: {

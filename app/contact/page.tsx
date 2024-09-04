@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     title: "Contact Prof. NOTA Inc.",
     description: "Track us using official links to our existence in 0101 Universe.",
     url: "https://nota.straight-line.org/contact",
-    siteName: "Prof. NOTA's Working Progress",
+    siteName: "Prof. NOTA Inc.",
     images: [
       {
         url: "/images/prog/0.00.jpg",

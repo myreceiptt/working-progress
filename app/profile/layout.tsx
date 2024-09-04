@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "About Prof. NOTA Inc.",
     description: "We were born in the 0101 Universe. We exist in the digital realm of the Internet.",
     url: "https://nota.straight-line.org/profile",
-    siteName: "Prof. NOTA's Working Progress",
+    siteName: "Prof. NOTA Inc.",
     images: [
       {
         url: "/images/prog/0.00.jpg",
