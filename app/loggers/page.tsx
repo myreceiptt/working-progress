@@ -58,7 +58,7 @@ export default async function LoggersPage() {
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
-        <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
+        <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
           <Card>
             <Link href={`/loggers/${featured.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
@@ -81,7 +81,6 @@ export default async function LoggersPage() {
                     )}
                   </span>
                 </div>
-
                 <h2
                   id="featured-post"
                   className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"

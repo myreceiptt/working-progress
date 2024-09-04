@@ -8,6 +8,7 @@ import {
   Skull,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
@@ -66,7 +67,7 @@ export default function OurProfile() {
         <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
           <div className="max-w-2xl mx-auto lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-              Prof. NOTA Inc.
+              Our Profile
             </h2>
             <p className="mt-4 text-zinc-400">
               We were born in the{" "}
@@ -80,28 +81,28 @@ export default function OurProfile() {
             </p>
           </div>
           <div className="w-full h-px bg-zinc-800" />
-          <div className="w-full mx-auto lg:mx-0">
+          <div className="grid- grid-cols-1 mx-auto xl:px-44">
             <Card>
               <article className="relative w-full h-full p-4 md:p-8">
-                <div className="flex justify-between gap-2 items-center">
-                  <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-xs text-zinc-100">
                     <time dateTime={new Date("2024-08-24").toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: "medium",
                       }).format(new Date("2024-08-24"))}
                     </time>
                   </span>
-                  <span className="text-zinc-500 text-xs  flex items-center gap-1">
+                  <span className="flex items-center gap-1 text-xs text-zinc-500">
                     <Eye className="w-4 h-4" />{" "}
                     {Intl.NumberFormat("en-US", {
                       notation: "compact",
                     }).format(11111111111)}
                   </span>
                 </div>
-                <h1 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
+                <h2 className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
                   Prof. NOTA Inc.
-                </h1>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                </h2>
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   Hello everyone, we are{" "}
                   <Link
                     target="_blank"
@@ -112,7 +113,7 @@ export default function OurProfile() {
                   </Link>
                   .
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   “Inc.” is short for “incorporated”, and it is the abbreviation
                   indicating that we are a corporation, which is a company, or a
                   group of people authorized to act as a single entity (legally
@@ -133,7 +134,7 @@ export default function OurProfile() {
                   </Link>
                   .
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   We were born in the{" "}
                   <Link
                     href="#"
@@ -146,7 +147,7 @@ export default function OurProfile() {
                   enforced one hundred percent of the time. Where we can all
                   know a priori how that enforcement will be executed.
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   We are continuously incubated in{" "}
                   <Link
                     target="_blank"
@@ -171,20 +172,17 @@ export default function OurProfile() {
                   >
                     0101 Universe
                   </Link>{" "}
-                  and Universe of Reality.
+                  and Universe of Reality. You can see the list of our products
+                  and services on the next section below.
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  You can see the list of our products and services on the next
-                  section below.
-                </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   We manage our products and services as best as we can with
                   certain rules that are deployed using code on the blockchain.
                   We hope that what we manage can drive various revenues, and
                   form values so that we can all enjoy the benefits. From us, by
                   us, and for us.
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   Concretely, we pull some of the resulting revenue and formed
                   value into our treasury as the profits. From this treasury,
                   all of us can claim it as the sharing profits, proof that{" "}
@@ -197,16 +195,27 @@ export default function OurProfile() {
                   </Link>{" "}
                   is in its continued execution.
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   But, we have many things to do and complete. All require our
                   hard work, smart work, and of course, our energy and time. So,
                   expect us, and please stay alert! Beware of scams! Let's hack
                   them all, ethically!
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                <p className="my-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   Warm regards,
                 </p>
-                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                <Image
+                  src={"/images/prog/0.00.jpg"}
+                  width={2000}
+                  height={1333}
+                  alt={"Hi, we are Prof. NOTA!"}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                  }}
+                  className="rounded-lg"
+                />
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   <Link
                     href="/"
                     className="underline duration-500 hover:text-zinc-300"
@@ -214,17 +223,14 @@ export default function OurProfile() {
                     Prof. NOTA Inc.
                   </Link>
                 </p>
-                <p className="z-20 mt-4 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300 mb-12">
                   ==== 47 =======
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">
-                  <Link
-                    href="#prodserv"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
-                    <p className="block text-zinc-200 hover:text-zinc-50 text-sm">
-                      <span aria-hidden="true">&darr;</span> Products and
-                      Services <span aria-hidden="true">&darr;</span>
+                  <Link href="#prodserv">
+                    <p className="text-zinc-200 hover:text-zinc-50 lg:block">
+                      Products and Services{" "}
+                      <span aria-hidden="true">&darr;&darr;</span>
                     </p>
                   </Link>
                 </div>
