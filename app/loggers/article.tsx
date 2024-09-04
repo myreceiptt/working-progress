@@ -23,7 +23,7 @@ export const Article: React.FC<Props> = ({ logger, views }) => {
               <span>SOON</span>
             )}
           </span>
-          <span className="text-zinc-500 text-xs  flex items-center gap-1">
+          <span className="text-zinc-500 text-xs flex items-center gap-1">
             <Eye className="w-4 h-4" />{" "}
             {Intl.NumberFormat("en-US", { notation: "compact" }).format(views)}
           </span>
@@ -31,7 +31,7 @@ export const Article: React.FC<Props> = ({ logger, views }) => {
         <h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
           {logger.title}
         </h2>
-        <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+        <p className="z-20 mt-4 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200">
           {logger.description}
         </p>
       </article>

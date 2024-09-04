@@ -1,4 +1,3 @@
-"use client";
 import {
   Github,
   Mail,
@@ -10,6 +9,7 @@ import {
   PhoneIncoming,
   Send,
 } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
@@ -71,6 +71,50 @@ const socials = [
     handle: "@MyReceiptTT",
   },
 ];
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://nota.straight-line.org/contact"),
+  title: {
+    template: "%s | nota.straight-line.org",
+    default: "Contact Prof. NOTA Inc.",
+  },
+  description: "Track us using official links to our existence in 0101 Universe.",
+  openGraph: {
+    title: "Contact Prof. NOTA Inc.",
+    description: "Track us using official links to our existence in 0101 Universe.",
+    url: "https://nota.straight-line.org/contact",
+    siteName: "Prof. NOTA's Working Progress",
+    images: [
+      {
+        url: "/images/prog/0.00.jpg",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "en-US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Prof. NOTA Inc.",
+    images: "/images/prog/0.00.jpg",
+  },
+  icons: {
+    shortcut: "/favicon.ico",
+  },
+};
 
 export default function OurContact() {
   return (

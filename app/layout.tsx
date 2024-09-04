@@ -7,8 +7,8 @@ import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   metadataBase: new URL("https://nota.straight-line.org"),
   title: {
-    default: "Prof. NOTA's Working Progress",
     template: "%s | nota.straight-line.org",
+    default: "Prof. NOTA's Working Progress",
   },
   description: "It's our working progress, it's not our work in progress.",
   openGraph: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: "Prof. NOTA's Working Progress",
     images: [
       {
-        url: "https://prompt.straight-line.org/prof-nota-v.1.20.jpg",
+        url: "/images/prog/1.20.jpg",
         width: 1920,
         height: 1080,
       },
@@ -32,19 +32,22 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
     },
   },
   twitter: {
-    title: "Prof. NOTA's Working Progress",
     card: "summary_large_image",
+    title: "Prof. NOTA's Working Progress",
+    images: "/images/prog/1.20.jpg",
   },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/favicon.ico",
   },
 };
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
