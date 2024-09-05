@@ -88,7 +88,7 @@ export const metadata: Metadata = {
       },
     ],
     type: "article", // Can be an "website" for the "type"
-    publishedTime: "2024-08-29T00:00:00.000Z", // Only use this for "article"
+    publishedTime: "2024-08-27T00:00:00.000Z", // Only use this for "article"
     authors: ["MyReceipt", "Prof. NOTA"], // Only use this for "article"
   },
   twitter: {
