@@ -4,7 +4,7 @@ import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nota.straight-line.org/profile/endhonesa"),
+  metadataBase: new URL("https://nota.straight-line.org"),
   title: {
     template: "%s | nota.straight-line.org",
     default: "ENDHONESA dot COM Online Store",
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     title: "ENDHONESA dot COM Online Store",
     description:
       "Trade would always proceed properly and as well as possible according to the resulting revenue and formed value.",
-    url: "https://nota.straight-line.org/profile/endhonesa",
+    url: "https://nota.straight-line.org",
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "./images/endhonesa-dot-com-online-store.jpg",
+        url: "/images/endhonesa-dot-com-online-store.jpg",
         width: 1920,
         height: 1080,
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ENDHONESA dot COM Online Store",
-    images: "./images/endhonesa-dot-com-online-store.jpg",
+    images: "/images/endhonesa-dot-com-online-store.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",

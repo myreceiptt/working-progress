@@ -4,7 +4,7 @@ import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nota.straight-line.org/profile/nota"),
+  metadataBase: new URL("https://nota.straight-line.org"),
   title: {
     template: "%s | nota.straight-line.org",
     default: "Professor NOTA Just for You",
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     title: "Professor NOTA Just for You",
     description:
       "Get the best help, support, and advice from Prof. NOTA about this 0101 Universe as long as utilize the Web3 technology.",
-    url: "https://nota.straight-line.org/profile/nota",
+    url: "https://nota.straight-line.org",
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "./images/prof-nota-inc.jpg",
+        url: "/images/prof-nota-inc.jpg",
         width: 1920,
         height: 1080,
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Professor NOTA Just for You",
-    images: "./images/prof-nota-inc.jpg",
+    images: "/images/prof-nota-inc.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nota.straight-line.org/profile"),
+  metadataBase: new URL("https://nota.straight-line.org"),
   title: {
     template: "%s | nota.straight-line.org",
     default: "About Prof. NOTA Inc.",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "./images/about-prof-nota-inc.jpg",
+        url: "/images/about-prof-nota-inc.jpg",
         width: 1920,
         height: 1080,
       },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Prof. NOTA Inc.",
-    images: "./images/about-prof-nota-inc.jpg",
+    images: "/images/about-prof-nota-inc.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",

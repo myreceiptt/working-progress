@@ -5,30 +5,84 @@ import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nota.straight-line.org"),
   title: {
-    template: "%s | nota.straight-line.org",
-    default: "Prof. NOTA Inc.",
+    template: "%s | Beware of Scams!", // Included on each child page
+    default: "Prof. NOTA Inc. :||: Working Progress", // Title on each page and used on "template" if child page
   },
-  description: "It's our working progress, it's not our work in progress.",
+
+  description: "Hi, we are Prof. NOTA! It's our working progress, it's not our work in progress.", // Description for each page
+
+  generator: "Breads Factory",
+  applicationName: "Working Progress",
+  referrer: "origin-when-cross-origin",
+  keywords: [
+    "MyReceipt",
+    "Prof. NOTA",
+    "Professor NOTA",
+    "Web3 Developer",
+    "Blockchain",
+    "Decentralized Corporation",
+    "Fungible Token",
+    "Non-Fungible Token",
+    "NFT",
+    "Professional Educator Speaker",
+  ],
+  authors: [
+    { name: "Professor NOTA" },
+    { name: "Prof. NOTA", url: "https://www.straight-line.org" },
+  ],
+  creator: "MyReceipt and Friends",
+  publisher: "Prof. NOTA Inc.",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+
+  metadataBase: new URL("https://nota.straight-line.org"),
+  alternates: {
+    canonical: "/", // Canonical for each page
+    languages: {
+      "en-US": "/en-US",
+      "id-ID": "/id-ID",
+    },
+  },
+
   openGraph: {
-    title: "Prof. NOTA Inc.",
-    description: "It's our working progress, it's not our work in progress.",
-    url: "https://nota.straight-line.org",
-    siteName: "Prof. NOTA Inc.",
+    title: "Prof. NOTA Inc. :||: Working Progress", // Title on each page
+    description: "Hi, we are Prof. NOTA! It's our working progress, it's not our work in progress.", // Description on each page
+    url: "https://nota.straight-line.org", // URL for each page
+    siteName: "Prof. NOTA's Working Progress",
     images: [
       {
-        url: "/images/prof-nota-inc.jpg",
+        url: "https://nota.straight-line.org/images/prof-nota-inc.jpg", // Must be an absolute URL
         width: 1920,
         height: 1080,
       },
+      {
+        url: "https://nota.straight-line.org/images/prof-nota-inc.jpg", // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: "Prof. NOTA Inc.",
+      },
+    ],
+    videos: [
+      {
+        url: "https://nota.straight-line.org/video/prof-nota-inc.mp4", // Must be an absolute URL
+        width: 800,
+        height: 600,
+      },
     ],
     locale: "en-US",
-    type: "website",
+    type: "website", // Can be an "article" for the "type"
+    // publishedTime: '2024-02-29T00:00:00.000Z', // Only use this for "article"
+    // authors: ['Seb', 'Josh'], // Only use this for "article"
   },
+
   robots: {
     index: true,
     follow: true,
+    nocache: true,
     googleBot: {
       index: true,
       follow: true,
@@ -38,13 +92,27 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+    other: {
+      rel: "apple-touch-icon-precomposed",
+      url: "/apple-icon.png",
+    },
+  },
+
+  manifest: "/manifest.webmanifest",
+
   twitter: {
     card: "summary_large_image",
-    title: "Prof. NOTA Inc.",
-    images: "/images/prof-nota-inc.jpg",
-  },
-  icons: {
-    shortcut: "/favicon.ico",
+    title: "Prof. NOTA Inc. :||: Working Progress", // Title on each page
+    description: "Hi, we are Prof. NOTA! It's our working progress, it's not our work in progress.", // Description on each page
+    siteId: "@MyReceiptTT",
+    creator: "@MyReceiptTT",
+    creatorId: "@MyReceiptTT",
+    images: ["https://nota.straight-line.org/images/prof-nota-inc.jpg"], // Must be an absolute URL
   },
 };
 
@@ -67,7 +135,6 @@ export default function RootLayout({
     <html lang="en" className={[inter.variable, calSans.variable].join(" ")}>
       <head>
         <Analytics />
-        <link rel="canonical" href="https://nota.straight-line.org/" />
       </head>
       <body
         className={`bg-black ${

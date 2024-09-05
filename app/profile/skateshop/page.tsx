@@ -4,7 +4,7 @@ import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nota.straight-line.org/profile/skateshop"),
+  metadataBase: new URL("https://nota.straight-line.org"),
   title: {
     template: "%s | nota.straight-line.org",
     default: "Online SKATESHOP in ENDHONESA",
@@ -15,11 +15,11 @@ export const metadata: Metadata = {
     title: "Online SKATESHOP in ENDHONESA",
     description:
       "Our skateboarding life will be free since we are anonymous. We will be a legion if we do not forgive and we do not forget.",
-    url: "https://nota.straight-line.org/profile/skateshop",
+    url: "https://nota.straight-line.org",
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "./images/online-skateshop-in-endhonesa.jpg",
+        url: "/images/online-skateshop-in-endhonesa.jpg",
         width: 1920,
         height: 1080,
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Online SKATESHOP in ENDHONESA",
-    images: "./images/online-skateshop-in-endhonesa.jpg",
+    images: "/images/online-skateshop-in-endhonesa.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",

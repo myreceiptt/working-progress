@@ -37,7 +37,7 @@ export default function Home() {
         quantity={747}
       />
       <Image
-        src="/favicon.png"
+        src="/og.png"
         priority={true}
         width={111}
         height={111}
