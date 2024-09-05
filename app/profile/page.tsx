@@ -203,6 +203,7 @@ export default function OurProfile() {
                 </p>
                 <Image
                   src={"/images/about-prof-nota-inc.jpg"}
+                  priority={true}
                   width={2000}
                   height={1333}
                   alt={"Hi, we are Prof. NOTA!"}
