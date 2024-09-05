@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "../../images/breads-factory-of-prof-nota-inc.jpg",
+        url: "./images/breads-factory-of-prof-nota-inc.jpg",
         width: 1920,
         height: 1080,
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Breads Factory of Prof. NOTA Inc.",
-    images: "../../images/breads-factory-of-prof-nota-inc.jpg",
+    images: "./images/breads-factory-of-prof-nota-inc.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",

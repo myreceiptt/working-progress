@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "../../images/dethwish-series-by-prof-nota.jpg",
+        url: "./images/dethwish-series-by-prof-nota.jpg",
         width: 1920,
         height: 1080,
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "/ˈdeTH ˌwiSH/ Series by Prof. NOTA",
-    images: "../../images/dethwish-series-by-prof-nota.jpg",
+    images: "./images/dethwish-series-by-prof-nota.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",
