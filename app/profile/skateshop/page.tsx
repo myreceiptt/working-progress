@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "/images/online-skateshop-in-endhonesa.jpg",
+        url: "../../images/online-skateshop-in-endhonesa.jpg",
         width: 1920,
         height: 1080,
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Online SKATESHOP in ENDHONESA",
-    images: "/images/online-skateshop-in-endhonesa.jpg",
+    images: "../../images/online-skateshop-in-endhonesa.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",

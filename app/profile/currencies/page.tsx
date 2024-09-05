@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: "Prof. NOTA Inc.",
     images: [
       {
-        url: "/images/the-currencies-for-prof-nota-inc.jpg",
+        url: "../../images/the-currencies-for-prof-nota-inc.jpg",
         width: 1920,
         height: 1080,
       },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "The Currencies for Prof. NOTA Inc.",
-    images: "/images/the-currencies-for-prof-nota-inc.jpg",
+    images: "../../images/the-currencies-for-prof-nota-inc.jpg",
   },
   icons: {
     shortcut: "/favicon.ico",
