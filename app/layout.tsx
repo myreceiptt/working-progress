@@ -7,13 +7,14 @@ import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: {
     template: "%s | Beware of Scams!", // Included on each child page
-    default: "Prof. NOTA Inc. :||: Working Progress", // Title on each page and used on "template" if child page
+    default: "Prof. NOTA's Working Progress", // Title on each page
   },
 
-  description: "Hi, we are Prof. NOTA! It's our working progress, it's not our work in progress.", // Description for each page
+  description:
+    "Hi, we are Prof. NOTA! It's our working progress, it's not our work in progress.", // Description for each page
 
   generator: "Breads Factory",
-  applicationName: "Working Progress",
+  applicationName: "Prof. NOTA's Working Progress",
   referrer: "origin-when-cross-origin",
   keywords: [
     "MyReceipt",
@@ -28,8 +29,8 @@ export const metadata: Metadata = {
     "Professional Educator Speaker",
   ],
   authors: [
-    { name: "Professor NOTA" },
-    { name: "Prof. NOTA", url: "https://www.straight-line.org" },
+    { name: "Prof. NOTA", url: "https://prompt.straight-line.org" },
+    { name: "MyReceipt", url: "https://www.straight-line.org" },
   ],
   creator: "MyReceipt and Friends",
   publisher: "Prof. NOTA Inc.",
@@ -49,8 +50,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Prof. NOTA Inc. :||: Working Progress", // Title on each page
-    description: "Hi, we are Prof. NOTA! It's our working progress, it's not our work in progress.", // Description on each page
+    title: "Prof. NOTA's Working Progress", // Title on each page
+    description:
+      "Hi, we are Prof. NOTA! It's our working progress, it's not our work in progress.", // Description on each page
     url: "https://nota.straight-line.org", // URL for each page
     siteName: "Prof. NOTA's Working Progress",
     images: [
@@ -107,8 +109,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Prof. NOTA Inc. :||: Working Progress", // Title on each page
-    description: "Hi, we are Prof. NOTA! It's our working progress, it's not our work in progress.", // Description on each page
+    title: "Prof. NOTA's Working Progress", // Title on each page
+    description:
+      "Hi, X People! We are Prof. NOTA! It's our working progress, it's not our work in progress.", // Description on each page
     siteId: "@MyReceiptTT",
     creator: "@MyReceiptTT",
     creatorId: "@MyReceiptTT",
