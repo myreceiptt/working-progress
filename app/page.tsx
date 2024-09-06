@@ -31,7 +31,7 @@ export default function Home() {
           ))}
         </ul>
       </nav>
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      <div className="w-screen h-px animate-glow block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={747}
@@ -46,7 +46,7 @@ export default function Home() {
       <h1 className="z-10 text-5xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl whitespace-nowrap bg-clip-text ">
         Prof. NOTA
       </h1>
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      <div className="w-screen h-px animate-glow block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {bottomnav.map((item) => (
@@ -61,7 +61,9 @@ export default function Home() {
         </ul>
       </nav>
       <div className="text-center animate-fade-in">
-        <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">Stay alert!</h2>
+        <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">
+          Stay alert!
+        </h2>
         <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">
           Beware of scams!
         </h2>
@@ -76,6 +78,15 @@ export default function Home() {
           </li>
         </ul>
       </nav>
+      <iframe
+        className="hidden absolute top-0 items-center w-full h-1/4 px-4"
+        src="https://open.spotify.com/embed/playlist/0DQja3HX6MsLGtDl30DHFW?utm_source=generator&theme=0"
+        // width="747"
+        // height="474"
+        allowFullScreen
+        loading="lazy"
+        title="High school anthems for the class of 2000s - Playlist by Prof. NOTA"
+      ></iframe>
     </div>
   );
 }
