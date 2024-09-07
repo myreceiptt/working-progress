@@ -158,7 +158,7 @@ export default function BreadsFactory() {
                     implementation.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Flat fee per project. Only 1 $OiOi, or 999 $HAIL, or 909
+                        Flat fee per project. Only 999 $HAIL, or 1 $OiOi, or 909
                         $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per project, goes to the treasury.
                       </li>

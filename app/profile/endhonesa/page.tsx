@@ -158,7 +158,7 @@ export default function ENDHONESAdotCom() {
                     Physical good stuff online store dApp.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Currencies for transaction using $OiOi, $HAIL, $NOTA,
+                        Currencies for transaction using $HAIL, $OiOi, $NOTA,
                         $MATIC, $XTZ, $ETH, $BTC, and FIAT with 11.1111% fee per
                         transaction, and 47.4747% of the fee, per transaction,
                         goes to the treasury.
@@ -169,7 +169,7 @@ export default function ENDHONESAdotCom() {
                     Digital good stuff online store dApp.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Currencies for transaction using $OiOi, $HAIL, $NOTA,
+                        Currencies for transaction using $HAIL, $OiOi, $NOTA,
                         $MATIC, $XTZ, $ETH, $BTC, and FIAT with 11.1111% fee per
                         transaction, and 47.4747% of the fee, per transaction,
                         goes to the treasury.

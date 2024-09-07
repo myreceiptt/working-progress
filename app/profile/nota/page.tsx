@@ -162,7 +162,7 @@ export default function ProfessorNOTA() {
                     work together with you on the board.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Flat fee per seat. Only 1 $OiOi, or 999 $HAIL, or 909
+                        Flat fee per seat. Only 999 $HAIL, or 1 $OiOi, or 909
                         $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per seat, goes to the treasury.
                       </li>
@@ -173,7 +173,7 @@ export default function ProfessorNOTA() {
                     educators like Prof. NOTA.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Flat fee per material. Only 1 $OiOi, or 999 $HAIL, or
+                        Flat fee per material. Only 999 $HAIL, or 1 $OiOi, or
                         909 $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH,
                         and 11.1111% of the fee, per material, goes to the
                         treasury.
@@ -185,7 +185,7 @@ export default function ProfessorNOTA() {
                     M.I.C.E events.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Flat fee per session. Only 1 $OiOi, or 999 $HAIL, or 909
+                        Flat fee per session. Only 999 $HAIL, or 1 $OiOi, or 909
                         $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per session, goes to the treasury.
                       </li>
@@ -196,7 +196,7 @@ export default function ProfessorNOTA() {
                     services business.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Min. fee per project only 1 $OiOi, or 999 $HAIL, or 909
+                        Min. fee per project only 999 $HAIL, or 1 $OiOi, or 909
                         $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per project, goes to the treasury.
                       </li>

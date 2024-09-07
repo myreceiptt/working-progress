@@ -156,7 +156,7 @@ export default function SkateShopDotID() {
                     Online skateboard shop multi-vendor.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Currencies for transaction using $OiOi, $HAIL, $NOTA,
+                        Currencies for transaction using $HAIL, $OiOi, $NOTA,
                         $MATIC, $XTZ, $ETH, $BTC, and FIAT with 7.4747% fee per
                         transaction, and 47.4747% of the fee, per transaction,
                         goes to the treasury.
@@ -167,7 +167,7 @@ export default function SkateShopDotID() {
                     Online skateboard shop development and operation.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Min. fee per project only 1 $OiOi, or 999 $HAIL, or 909
+                        Min. fee per project only 999 $HAIL, or 1 $OiOi, or 909
                         $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per project, goes to the treasury.
                       </li>
