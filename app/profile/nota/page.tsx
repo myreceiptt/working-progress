@@ -169,8 +169,15 @@ export default function ProfessorNOTA() {
                     </ul>
                   </li>
                   <li className="mt-2">
-                    Create educational materials to be used by tutors or
-                    educators like Prof. NOTA.
+                    Create{" "}
+                    <Link
+                      href="https://iqraa.straight-line.org/tutor-x-educator"
+                      target="_blank"
+                      className="underline duration-500 hover:text-zinc-300"
+                    >
+                      educational materials
+                    </Link>{" "}
+                    to be used by tutors or educators like Prof. NOTA.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Flat fee per material. Only 999 $HAIL, or 1 $OiOi, or

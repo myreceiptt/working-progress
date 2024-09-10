@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "Versions of Prof. NOTA Inc.", // Title on each page
   },
   description:
-    "This is our version progress. It's our working progress, not our work in progress.", // Description for each page
+    "This is our version progress that control our working progress, not our work in progress.", // Description for each page
   // applicationName: "Prof. NOTA's Working Progress",
   authors: [
     { name: "MyReceipt", url: "https://www.straight-line.org" },
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Versions of Prof. NOTA Inc.", // Title on each page
     description:
-      "This is our version progress. It's our working progress, not our work in progress.", // Description on each page
+      "This is our version progress that control our working progress, not our work in progress.", // Description on each page
     url: "https://nota.straight-line.org/progresses", // URL for each page
     siteName: "Prof. NOTA's Working Progress",
     locale: "en-US",
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     creatorId: "@MyReceiptTT",
     title: "Versions of Prof. NOTA Inc.", // Title on each page
     description:
-      "Hi, X People! This is our version progress. It's our working progress, not our work in progress.", // Description on each page
+      "Hi, X People! This is our version progress that control our working progress, not our work in progress.", // Description on each page
     images: ["https://nota.straight-line.org/images/about-prof-nota-inc.jpg"], // Must be an absolute URL
   },
   // icons: {

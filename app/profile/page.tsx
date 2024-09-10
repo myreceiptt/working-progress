@@ -54,8 +54,8 @@ const products = [
     icon: <Skull size={20} />,
     href: "/profile/dethwish",
     // href: "#prodserv",
-    label: "/ˈdeTH ˌwiSH/",
-    handle: "deTH wiSH",
+    label: "deTHwiSH",
+    handle: "/ˈdeTH ˌwiSH/",
   },
 ];
 
