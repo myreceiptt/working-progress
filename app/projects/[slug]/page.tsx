@@ -6,7 +6,6 @@ import { Footer } from "./footer";
 import "./mdx.css";
 import { ReportView } from "./view";
 import { Redis } from "@upstash/redis";
-import type { Metadata, ResolvingMetadata } from "next";
 
 export const revalidate = 60;
 
