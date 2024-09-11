@@ -98,6 +98,9 @@ export const Project = defineDocumentType(() => ({
     partner: {
       type: "string",
     },
+    gambar: {
+      type: "string",
+    },
   },
   computedFields,
 }));
