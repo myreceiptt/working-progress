@@ -101,25 +101,25 @@ export async function generateMetadata({ params }: Props) {
       locale: "en-US",
       images: [
         {
-          url: "https://nota.straight-line.org/images/about-prof-nota-inc.jpg", // Must be an absolute URL
+          url: ("https://nota.straight-line.org" + progress.gambar) as string, // Must be an absolute URL
           width: 1920,
           height: 1080,
-          alt: "We Are Prof. NOTA Inc.", // Alternate text for image
+          alt: progress.title, // Alternate text for image
         },
         {
-          url: "https://nota.straight-line.org/images/about-prof-nota-inc.jpg", // Must be an absolute URL
+          url: ("https://nota.straight-line.org" + progress.gambar) as string, // Must be an absolute URL
           width: 1800,
           height: 1600,
-          alt: "We Are Prof. NOTA Inc.", // Alternate text for image
+          alt: progress.title, // Alternate text for image
         },
       ],
-      videos: [
-        {
-          url: "https://nota.straight-line.org/video/images/about-prof-nota-inc.mp4", // Must be an absolute URL
-          width: 800,
-          height: 600,
-        },
-      ],
+      // videos: [
+      //   {
+      //     url: ("https://nota.straight-line.org" + progress.video) as string, // Must be an absolute URL
+      //     width: 800,
+      //     height: 600,
+      //   },
+      // ],
       type: "article", // Can be an "website" for the "type"
       publishedTime: publishedAt, // Only use this for "article"
       authors: ["MyReceipt", "Prof. NOTA"], // Only use this for "article"
@@ -131,7 +131,7 @@ export async function generateMetadata({ params }: Props) {
       creatorId: "@MyReceiptTT",
       title: progress.title, // Title on each page
       description: progress.description, // Description on each page
-      images: ["https://nota.straight-line.org/images/about-prof-nota-inc.jpg"], // Must be an absolute URL
+      images: [("https://nota.straight-line.org" + progress.gambar) as string], // Must be an absolute URL
     },
     // icons: {
     //   shortcut: "/favicon.ico",

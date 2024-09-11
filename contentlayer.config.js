@@ -53,6 +53,9 @@ export const Progress = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    gambar: {
+      type: "string",
+    },
     date: {
       type: "date",
     },
@@ -83,6 +86,9 @@ export const Project = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    gambar: {
+      type: "string",
+    },
     date: {
       type: "date",
     },
@@ -96,9 +102,6 @@ export const Project = defineDocumentType(() => ({
       type: "boolean",
     },
     partner: {
-      type: "string",
-    },
-    gambar: {
       type: "string",
     },
   },
