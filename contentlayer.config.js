@@ -122,6 +122,9 @@ export const Story = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    gambar: {
+      type: "string",
+    },
     date: {
       type: "date",
     },
