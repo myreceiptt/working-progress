@@ -100,8 +100,8 @@ export default function Particles({
     const size = Math.floor(Math.random() * 2) + 0.1;
     const alpha = 0;
     const targetAlpha = parseFloat((Math.random() * 0.6 + 0.1).toFixed(1));
-    const dx = (Math.random() - 0.5) * 0.2;
-    const dy = (Math.random() - 0.5) * 0.2;
+    const dx = (Math.random() - 0.5) * 1.1;
+    const dy = (Math.random() - 0.5) * 1.1;
     const magnetism = 0.1 + Math.random() * 4;
     return {
       x,
