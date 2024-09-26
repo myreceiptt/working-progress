@@ -81,7 +81,7 @@ export default function OurProfile() {
             </p>
           </div>
           <div className="w-full h-px bg-zinc-800" />
-          <div className="grid grid-cols-1 mx-auto xl:px-44">
+          <div className="grid grid-cols-1 mx-auto">
             <Card>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
@@ -176,16 +176,25 @@ export default function OurProfile() {
                   and services on the next section below.
                 </p>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                  We manage our products and services as best as we can with
-                  certain rules that are deployed using code on the blockchain.
-                  We hope that what we manage can drive various revenues, and
-                  form values so that we can all enjoy the benefits. From us, by
-                  us, and for us.
+                  Our products and services are some of the many artifacts of
+                  our progress in both universes,{" "}
+                  <Link
+                    href="#"
+                    className="underline duration-500 hover:text-zinc-300"
+                  >
+                    0101 Universe
+                  </Link>{" "}
+                  and Universe of Reality. We manage our products and services
+                  as best as possible with certain rules deployed using code on
+                  the blockchain just as our infinite gratitude. We hope that
+                  what we manage can continuously drive various revenues, and
+                  form values to be given back to all who have supported and
+                  expected us since day one.
                 </p>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   Concretely, we pull some of the resulting revenue and formed
-                  value into our treasury as the profits. From this treasury,
-                  all of us can claim it as the sharing profits, proof that{" "}
+                  value into our treasury as the profits. From our treasury, all
+                  of us can claim the sharing profits, proof that{" "}
                   <Link
                     target="_blank"
                     href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-12th-stage-keep-playing-learning-and-working-47-on-web3-for-the-king-and-so-on"
@@ -193,7 +202,8 @@ export default function OurProfile() {
                   >
                     The 12th Stage
                   </Link>{" "}
-                  is in its continued execution.
+                  is in its continued execution. Enjoy the benefits from us, by
+                  us, and for us.
                 </p>
                 <p className="my-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   But, we have many things to do and complete. All require our
