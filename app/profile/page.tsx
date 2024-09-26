@@ -185,11 +185,11 @@ export default function OurProfile() {
                     0101 Universe
                   </Link>{" "}
                   and Universe of Reality. We manage our products and services
-                  as best as possible with certain rules deployed using code on
-                  the blockchain just as our infinite gratitude. We hope that
-                  what we manage can continuously drive various revenues, and
-                  form values to be given back to all who have supported and
-                  expected us since day one.
+                  as best as possible, with certain rules deployed using code on
+                  the blockchain, as our infinite gratitude. We hope that what
+                  we manage can continuously drive various revenues, and form
+                  values to be given back to all who have supported and expected
+                  us since day one.
                 </p>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   Concretely, we pull some of the resulting revenue and formed
