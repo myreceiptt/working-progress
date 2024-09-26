@@ -64,13 +64,13 @@ export default function Home() {
       </nav>
       <div className="text-center animate-fade-in">
         <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">
-          Stay alert!
+          We were born in the 0101 Universe.
         </h2>
         <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">
-          Beware of scams!
+          We exist in the digital realm of the Internet.
         </h2>
         <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">
-          Hack them all, ethically!
+          So, stay alert and beware of scams!
         </h2>
       </div>
       <nav className="my-16 animate-fade-in">
