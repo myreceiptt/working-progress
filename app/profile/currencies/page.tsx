@@ -141,31 +141,16 @@ export default function TheCurrencies() {
                   The Currencies
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Only{" "}
+                  Only $HAIL, $OiOi, and $NOTA Fungible Tokens are valid for all
+                  activities. Please read and learn from{" "}
                   <Link
-                    href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/tezos-usdhail-fts"
+                    href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../the-currencies"
                     target="_blank"
                     className="underline duration-500 hover:text-zinc-300"
                   >
-                    $HAIL
-                  </Link>
-                  ,{" "}
-                  <Link
-                    href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/tezos-usdoioi-fts"
-                    target="_blank"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
-                    $OiOi
-                  </Link>
-                  , and{" "}
-                  <Link
-                    href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/tezos-usdnota-fts"
-                    target="_blank"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
-                    $NOTA
+                    The White Paper
                   </Link>{" "}
-                  Fungible Tokens are valid for all activities.
+                  if necessary.
                 </p>
                 <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-decimal">
                   <li className="mt-2">
@@ -174,6 +159,17 @@ export default function TheCurrencies() {
                       <li className="mt-2 ml-4">
                         Max. supply is 47,474,747 $OiOi. No pre-sale, only
                         airdropped or rewarded, and no LP on release.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Launching information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/polygon-usdoioi-fts"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Polygon $OiOi on GitBook of The KING's NFTs
+                        </Link>
+                        .
                       </li>
                     </ul>
                   </li>
@@ -184,6 +180,17 @@ export default function TheCurrencies() {
                         Max. supply is 47,000,000,000 $HAIL. Some pre-sale, some
                         airdropped or rewarded, and some LP on release.
                       </li>
+                      <li className="mt-2 ml-4">
+                        Launching information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/tezos-usdhail-fts"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Tezos $HAIL on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
                     </ul>
                   </li>
                   <li className="mt-2">
@@ -192,6 +199,17 @@ export default function TheCurrencies() {
                       <li className="mt-2 ml-4">
                         Max. supply is 47,474,747 $OiOi. No pre-sale, only
                         airdropped or rewarded, and no LP on release.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Launching information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/tezos-usdoioi-fts"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Tezos $OiOi on GitBook of The KING's NFTs
+                        </Link>
+                        .
                       </li>
                     </ul>
                   </li>
@@ -202,6 +220,17 @@ export default function TheCurrencies() {
                         Max. supply is 74,747,474,747 $NOTA. No pre-sale, only
                         airdropped or rewarded, and no LP on release.
                       </li>
+                      <li className="mt-2 ml-4">
+                        Launching information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/tezos-usdnota-fts"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Tezos $NOTA on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
                     </ul>
                   </li>
                   <li className="mt-2">
@@ -210,6 +239,17 @@ export default function TheCurrencies() {
                       <li className="mt-2 ml-4">
                         Max. supply is 47,474,747 $OiOi. No pre-sale, only
                         airdropped or rewarded, and no LP on release.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Launching information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/ethereum-usdoioi-fts"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Ethereum L2 $OiOi on GitBook of The KING's NFTs
+                        </Link>
+                        .
                       </li>
                     </ul>
                   </li>

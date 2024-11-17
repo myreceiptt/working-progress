@@ -141,9 +141,9 @@ export default function ENDHONESAdotCom() {
                   ENDHONESA.COM
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Trade would always proceed properly and as well as possible
-                  according to the resulting revenue and formed value by
-                  respective residents of{" "}
+                  Where trade would always proceed properly and as well as
+                  possible according to the resulting revenue and formed value
+                  by respective residents of{" "}
                   <Link
                     href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../endhonesa.com"
                     target="_blank"
@@ -159,9 +159,19 @@ export default function ENDHONESAdotCom() {
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Currencies for transaction using $HAIL, $OiOi, $NOTA,
-                        $MATIC, $XTZ, $ETH, $BTC, and FIAT with 11.1111% fee per
+                        $POL, $XTZ, $ETH, $BTC, and FIAT with 11.1111% fee per
                         transaction, and 47.4747% of the fee, per transaction,
                         goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://store.endhonesa.com/physical/"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          STORE.ENDHONESA.COM
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -170,14 +180,38 @@ export default function ENDHONESAdotCom() {
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Currencies for transaction using $HAIL, $OiOi, $NOTA,
-                        $MATIC, $XTZ, $ETH, $BTC, and FIAT with 11.1111% fee per
+                        $POL, $XTZ, $ETH, $BTC, and FIAT with 11.1111% fee per
                         transaction, and 47.4747% of the fee, per transaction,
                         goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://store.endhonesa.com/digital/"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          STORE.ENDHONESA.COM
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
                     Subdomain provider for any Breads Factory dApp projects.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        In addition to being an online store, ENDHONESA.COM also
+                        provides subdomains for projects carried out by Prof.
+                        NOTA, one of which is for any{" "}
+                        <Link
+                          href="/profile/breads"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Breads Factory dApp projects
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                 </ul>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">

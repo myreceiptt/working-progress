@@ -141,14 +141,16 @@ export default function SkateShopDotID() {
                   SKATESHOP.ID
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Our skateboarding life will be free since we are anonymous. We
+                  SKATESHOP in ENDHONESA or SKATESHOP.ID will bring you all the
+                  best skateboarding goods from 0101 Universe. So our
+                  skateboarding life will be free since we are anonymous. We
                   will be a legion if we do not forgive and we do not forget.{" "}
                   <Link
                     href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../skateshop.id"
                     target="_blank"
                     className="underline duration-500 hover:text-zinc-300"
                   >
-                    All Hail Skateboarding!!!!
+                    ALL HAIL SKATEBOARDING!!!!
                   </Link>
                 </p>
                 <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-decimal">
@@ -157,9 +159,19 @@ export default function SkateShopDotID() {
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Currencies for transaction using $HAIL, $OiOi, $NOTA,
-                        $MATIC, $XTZ, $ETH, $BTC, and FIAT with 7.4747% fee per
+                        $POL, $XTZ, $ETH, $BTC, and FIAT with 7.4747% fee per
                         transaction, and 47.4747% of the fee, per transaction,
                         goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://shop.skateshop.id/"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          SHOP.SKATESHOP.ID
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -167,15 +179,46 @@ export default function SkateShopDotID() {
                     Online skateboard shop development and operation.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
+                        In addition to being an online shop, we provide
+                        solutions for any skateboard shop in ENDHONESA for the
+                        development and operation of their online skateboard
+                        shop.
+                      </li>
+                      <li className="mt-2 ml-4">
                         Min. fee per project only 999 $HAIL, or 1 $OiOi, or 909
-                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        $NOTA, or 747 $POL, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per project, goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        <Link
+                          href="/contact"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Contact Prof. NOTA Inc.
+                        </Link>{" "}
+                        to talk about this with our online and offline
+                        firewalls.
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
-                    Subdomain provider for all online skateboard shop in
+                    Subdomain provider for any online skateboard shop in
                     ENDHONESA.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        We will provide free subdomains for any online skateboard shop as our support, contribution, and dedication to this skateboarding community.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        <Link
+                          href="/contact"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Contact Prof. NOTA Inc.
+                        </Link>{" "}
+                        to talk about this with our online and offline
+                        firewalls.
+                      </li>
+                    </ul>
                   </li>
                 </ul>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">

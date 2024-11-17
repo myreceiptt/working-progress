@@ -139,7 +139,7 @@ export default function ProfessorNOTA() {
                   Professor NOTA
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Get the best help, support, and advice from{" "}
+                  Get help, support, advice, and solution from{" "}
                   <Link
                     href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../professor-nota"
                     target="_blank"
@@ -147,7 +147,7 @@ export default function ProfessorNOTA() {
                   >
                     Prof. NOTA
                   </Link>{" "}
-                  about this{" "}
+                  in this{" "}
                   <Link
                     href="#"
                     className="underline duration-500 hover:text-zinc-300"
@@ -163,8 +163,18 @@ export default function ProfessorNOTA() {
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Flat fee per seat. Only 999 $HAIL, or 1 $OiOi, or 909
-                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        $NOTA, or 747 $POL, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per seat, goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        <Link
+                          href="/contact"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Contact Prof. NOTA Inc.
+                        </Link>{" "}
+                        to talk about this with our online and offline
+                        firewalls.
                       </li>
                     </ul>
                   </li>
@@ -181,9 +191,18 @@ export default function ProfessorNOTA() {
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Flat fee per material. Only 999 $HAIL, or 1 $OiOi, or
-                        909 $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH,
-                        and 11.1111% of the fee, per material, goes to the
-                        treasury.
+                        909 $NOTA, or 747 $POL, or 747 $XTZ, or 0.747 $ETH, and
+                        11.1111% of the fee, per material, goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        <Link
+                          href="/contact"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Contact Prof. NOTA Inc.
+                        </Link>{" "}
+                        to talk about this with our online and offline
+                        firewalls.
                       </li>
                     </ul>
                   </li>
@@ -193,8 +212,18 @@ export default function ProfessorNOTA() {
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Flat fee per session. Only 999 $HAIL, or 1 $OiOi, or 909
-                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        $NOTA, or 747 $POL, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per session, goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        <Link
+                          href="/contact"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Contact Prof. NOTA Inc.
+                        </Link>{" "}
+                        to talk about this with our online and offline
+                        firewalls.
                       </li>
                     </ul>
                   </li>
@@ -204,8 +233,18 @@ export default function ProfessorNOTA() {
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Min. fee per project only 999 $HAIL, or 1 $OiOi, or 909
-                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        $NOTA, or 747 $POL, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per project, goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        <Link
+                          href="/contact"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Contact Prof. NOTA Inc.
+                        </Link>{" "}
+                        to talk about this with our online and offline
+                        firewalls.
                       </li>
                     </ul>
                   </li>

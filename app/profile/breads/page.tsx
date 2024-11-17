@@ -159,18 +159,38 @@ export default function BreadsFactory() {
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Flat fee per project. Only 999 $HAIL, or 1 $OiOi, or 909
-                        $NOTA, or 747 $MATIC, or 747 $XTZ, or 0.747 $ETH, and
+                        $NOTA, or 747 $POL, or 747 $XTZ, or 0.747 $ETH, and
                         11.1111% of the fee, per project, goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        <Link
+                          href="/contact"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          Contact Prof. NOTA Inc.
+                        </Link>{" "}
+                        to talk about this token deployer service with our
+                        online and offline firewalls.
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
                     Token dExchange dApp only between Polygon $OiOi, and Polygon
-                    $MATIC.
+                    $POL.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Only 0.1111% fee per transaction, and 100% of the fee,
                         per transaction, goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://oioipol.endhonesa.com"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          OIOIPOL.ENDHONESA.COM
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -182,6 +202,16 @@ export default function BreadsFactory() {
                         Only 0.1111% fee per transaction, and 100% of the fee,
                         per transaction, goes to the treasury.
                       </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://oioixtz.endhonesa.com"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          OIOIXTZ.ENDHONESA.COM
+                        </Link>
+                      </li>
                     </ul>
                   </li>
                   <li className="mt-2">
@@ -191,6 +221,16 @@ export default function BreadsFactory() {
                       <li className="mt-2 ml-4">
                         Only 0.1111% fee per transaction, and 100% of the fee,
                         per transaction, goes to the treasury.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://oioieth.endhonesa.com"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          OIOIETH.ENDHONESA.COM
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -202,6 +242,16 @@ export default function BreadsFactory() {
                         Only 0.1111% fee per transaction, and 100% of the fee,
                         per transaction, goes to the treasury.
                       </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://oioibridge.endhonesa.com"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          OIOIBRIDGE.ENDHONESA.COM
+                        </Link>
+                      </li>
                     </ul>
                   </li>
                   <li className="mt-2">
@@ -211,6 +261,16 @@ export default function BreadsFactory() {
                         Token-gated dApp using Ethereum L2 $OiOi, and voting to
                         propose to Prof. NOTA Inc. to share the profits.
                       </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://oioiprops.endhonesa.com"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          OIOIPROPS.ENDHONESA.COM
+                        </Link>
+                      </li>
                     </ul>
                   </li>
                   <li className="mt-2">
@@ -218,8 +278,18 @@ export default function BreadsFactory() {
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Token-gated dApp using Tezos $NOTA, and voting to
-                        determine whether, when, and by who the profit share is
+                        determine whether (yes/no), when (monthly/annually), and by who (which NFT holders) the profit share is
                         claimable.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://notavote.endhonesa.com"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          NOTAVOTE.ENDHONESA.COM
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -262,6 +332,16 @@ export default function BreadsFactory() {
                           the FINAL /ˈdeTH ˌwiSH/ NFTs
                         </Link>{" "}
                         (staked).
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Here is the URL link of the dApp:{" "}
+                        <Link
+                          href="https://oioiclaim.endhonesa.com"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          OIOICLAIM.ENDHONESA.COM
+                        </Link>
                       </li>
                     </ul>
                   </li>

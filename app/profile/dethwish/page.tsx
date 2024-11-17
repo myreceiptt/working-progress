@@ -138,158 +138,294 @@ export default function OurDethWish() {
                   /ˈdeTH ˌwiSH/ Series
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  Hello everyone, this is our deTH wiSH series...
+                  Hello everyone, this is our deTH wiSH NFTs collection
+                  series...
                 </p>
                 <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-disc">
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/21.-deth-wish"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      /ˈdeTH ˌwiSH/
-                    </Link>{" "}
-                    SOLD OUT in Two Weeks.
+                    /ˈdeTH ˌwiSH/, the first collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Already SOLD OUT in just two weeks after being released.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/21.-deth-wish"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/13.-2nd-deth-wish"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      2nd /ˈdeTH ˌwiSH/
-                    </Link>{" "}
-                    Currently Suspended.
+                    2nd /ˈdeTH ˌwiSH/, the second collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        This second collection currently suspended.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/13.-2nd-deth-wish"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          2nd /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/12.-3rd-deth-wish"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      3rd /ˈdeTH ˌwiSH/
-                    </Link>{" "}
-                    Too Early Now.
+                    3rd /ˈdeTH ˌwiSH/, the third collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this third collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/12.-3rd-deth-wish"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          3rd /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/11.-4th-deth-wish"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      4th /ˈdeTH ˌwiSH/
-                    </Link>{" "}
-                    Too Early Now.
+                    4th /ˈdeTH ˌwiSH/, the fourth collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this fourth collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/11.-4th-deth-wish"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          4th /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/10.-5th-deth-wish"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      5th /ˈdeTH ˌwiSH/
-                    </Link>{" "}
-                    Too Early Now.
+                    5th /ˈdeTH ˌwiSH/, the fifth collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this fifth collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/10.-5th-deth-wish"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          5th /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/09.-6th-deth-wish"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      6th /ˈdeTH ˌwiSH/
-                    </Link>{" "}
-                    Too Early Now.
+                    6th /ˈdeTH ˌwiSH/, the sixth collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this sixth collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/09.-6th-deth-wish"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          6th /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/08.-deth-wish-x"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      /ˈdeTH ˌwiSH/ -X-
-                    </Link>{" "}
-                    Too Early Now.
+                    /ˈdeTH ˌwiSH/ -X-, the seventh collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this seventh collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/08.-deth-wish-x"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          /ˈdeTH ˌwiSH/ -X- on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/07.-deth-wish-y"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      /ˈdeTH ˌwiSH/ -Y-
-                    </Link>{" "}
-                    Too Early Now.
+                    /ˈdeTH ˌwiSH/ -Y-, the eighth collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this eighth collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/07.-deth-wish-y"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          /ˈdeTH ˌwiSH/ -Y- on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/06.-deth-wish-z"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      /ˈdeTH ˌwiSH/ -Z-
-                    </Link>{" "}
-                    Too Early Now.
+                    /ˈdeTH ˌwiSH/ -Z-, the ninth collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this ninth collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/06.-deth-wish-z"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          /ˈdeTH ˌwiSH/ -Z- on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/05.-deth-wish-body"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      /ˈdeTH ˌwiSH/ BODY
-                    </Link>{" "}
-                    Too Early Now.
+                    /ˈdeTH ˌwiSH/ BODY, the tenth collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this tenth collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/05.-deth-wish-body"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          /ˈdeTH ˌwiSH/ BODY on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/04.-deth-wish-mind"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      /ˈdeTH ˌwiSH/ MIND
-                    </Link>{" "}
-                    Too Early Now.
+                    /ˈdeTH ˌwiSH/ MIND, the eleventh collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this eleventh collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/04.-deth-wish-mind"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          /ˈdeTH ˌwiSH/ MIND on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/03.-deth-wish-hearth"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      /ˈdeTH ˌwiSH/ HEARTH
-                    </Link>{" "}
-                    Too Early Now.
+                    /ˈdeTH ˌwiSH/ HEARTH, the twelfth collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this twelfth collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/03.-deth-wish-hearth"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          /ˈdeTH ˌwiSH/ HEARTH on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/02.-deth-wish-soul"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      /ˈdeTH ˌwiSH/ SOUL
-                    </Link>{" "}
-                    Too Early Now.
+                    /ˈdeTH ˌwiSH/ SOUL, the thirteenth collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this thirteenth collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/02.-deth-wish-soul"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          /ˈdeTH ˌwiSH/ SOUL on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/01.-last-deth-wish"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      LAST /ˈdeTH ˌwiSH/
-                    </Link>{" "}
-                    Too Early Now.
+                    LAST /ˈdeTH ˌwiSH/, the fourteenth collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this fourteenth collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/01.-last-deth-wish"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          LAST /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                   <li className="mt-2">
-                    <Link
-                      href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/00.-final-deth-wish"
-                      target="_blank"
-                      className="underline duration-500 hover:text-zinc-300"
-                    >
-                      FINAL /ˈdeTH ˌwiSH/
-                    </Link>{" "}
-                    Too Early Now.
+                    FINAL /ˈdeTH ˌwiSH/, the final collection.
+                    <ul className="list-disc">
+                      <li className="mt-2 ml-4">
+                        Too early now for this final collection.
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Release information:{" "}
+                        <Link
+                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/00.-final-deth-wish"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300"
+                        >
+                          FINAL /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        </Link>
+                        .
+                      </li>
+                    </ul>
                   </li>
                 </ul>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200 mb-12">
