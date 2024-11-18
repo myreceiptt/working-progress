@@ -1,70 +1,22 @@
 "use client";
-import {
-  Receipt,
-  Factory,
-  GraduationCap,
-  Store,
-  Warehouse,
-  Skull,
-} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 import { Eye } from "lucide-react";
-
-const products = [
-  {
-    icon: <Receipt size={20} />,
-    href: "/profile/currencies",
-    // href: "#prodserv",
-    label: "$HAIL $OiOi $NOTA",
-    handle: "The Currencies",
-  },
-  {
-    icon: <Factory size={20} />,
-    href: "/profile/breads",
-    // href: "#prodserv",
-    label: "PabrikRoti.IDN",
-    handle: "Breads Factory",
-  },
-  {
-    icon: <GraduationCap size={20} />,
-    href: "/profile/nota",
-    // href: "#prodserv",
-    label: "Prof. NOTA",
-    handle: "Professor NOTA",
-  },
-  {
-    icon: <Warehouse size={20} />,
-    href: "/profile/endhonesa",
-    // href: "#prodserv",
-    label: "#ENDHONESA",
-    handle: "ENDHONESA.COM",
-  },
-  {
-    icon: <Store size={20} />,
-    href: "/profile/skateshop",
-    // href: "#prodserv",
-    label: "#hailskateboarding",
-    handle: "SKATESHOP.ID",
-  },
-  {
-    icon: <Skull size={20} />,
-    href: "/profile/dethwish",
-    // href: "#prodserv",
-    label: "deTHwiSH",
-    handle: "/ˈdeTH ˌwiSH/",
-  },
-];
+import Connected from "../components/connect";
+import OurProducts from "../components/products";
+import { useActiveAccount } from "thirdweb/react";
 
 export default function OurProfile() {
+  const account = useActiveAccount();
+
   return (
     <>
       <div className="relative pb-16">
         <Navigation />
-        <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
+        <div className="px-6 pt-20 pb-10 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
           <div className="max-w-2xl mx-auto lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
               Our Profile
@@ -81,6 +33,7 @@ export default function OurProfile() {
             </p>
           </div>
           <div className="w-full h-px bg-zinc-800" />
+
           <div className="grid grid-cols-1 mx-auto">
             <Card>
               <article className="relative w-full h-full p-4 md:p-8">
@@ -234,50 +187,38 @@ export default function OurProfile() {
                     Prof. NOTA Inc.
                   </Link>
                 </p>
-                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300 mb-12">
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   ==== 47 =======
                 </p>
-                <div className="absolute bottom-4 md:bottom-8">
+              </article>
+            </Card>
+          </div>
+          <div className="hidden w-full h-px md:block bg-zinc-800" />
+
+          <div className="grid grid-cols-1 mx-auto">
+            <Card>
+              <article className="relative w-full h-full p-4 md:p-8">
+                <h2 className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
+                  Products and Services
+                </h2>
+                {/* <div className="mb-4 md:mb-8">
                   <Link href="#prodserv">
                     <p className="text-zinc-200 hover:text-zinc-50 lg:block">
                       Products and Services{" "}
                       <span aria-hidden="true">&darr;&darr;</span>
                     </p>
                   </Link>
+                </div> */}
+                <div className="mt-4 md:mt-8 grid grid-cols-1">
+                  <Connected />
                 </div>
               </article>
             </Card>
           </div>
+
+          {account && <OurProducts />}
+
           <div className="w-full h-px bg-zinc-800" />
-          <div
-            id="prodserv"
-            className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-3 lg:gap-16"
-          >
-            {products.map((s) => (
-              <Card key={s.label}>
-                <Link
-                  href={s.href}
-                  className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 sm:py-8 md:pt-12 md:pb-16 lg:pb-28 xl:pb-44"
-                >
-                  <span
-                    className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
-                    aria-hidden="true"
-                  />
-                  <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
-                    {s.icon}
-                  </span>{" "}
-                  <div className="z-10 flex flex-col items-center">
-                    <span className="lg:text-lg font-medium duration-150 xl:text-xl text-zinc-200 group-hover:text-white font-display">
-                      {s.handle}
-                    </span>
-                    <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                      {s.label}
-                    </span>
-                  </div>
-                </Link>
-              </Card>
-            ))}
-          </div>
         </div>
         <BottomNavigation />
       </div>

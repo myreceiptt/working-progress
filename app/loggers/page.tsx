@@ -47,7 +47,7 @@ export default async function LoggersPage() {
   return (
     <div className="relative pb-16">
       <Navigation />
-      <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
+      <div className="px-6 pt-20 pb-10 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
             Our Logs
@@ -64,7 +64,8 @@ export default async function LoggersPage() {
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
-        <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
+
+        <div className="grid grid-cols-1 gap-4 md:gap-8 mx-auto lg:grid-cols-2">
           <Card>
             <Link href={`/loggers/${featured.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
@@ -104,7 +105,8 @@ export default async function LoggersPage() {
               </article>
             </Link>
           </Card>
-          <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
+
+          <div className="flex flex-col w-full gap-4 md:gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
             {[top2, top3].map((logger) => (
               <Card key={logger.slug}>
                 <Article logger={logger} views={views[logger.slug] ?? 0} />
@@ -113,6 +115,7 @@ export default async function LoggersPage() {
           </div>
         </div>
         <div className="hidden w-full h-px md:block bg-zinc-800" />
+
         <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
           <div className="grid grid-cols-1 gap-4">
             {sorted
@@ -143,7 +146,8 @@ export default async function LoggersPage() {
           </div>
         </div>
         <div className="hidden w-full h-px md:block bg-zinc-800" />
-        <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2">
+
+        <div className="grid grid-cols-1 gap-4 md:gap-8 mx-auto lg:grid-cols-2">
           <Card>
             <Link href={`/loggers/${running.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
@@ -183,7 +187,8 @@ export default async function LoggersPage() {
               </article>
             </Link>
           </Card>
-          <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
+
+          <div className="flex flex-col w-full gap-4 md:gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
             {[bottom3, bottom2].map((logger) => (
               <Card key={logger.slug}>
                 <Article logger={logger} views={views[logger.slug] ?? 0} />
@@ -191,6 +196,7 @@ export default async function LoggersPage() {
             ))}
           </div>
         </div>
+        <div className="w-full h-px bg-zinc-800" />
       </div>
       <BottomNavigation />
     </div>

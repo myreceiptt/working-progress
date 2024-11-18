@@ -11,6 +11,7 @@ import { Eye } from "lucide-react";
 const redis = Redis.fromEnv();
 
 export const revalidate = 60;
+
 export default async function StoriesPage() {
   const views = (
     await redis.mget<number[]>(
@@ -41,7 +42,7 @@ export default async function StoriesPage() {
   return (
     <div className="relative pb-16">
       <Navigation />
-      <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
+      <div className="px-6 pt-20 pb-10 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
         <div className="max-w-2xl mx-auto lg:mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
             0101 Collection
@@ -59,7 +60,7 @@ export default async function StoriesPage() {
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
-        <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
+        <div className="grid grid-cols-1 gap-4 md:gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
             <Link href={`/stories/${featured.slug}`}>
               <article className="relative w-full h-full p-4 md:p-8">
@@ -101,7 +102,7 @@ export default async function StoriesPage() {
             </Link>
           </Card>
 
-          <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
+          <div className="flex flex-col w-full gap-4 md:gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
             {[top2, top3].map((story) => (
               <Card key={story.slug}>
                 <Article story={story} views={views[story.slug] ?? 0} />
@@ -140,6 +141,7 @@ export default async function StoriesPage() {
               ))}
           </div>
         </div>
+        <div className="w-full h-px bg-zinc-800" />
       </div>
       <BottomNavigation />
     </div>

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import LocalFont from "next/font/local";
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { ThirdwebProvider } from "thirdweb/react";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nota.straight-line.org"),
@@ -138,7 +139,7 @@ export default function RootLayout({
           process.env.NODE_ENV === "development" ? "debug-screens" : undefined
         }`}
       >
-        {children}
+        <ThirdwebProvider>{children}</ThirdwebProvider>
       </body>
     </html>
   );

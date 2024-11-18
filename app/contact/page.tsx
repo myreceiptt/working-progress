@@ -186,7 +186,7 @@ export default function OurContact() {
     <div className="relative min-h-screen bg-gradient-to-tl from-zinc-900 via-zinc-400/10 to-zinc-900">
       <div className="relative pb-16">
         <Navigation />
-        <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
+        <div className="px-6 pt-20 pb-10 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
           <div className="max-w-2xl mx-auto lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
               Track Us
@@ -203,7 +203,7 @@ export default function OurContact() {
             </p>
           </div>
           <div className="w-full h-px bg-zinc-800" />
-          <div className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-3 lg:gap-16">
+          <div className="grid grid-cols-1 gap-4 md:gap-8 mx-auto md:grid-cols-3">
             {socials.map((s) => (
               <Card key={s.label}>
                 <Link
@@ -230,6 +230,7 @@ export default function OurContact() {
               </Card>
             ))}
           </div>
+          <div className="w-full h-px bg-zinc-800" />
           {/* <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 "></div> */}
           {/* <div className="hidden w-full h-px md:block bg-zinc-800" /> */}
 
