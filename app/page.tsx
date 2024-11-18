@@ -63,7 +63,7 @@ export default function Home() {
         </ul>
       </nav>
       <div className="text-center animate-fade-in">
-        <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-11 md:px-44">
+        <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-10 sm:px-40 md:px-60 lg:px-80 xl:px-96">
           We were born in the 0101 Universe. We exist in the digital realm of
           the Internet. So, stay alert and beware of scams!
         </h2>
