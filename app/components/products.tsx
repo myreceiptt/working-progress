@@ -56,10 +56,7 @@ const products = [
 
 export default function OurProducts() {
   return (
-    <div
-      id="prodserv"
-      className="grid grid-cols-1 gap-4 md:gap-8 mx-auto md:grid-cols-3"
-    >
+    <div className="grid grid-cols-1 gap-4 md:gap-8 mx-auto md:grid-cols-3">
       {products.map((s) => (
         <Card key={s.label}>
           <Link

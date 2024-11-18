@@ -195,7 +195,7 @@ export default function OurProfile() {
           </div>
           <div className="hidden w-full h-px md:block bg-zinc-800" />
 
-          <div className="grid grid-cols-1 mx-auto">
+          <div id="prodserv" className="grid grid-cols-1 mx-auto">
             <Card>
               <article className="relative w-full h-full p-4 md:p-8">
                 <h2 className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
