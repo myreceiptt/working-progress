@@ -1,5 +1,5 @@
 "use client";
-import { client } from "./client";
+import { client } from "../../util/client";
 import { ConnectButton } from "thirdweb/react";
 import { darkTheme } from "thirdweb/react";
 import { inAppWallet, createWallet } from "thirdweb/wallets";
