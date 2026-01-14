@@ -3,13 +3,11 @@ import { createThirdwebClient } from "thirdweb";
 
 const clientId = process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID;
 
-if (!clientId) {
-  throw new Error("There is no thirdweb cliend ID.");
-}
-
-export const client = createThirdwebClient({
-  clientId: clientId,
-});
+export const client = clientId
+  ? createThirdwebClient({
+      clientId: clientId,
+    })
+  : null;
 
 // For "server-side" usage
 // import { createThirdwebClient } from "thirdweb";

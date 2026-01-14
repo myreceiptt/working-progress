@@ -26,6 +26,9 @@ const wallets = [
 ];
 
 export default function Connected() {
+  if (!client) {
+    return null;
+  }
   return (
     <ConnectButton
       client={client}
