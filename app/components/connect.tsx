@@ -7,16 +7,7 @@ import { inAppWallet, createWallet } from "thirdweb/wallets";
 const wallets = [
   inAppWallet({
     auth: {
-      options: [
-        "google",
-        "email",
-        "passkey",
-        "phone",
-        "apple",
-        "guest",
-        "facebook",
-        "x",
-      ],
+      options: ["email", "passkey"],
     },
   }),
   createWallet("io.metamask"),
