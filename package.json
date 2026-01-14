@@ -28,7 +28,7 @@
     "rehype-pretty-code": "^0.10.2",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "3.0.1",
-    "thirdweb": "^5.116.1",
+    "thirdweb": "^5.117.1",
     "typescript": "^5.9.3",
     "webpack": "^5.104.1"
   },
