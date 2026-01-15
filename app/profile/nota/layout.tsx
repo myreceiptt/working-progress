@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nota.straight-line.org"),
+  metadataBase: new URL("https://nota.endhonesa.com"),
   title: {
     template: "%s | Beware of Scams!", // Included on each child page
     default: "Professor NOTA Just for You", // Title on each page
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     "Get the best help, support, and advice from Prof. NOTA about this 0101 Universe as long as utilize the Web3 technology.", // Description for each page
   // applicationName: "Prof. NOTA's Working Progress",
   authors: [
-    { name: "MyReceipt", url: "https://www.straight-line.org" },
-    { name: "Prof. NOTA", url: "https://prompt.straight-line.org" },
+    { name: "MyReceipt", url: "https://www.endhonesa.com" },
+    { name: "Prof. NOTA", url: "https://prompt.endhonesa.com" },
   ],
   // manifest: "/manifest.webmanifest",
   // generator: "Breads Factory",
@@ -60,18 +60,18 @@ export const metadata: Metadata = {
     title: "Professor NOTA Just for You", // Title on each page
     description:
       "Get the best help, support, and advice from Prof. NOTA about this 0101 Universe as long as utilize the Web3 technology.", // Description on each page
-    url: "https://nota.straight-line.org/profile/nota", // URL for each page
+    url: "https://nota.endhonesa.com/profile/nota", // URL for each page
     siteName: "Prof. NOTA's Working Progress",
     locale: "en-US",
     images: [
       {
-        url: "https://nota.straight-line.org/images/prof-nota-inc.jpg", // Must be an absolute URL
+        url: "https://nota.endhonesa.com/images/prof-nota-inc.jpg", // Must be an absolute URL
         width: 1920,
         height: 1080,
         alt: "Prof. NOTA Inc.", // Alternate text for image
       },
       {
-        url: "https://nota.straight-line.org/images/prof-nota-inc.jpg", // Must be an absolute URL
+        url: "https://nota.endhonesa.com/images/prof-nota-inc.jpg", // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: "Prof. NOTA Inc.", // Alternate text for image
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     ],
     videos: [
       {
-        url: "https://nota.straight-line.org/video/images/prof-nota-inc.mp4", // Must be an absolute URL
+        url: "https://nota.endhonesa.com/video/images/prof-nota-inc.mp4", // Must be an absolute URL
         width: 800,
         height: 600,
       },
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
     title: "Professor NOTA Just for You", // Title on each page
     description:
       "Hi, X People! Get the best help, support, and advice from Prof. NOTA about this 0101 Universe as long as utilize the Web3 technology.", // Description on each page
-    images: ["https://nota.straight-line.org/images/prof-nota-inc.jpg"], // Must be an absolute URL
+    images: ["https://nota.endhonesa.com/images/prof-nota-inc.jpg"], // Must be an absolute URL
   },
   // icons: {
   //   shortcut: "/favicon.ico",

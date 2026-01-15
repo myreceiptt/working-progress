@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Connected from "../../components/connect";
+import Connected from "../../components/connect/accessbutton";
 import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
 import { useActiveAccount } from "thirdweb/react";
@@ -20,10 +20,10 @@ export default function BreadsFactory() {
               <>
                 <div className="flex justify-between gap-2 items-center">
                   <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                    <time dateTime={new Date("2024-08-26").toISOString()}>
+                    <time dateTime={new Date("2021-08-26").toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: "medium",
-                      }).format(new Date("2024-08-26"))}
+                      }).format(new Date("2021-08-26"))}
                     </time>
                   </span>
                   <span className="text-zinc-500 text-xs  flex items-center gap-1">
@@ -38,10 +38,9 @@ export default function BreadsFactory() {
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                   <Link
-                    href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../breads-factory"
+                    href="https://docs.endhonesa.com/04-the-12th-stage.../breads-factory"
                     target="_blank"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    className="underline duration-500 hover:text-zinc-300">
                     The Breads Factory
                   </Link>{" "}
                   is a factory that produces Programmed Bread (tokenized assets)
@@ -61,9 +60,8 @@ export default function BreadsFactory() {
                       <li className="mt-2 ml-4">
                         <Link
                           href="/contact"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          Contact Prof. NOTA Inc.
+                          className="underline duration-500 hover:text-zinc-300">
+                          Contact Prof. NOTA
                         </Link>{" "}
                         to talk about this token deployer service with our
                         online and offline firewalls.
@@ -71,47 +69,45 @@ export default function BreadsFactory() {
                     </ul>
                   </li>
                   <li className="mt-2">
-                    Token dExchange dApp only between Polygon $OiOi, and Polygon
-                    $POL.
+                    Token dExchange service only between Polygon $OiOi, and
+                    Polygon $POL.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Only 0.1111% fee per transaction, and 100% of the fee,
                         per transaction, goes to the treasury.
                       </li>
                       <li className="mt-2 ml-4">
-                        Here is the URL link of the dApp:{" "}
+                        Here is the URL link to the service:{" "}
                         <Link
-                          href="https://oioipol.endhonesa.com"
+                          href="https://discord.gg/HKaVg4vYMp"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          OIOIPOL.ENDHONESA.COM
+                          className="underline duration-500 hover:text-zinc-300">
+                          OiOi ExChange (Ganti Mantan ;P)
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
-                    Token dExchange dApp only between Tezos $HAIL, Tezos $OiOi,
-                    Tezos $NOTA, and Tezos $XTZ.
+                    Token dExchange service only between Tezos $HAIL, Tezos
+                    $OiOi, Tezos $NOTA, and Tezos $XTZ.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
                         Only 0.1111% fee per transaction, and 100% of the fee,
                         per transaction, goes to the treasury.
                       </li>
                       <li className="mt-2 ml-4">
-                        Here is the URL link of the dApp:{" "}
+                        Here is the URL link to the service:{" "}
                         <Link
-                          href="https://oioixtz.endhonesa.com"
+                          href="https://discord.gg/HKaVg4vYMp"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          OIOIXTZ.ENDHONESA.COM
+                          className="underline duration-500 hover:text-zinc-300">
+                          OiOi ExChange (Ganti Mantan ;P)
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
-                    Token dExchange dApp only between Ethereum L2 $OiOi and
+                    Token dExchange service only between Ethereum L2 $OiOi and
                     Ethereum L2 $ETH.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
@@ -119,19 +115,18 @@ export default function BreadsFactory() {
                         per transaction, goes to the treasury.
                       </li>
                       <li className="mt-2 ml-4">
-                        Here is the URL link of the dApp:{" "}
+                        Here is the URL link to the service:{" "}
                         <Link
-                          href="https://oioieth.endhonesa.com"
+                          href="https://discord.gg/HKaVg4vYMp"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          OIOIETH.ENDHONESA.COM
+                          className="underline duration-500 hover:text-zinc-300">
+                          OiOi ExChange (Ganti Mantan ;P)
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
-                    Token dExchange dApp only between Polygon $OiOi, Tezos
+                    Token dExchange service only between Polygon $OiOi, Tezos
                     $OiOi, and Ethereum L2 $OiOi.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
@@ -139,105 +134,78 @@ export default function BreadsFactory() {
                         per transaction, goes to the treasury.
                       </li>
                       <li className="mt-2 ml-4">
-                        Here is the URL link of the dApp:{" "}
+                        Here is the URL link to the service:{" "}
                         <Link
-                          href="https://oioibridge.endhonesa.com"
+                          href="https://discord.gg/HKaVg4vYMp"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          OIOIBRIDGE.ENDHONESA.COM
+                          className="underline duration-500 hover:text-zinc-300">
+                          OiOi ExChange (Ganti Mantan, ;P)
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
-                    OiOi decision power dApp using Ethereum L2 $OiOi to vote.
+                    OiOi decision power facility using Ethereum L2 $OiOi to
+                    vote.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Token-gated dApp using Ethereum L2 $OiOi, and voting to
-                        propose to Prof. NOTA Inc. to share the profits.
+                        Token-gated facility using Ethereum L2 $OiOi, and voting
+                        to propose to Prof. NOTA Inc. to share the profits.
                       </li>
                       <li className="mt-2 ml-4">
-                        Here is the URL link of the dApp:{" "}
+                        Here is the URL link to the facility:{" "}
                         <Link
-                          href="https://oioiprops.endhonesa.com"
+                          href="https://discord.gg/rdxKH5w4CW"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          OIOIPROPS.ENDHONESA.COM
+                          className="underline duration-500 hover:text-zinc-300">
+                          OiOi Props to Be-Ex (Jadi Mantan, ;P)
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
-                    OiOi decision power dApp using Tezos $NOTA to vote.
+                    OiOi decision power facility using Tezos $NOTA to vote.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Token-gated dApp using Tezos $NOTA, and voting to
+                        Token-gated facility using Tezos $NOTA, and voting to
                         determine whether (yes/no), when (monthly/annually), and
                         by who (which NFT holders) the profit share is
                         claimable.
                       </li>
                       <li className="mt-2 ml-4">
-                        Here is the URL link of the dApp:{" "}
+                        Here is the URL link to the facility:{" "}
                         <Link
-                          href="https://notavote.endhonesa.com"
+                          href="https://discord.gg/rdxKH5w4CW"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          NOTAVOTE.ENDHONESA.COM
+                          className="underline duration-500 hover:text-zinc-300">
+                          NOTA for Vote-Ex (Dukung Mantan, ;P)
                         </Link>
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
-                    OiOi treasury profits share claim dApp, from us, by us, and
-                    for us.
+                    OiOi treasury profits share claim facility, from us, by us,
+                    and for us.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Based on OiOi decision power, dApp provide monthly and
-                        annually claimable profits share for all holders of{" "}
+                        Based on OiOi decision power, this facility provide
+                        monthly and annually claimable profits share for all
+                        holders of{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/16.-roty-base-deth"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/00.-final-deth-wish"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          the ROTY BASE dETH NFTs
-                        </Link>{" "}
-                        (staked),{" "}
-                        <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/15.-the-melting-land"
-                          target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          The Melting Land NFTs
-                        </Link>{" "}
-                        (staked),{" "}
-                        <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/14.-amanda-wives"
-                          target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          the Amanda Wives NFTs
-                        </Link>{" "}
-                        (staked), and{" "}
-                        <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/00.-final-deth-wish"
-                          target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           the FINAL /ˈdeTH ˌwiSH/ NFTs
                         </Link>{" "}
-                        (staked).
+                        (staked-locked).
                       </li>
                       <li className="mt-2 ml-4">
-                        Here is the URL link of the dApp:{" "}
+                        Here is the URL link to the facility:{" "}
                         <Link
-                          href="https://oioiclaim.endhonesa.com"
+                          href="https://discord.gg/rdxKH5w4CW"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          OIOICLAIM.ENDHONESA.COM
+                          className="underline duration-500 hover:text-zinc-300">
+                          OiOi Claim-Ex (Gono-Gini Mantan, ;P)
                         </Link>
                       </li>
                     </ul>
@@ -249,13 +217,14 @@ export default function BreadsFactory() {
                 <div className="absolute bottom-4 md:bottom-8">
                   <Link
                     href="/profile#prodserv"
-                    className="duration-500 hover:underline hover:text-zinc-300"
-                  >
+                    className="duration-500 hover:underline hover:text-zinc-300">
                     <p className="block text-zinc-200 hover:text-zinc-50 text-sm">
                       <span aria-hidden="true">&larr;</span> Back to Profile
                     </p>
                   </Link>
                 </div>
+
+                {/* Here will be a button to claim the receipt. */}
               </>
             )}
           </article>

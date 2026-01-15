@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Connected from "../../components/connect";
+import Connected from "../../components/connect/accessbutton";
 import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
 import { useActiveAccount } from "thirdweb/react";
@@ -20,10 +20,10 @@ export default function TheCurrencies() {
               <>
                 <div className="flex justify-between gap-2 items-center">
                   <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                    <time dateTime={new Date("2024-08-25").toISOString()}>
+                    <time dateTime={new Date("2021-08-25").toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: "medium",
-                      }).format(new Date("2024-08-25"))}
+                      }).format(new Date("2021-08-25"))}
                     </time>
                   </span>
                   <span className="text-zinc-500 text-xs flex items-center gap-1">
@@ -40,11 +40,10 @@ export default function TheCurrencies() {
                   Only $HAIL, $OiOi, and $NOTA Fungible Tokens are valid for all
                   activities. Please read and learn from{" "}
                   <Link
-                    href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../the-currencies"
+                    href="https://docs.endhonesa.com/01-the-project.../how-is-the-journey"
                     target="_blank"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
-                    The White Paper
+                    className="underline duration-500 hover:text-zinc-300">
+                    The Hint
                   </Link>{" "}
                   if necessary.
                 </p>
@@ -59,13 +58,15 @@ export default function TheCurrencies() {
                       <li className="mt-2 ml-4">
                         Launching information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/polygon-usdoioi-fts"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/polygon-usdoioi-fts"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           Polygon $OiOi on GitBook of The KING's NFTs
                         </Link>
                         .
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Status: Deprecated (Obsolete)
                       </li>
                     </ul>
                   </li>
@@ -79,13 +80,15 @@ export default function TheCurrencies() {
                       <li className="mt-2 ml-4">
                         Launching information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/tezos-usdhail-fts"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/tezos-usdhail-fts"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           Tezos $HAIL on GitBook of The KING's NFTs
                         </Link>
                         .
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Status: Deprecated (Obsolete)
                       </li>
                     </ul>
                   </li>
@@ -99,13 +102,15 @@ export default function TheCurrencies() {
                       <li className="mt-2 ml-4">
                         Launching information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/tezos-usdoioi-fts"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/tezos-usdoioi-fts"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           Tezos $OiOi on GitBook of The KING's NFTs
                         </Link>
                         .
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Status: Deprecated (Obsolete)
                       </li>
                     </ul>
                   </li>
@@ -119,13 +124,15 @@ export default function TheCurrencies() {
                       <li className="mt-2 ml-4">
                         Launching information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/tezos-usdnota-fts"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/tezos-usdnota-fts"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           Tezos $NOTA on GitBook of The KING's NFTs
                         </Link>
                         .
+                      </li>
+                      <li className="mt-2 ml-4">
+                        Status: Deprecated (Obsolete)
                       </li>
                     </ul>
                   </li>
@@ -139,14 +146,14 @@ export default function TheCurrencies() {
                       <li className="mt-2 ml-4">
                         Launching information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/ethereum-usdoioi-fts"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/ethereum-usdoioi-fts"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           Ethereum L2 $OiOi on GitBook of The KING's NFTs
                         </Link>
                         .
                       </li>
+                      <li className="mt-2 ml-4">Status: Active Mature (LTS)</li>
                     </ul>
                   </li>
                 </ul>
@@ -156,13 +163,14 @@ export default function TheCurrencies() {
                 <div className="absolute bottom-4 md:bottom-8">
                   <Link
                     href="/profile#prodserv"
-                    className="hover:underline duration-500 hover:text-zinc-300"
-                  >
+                    className="hover:underline duration-500 hover:text-zinc-300">
                     <p className="block text-zinc-200 hover:text-zinc-50 text-sm">
                       <span aria-hidden="true">&larr;</span> Back to Profile
                     </p>
                   </Link>
                 </div>
+
+                {/* Here will be a button to claim the receipt. */}
               </>
             )}
           </article>

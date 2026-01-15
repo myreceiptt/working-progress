@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nota.straight-line.org"),
+  metadataBase: new URL("https://nota.endhonesa.com"),
   title: {
     template: "%s | Beware of Scams!", // Included on each child page
     default: "ENDHONESA dot COM Online Store", // Title on each page
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     "Trade would always proceed properly and as well as possible according to the resulting revenue and formed value.", // Description for each page
   // applicationName: "Prof. NOTA's Working Progress",
   authors: [
-    { name: "MyReceipt", url: "https://www.straight-line.org" },
-    { name: "Prof. NOTA", url: "https://prompt.straight-line.org" },
+    { name: "MyReceipt", url: "https://www.endhonesa.com" },
+    { name: "Prof. NOTA", url: "https://prompt.endhonesa.com" },
   ],
   // manifest: "/manifest.webmanifest",
   // generator: "Breads Factory",
@@ -60,18 +60,18 @@ export const metadata: Metadata = {
     title: "ENDHONESA dot COM Online Store", // Title on each page
     description:
       "Trade would always proceed properly and as well as possible according to the resulting revenue and formed value.", // Description on each page
-    url: "https://nota.straight-line.org/profile/endhonesa", // URL for each page
+    url: "https://nota.endhonesa.com/profile/endhonesa", // URL for each page
     siteName: "Prof. NOTA's Working Progress",
     locale: "en-US",
     images: [
       {
-        url: "https://nota.straight-line.org/images/endhonesa-dot-com-online-store.jpg", // Must be an absolute URL
+        url: "https://nota.endhonesa.com/images/endhonesa-dot-com-online-store.jpg", // Must be an absolute URL
         width: 1920,
         height: 1080,
         alt: "ENDHONESA dot COM Online Store", // Alternate text for image
       },
       {
-        url: "https://nota.straight-line.org/images/endhonesa-dot-com-online-store.jpg", // Must be an absolute URL
+        url: "https://nota.endhonesa.com/images/endhonesa-dot-com-online-store.jpg", // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: "ENDHONESA dot COM Online Store", // Alternate text for image
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     ],
     videos: [
       {
-        url: "https://nota.straight-line.org/video/images/endhonesa-dot-com-online-store.mp4", // Must be an absolute URL
+        url: "https://nota.endhonesa.com/video/images/endhonesa-dot-com-online-store.mp4", // Must be an absolute URL
         width: 800,
         height: 600,
       },
@@ -97,7 +97,7 @@ export const metadata: Metadata = {
     description:
       "Hi, X People! Trade would always proceed properly and as well as possible according to the resulting revenue and formed value.", // Description on each page
     images: [
-      "https://nota.straight-line.org/images/endhonesa-dot-com-online-store.jpg",
+      "https://nota.endhonesa.com/images/endhonesa-dot-com-online-store.jpg",
     ], // Must be an absolute URL
   },
   // icons: {

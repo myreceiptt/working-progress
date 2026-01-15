@@ -51,8 +51,7 @@ export default async function StoriesPage() {
             Our stories from{" "}
             <Link
               href="#"
-              className="underline duration-500 hover:text-zinc-300"
-            >
+              className="underline duration-500 hover:text-zinc-300">
               0101 Universe
             </Link>
             . These are our origin receipts...
@@ -86,8 +85,7 @@ export default async function StoriesPage() {
 
                 <h2
                   id="featured-post"
-                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
-                >
+                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
                   {featured.title}
                 </h2>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">

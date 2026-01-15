@@ -11,32 +11,12 @@ import { Card } from "../components/card";
 
 const products = [
   {
-    icon: <Receipt size={20} />,
-    href: "/profile/currencies",
+    icon: <Skull size={20} />,
+    href: "/profile/dethwish",
     // href: "#prodserv",
-    label: "$HAIL $OiOi $NOTA",
-    handle: "The Currencies",
-  },
-  {
-    icon: <Factory size={20} />,
-    href: "/profile/breads",
-    // href: "#prodserv",
-    label: "PabrikRoti.IDN",
-    handle: "Breads Factory",
-  },
-  {
-    icon: <GraduationCap size={20} />,
-    href: "/profile/nota",
-    // href: "#prodserv",
-    label: "Prof. NOTA",
-    handle: "Professor NOTA",
-  },
-  {
-    icon: <Warehouse size={20} />,
-    href: "/profile/endhonesa",
-    // href: "#prodserv",
-    label: "#ENDHONESA",
-    handle: "ENDHONESA.COM",
+    label: "deTHwiSH",
+    handle: "/ˈdeTH ˌwiSH/",
+    status: "Active (Current)",
   },
   {
     icon: <Store size={20} />,
@@ -44,13 +24,39 @@ const products = [
     // href: "#prodserv",
     label: "#hailskateboarding",
     handle: "SKATESHOP.ID",
+    status: "Active (Current)",
   },
   {
-    icon: <Skull size={20} />,
-    href: "/profile/dethwish",
+    icon: <Warehouse size={20} />,
+    href: "/profile/endhonesa",
     // href: "#prodserv",
-    label: "deTHwiSH",
-    handle: "/ˈdeTH ˌwiSH/",
+    label: "#ENDHONESA",
+    handle: "ENDHONESA.COM",
+    status: "Active (Current)",
+  },
+  {
+    icon: <GraduationCap size={20} />,
+    href: "/profile/nota",
+    // href: "#prodserv",
+    label: "Prof. NOTA",
+    handle: "Professor NOTA",
+    status: "Active (LTS))",
+  },
+  {
+    icon: <Factory size={20} />,
+    href: "/profile/breads",
+    // href: "#prodserv",
+    label: "PabrikRoti.IDN",
+    handle: "Breads Factory",
+    status: "Maintenance (LTS)",
+  },
+  {
+    icon: <Receipt size={20} />,
+    href: "/profile/currencies",
+    // href: "#prodserv",
+    label: "$HAIL $OiOi $NOTA",
+    handle: "The Currencies",
+    status: "End of Life (Obsolete)",
   },
 ];
 
@@ -61,8 +67,7 @@ export default function OurProducts() {
         <Card key={s.label}>
           <Link
             href={s.href}
-            className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 sm:py-8 md:pt-12 md:pb-16 lg:pb-28 xl:pb-44"
-          >
+            className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 sm:py-8 md:pt-12 md:pb-16 lg:pb-28 xl:pb-44">
             <span
               className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
               aria-hidden="true"
@@ -76,6 +81,9 @@ export default function OurProducts() {
               </span>
               <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
                 {s.label}
+              </span>
+              <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                {s.status}
               </span>
             </div>
           </Link>
