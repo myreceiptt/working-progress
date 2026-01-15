@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { allProgresses } from "contentlayer/generated";
+import { getAllProgresses } from "@/lib/content";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
@@ -12,6 +12,7 @@ const redis = Redis.fromEnv();
 
 export const revalidate = 60;
 export default async function ProgressesPage() {
+  const allProgresses = await getAllProgresses();
   const views = (
     await redis.mget<number[]>(
       ...allProgresses.map((p) => ["pageviews", "progresses", p.slug].join(":"))

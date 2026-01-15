@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { allLoggers } from "contentlayer/generated";
+import { getAllLoggers, getLoggerBySlug } from "@/lib/content";
 import { Mdx } from "@/app/components/mdx";
 import { Header } from "./header";
 import { Footer } from "./footer";
@@ -18,6 +18,7 @@ type Props = {
 const redis = Redis.fromEnv();
 
 export async function generateStaticParams(): Promise<Props["params"][]> {
+  const allLoggers = await getAllLoggers();
   return allLoggers
     .filter((p) => p.published)
     .map((p) => ({
@@ -26,8 +27,8 @@ export async function generateStaticParams(): Promise<Props["params"][]> {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const slug = params?.slug;
-  const logger = allLoggers.find((logger) => logger.slug === slug);
+  const { slug } = params;
+  const logger = await getLoggerBySlug(slug);
 
   if (!logger) {
     notFound();
@@ -144,8 +145,8 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function PostPage({ params }: Props) {
-  const slug = params?.slug;
-  const logger = allLoggers.find((logger) => logger.slug === slug);
+  const { slug } = params;
+  const logger = await getLoggerBySlug(slug);
 
   if (!logger) {
     notFound();
@@ -160,7 +161,7 @@ export default async function PostPage({ params }: Props) {
       <ReportView slug={logger.slug} />
 
       <article className="px-4 pt-12 pb-24 mx-auto prose prose-zinc prose-quoteless">
-        <Mdx code={logger.body.code} />
+        <Mdx source={logger.body} />
       </article>
       <Footer views={views} />
     </div>

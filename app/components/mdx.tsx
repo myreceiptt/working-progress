@@ -1,8 +1,11 @@
 // @ts-nocheck
 import * as React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { useMDXComponent } from "next-contentlayer/hooks";
+import { compileMDX } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
+import rehypePrettyCode from "rehype-pretty-code";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import YouTube from "./youtube";
 import CustomLink from "./customlink";
 
@@ -60,15 +63,6 @@ const components = {
     <h6
       className={clsx(
         "mt-8 scroll-m-20 text-base font-semibold tracking-tight",
-        className
-      )}
-      {...props}
-    />
-  ),
-  a: ({ className, ...props }) => (
-    <Link
-      className={clsx(
-        "font-medium text-zinc-900 underline underline-offset-4",
         className
       )}
       {...props}
@@ -166,7 +160,7 @@ const components = {
   code: ({ className, ...props }) => (
     <code
       className={clsx(
-        "relative rounded border bg-zinc-300 bg-opacity-25 py-[0.2rem] px-[0.3rem] font-mono text-sm text-zinc-600",
+        "relative rounded border bg-zinc-300/25 py-[0.2rem] px-[0.3rem] font-mono text-sm text-zinc-600",
         className
       )}
       {...props}
@@ -177,15 +171,48 @@ const components = {
 };
 
 interface MdxProps {
-  code: string;
+  source: string;
 }
 
-export function Mdx({ code }: MdxProps) {
-  const Component = useMDXComponent(code);
+export async function Mdx({ source }: MdxProps) {
+  const { content } = await compileMDX({
+    source,
+    options: {
+      mdxOptions: {
+        remarkPlugins: [remarkGfm],
+        rehypePlugins: [
+          rehypeSlug,
+          [
+            rehypePrettyCode,
+            {
+              theme: "github-dark",
+              onVisitLine(node) {
+                if (node.children.length === 0) {
+                  node.children = [{ type: "text", value: " " }];
+                }
+              },
+              onVisitHighlightedLine(node) {
+                node.properties.className.push("line--highlighted");
+              },
+              onVisitHighlightedWord(node) {
+                node.properties.className = ["word--highlighted"];
+              },
+            },
+          ],
+          [
+            rehypeAutolinkHeadings,
+            {
+              properties: {
+                className: ["subheading-anchor"],
+                ariaLabel: "Link to section",
+              },
+            },
+          ],
+        ],
+      },
+    },
+    components,
+  });
 
-  return (
-    <div className="mdx">
-      <Component components={components} />
-    </div>
-  );
+  return <div className="mdx">{content}</div>;
 }

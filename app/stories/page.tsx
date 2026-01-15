@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { allStories } from "contentlayer/generated";
+import { getAllStories } from "@/lib/content";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
@@ -13,6 +13,7 @@ const redis = Redis.fromEnv();
 export const revalidate = 60;
 
 export default async function StoriesPage() {
+  const allStories = await getAllStories();
   const views = (
     await redis.mget<number[]>(
       ...allStories.map((p) => ["pageviews", "stories", p.slug].join(":"))
