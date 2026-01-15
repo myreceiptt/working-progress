@@ -1,5 +1,5 @@
 "use client";
-import { client } from "../../util/client";
+import { client } from "../../../util/client";
 import {
   mainnet,
   optimism,
@@ -24,44 +24,58 @@ const wallets = [
   createWallet("com.coinbase.wallet"),
 ];
 
-export default function Connected() {
+export default function CheckInButton() {
   if (!client) {
     return null;
   }
   return (
     <ConnectButton
       client={client}
-      chains={[mainnet, optimism, base, baseSepolia, monad, celo]}
+      chains={[base, baseSepolia, monad, celo, optimism, mainnet]}
       wallets={wallets}
       theme={darkTheme({
         colors: { primaryText: "hsl(240, 6%, 94%)" },
       })}
-      connectButton={{ label: "Connect to Access!" }}
+      connectButton={{ label: "Check In Please!" }}
       connectModal={{
         size: "compact",
         title: "Connect with us...",
-        titleIcon: "https://nota.endhonesa.com/og.png",
+        titleIcon: "/og.png",
         showThirdwebBranding: false,
         termsOfServiceUrl: "https://nota.endhonesa.com/profile",
         privacyPolicyUrl: "https://nota.endhonesa.com/profile",
       }}
+      detailsButton={{
+        connectedAccountAvatarUrl: "/1.21.jpeg",
+        connectedAccountName: "Welcome back, Prof. NOTA!",
+        displayBalanceToken: {
+          [base.id]: "0xa3c0d70358eb07c7b8f879a7bb3a4340ac6c4c8f",
+        },
+      }}
       detailsModal={{
-        connectedAccountAvatarUrl: "https://nota.endhonesa.com/og.png",
+        connectedAccountAvatarUrl: "/1.21.jpeg",
         connectedAccountName: "Prof. NOTA",
         hideBuyFunds: true,
       }}
-      // supportedNFTs={{
-      //   1: ["0xe75f06bff5f03769748374376443a43ff0d1fd85"], // Prof. NOTA Genesis
-      //   // 84532: ["0x..."], // Prof. NOTA's Working Progress
-      //   // 84532: ["0x..."], // Prof. NOTA on BASE
-      // }}
       supportedTokens={{
-        84532: [
+        [base.id]: [
           {
             address: "0xa3c0d70358eb07c7b8f879a7bb3a4340ac6c4c8f",
-            name: "ENDHONESA Coin",
+            name: "ENDHONESA",
             symbol: "ENDHONESA",
-            icon: "https://nota.endhonesa.com/og.png",
+            icon: "/og.png",
+          },
+          {
+            address: "0x1111111111166b7FE7bd91427724B487980aFc69",
+            name: "Zora",
+            symbol: "ZORA",
+            icon: "/zora_64.png",
+          },
+          {
+            address: "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+            name: "USDC",
+            symbol: "USDC",
+            icon: "/centre-usdc_28.png",
           },
         ],
       }}

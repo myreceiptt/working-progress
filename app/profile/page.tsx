@@ -5,7 +5,7 @@ import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 import { Eye } from "lucide-react";
-import Connected from "../components/connect";
+import AccessButton from "../components/connect/accessbutton";
 import OurProducts from "../components/products";
 import { useActiveAccount } from "thirdweb/react";
 
@@ -25,8 +25,7 @@ export default function OurProfile() {
               We were born in the{" "}
               <Link
                 href="#"
-                className="underline duration-500 hover:text-zinc-300"
-              >
+                className="underline duration-500 hover:text-zinc-300">
                 0101 Universe
               </Link>
               . We exist in the digital realm of the Internet.
@@ -59,9 +58,8 @@ export default function OurProfile() {
                   Hello everyone, we are{" "}
                   <Link
                     target="_blank"
-                    href="https://prompt.straight-line.org/"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    href="https://prompt.endhonesa.com/"
+                    className="underline duration-500 hover:text-zinc-300">
                     Prof. NOTA
                   </Link>
                   .
@@ -73,16 +71,14 @@ export default function OurProfile() {
                   is{" "}
                   <Link
                     target="_blank"
-                    href="https://prompt.straight-line.org/"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    href="https://prompt.endhonesa.com/"
+                    className="underline duration-500 hover:text-zinc-300">
                     Prof. NOTA
                   </Link>
                   ) and recognized as such in the decentralization of the{" "}
                   <Link
                     href="#"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    className="underline duration-500 hover:text-zinc-300">
                     0101 Universe
                   </Link>
                   .
@@ -91,8 +87,7 @@ export default function OurProfile() {
                   We were born in the{" "}
                   <Link
                     href="#"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    className="underline duration-500 hover:text-zinc-300">
                     0101 Universe
                   </Link>
                   . We exist in the digital realm of the Internet where the laws
@@ -104,45 +99,53 @@ export default function OurProfile() {
                   We are continuously incubated in{" "}
                   <Link
                     target="_blank"
-                    href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-7th-stage-the-sanctuary-of-the-kings-world-postponed"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    href="https://docs.endhonesa.com/01-the-project.../how-is-the-journey#id-7th-stage-the-sanctuary-of-the-kings-world-postponed"
+                    className="underline duration-500 hover:text-zinc-300">
                     The KING’s World
                   </Link>{" "}
                   to execute{" "}
                   <Link
                     target="_blank"
-                    href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-12th-stage-keep-playing-learning-and-working-47-on-web3-for-the-king-and-so-on"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    href="https://docs.endhonesa.com/01-the-project.../how-is-the-journey#id-12th-stage-keep-playing-learning-and-working-47-on-web3-for-the-king-and-so-on"
+                    className="underline duration-500 hover:text-zinc-300">
                     The 12th Stage
                   </Link>
                   . So, our products and services can be accessed by everyone
                   from both universes,{" "}
                   <Link
                     href="#"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    className="underline duration-500 hover:text-zinc-300">
                     0101 Universe
                   </Link>{" "}
-                  and Universe of Reality. You can see the list of our products
-                  and services on the next section below.
+                  and{" "}
+                  <Link
+                    href="#"
+                    className="underline duration-500 hover:text-zinc-300">
+                    Universe of Reality
+                  </Link>
+                  . You can see the list of our products and services on the
+                  next section below.
                 </p>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   Our products and services are some of the many artifacts of
                   our progress in both universes,{" "}
                   <Link
                     href="#"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    className="underline duration-500 hover:text-zinc-300">
                     0101 Universe
                   </Link>{" "}
-                  and Universe of Reality. We manage our products and services
-                  as best as possible, with certain rules deployed using code on
-                  the blockchain, as our infinite gratitude. We hope that what
-                  we manage can continuously drive various revenues, and form
-                  values to be given back to all who have supported and expected
-                  us since day one.
+                  and{" "}
+                  <Link
+                    href="#"
+                    className="underline duration-500 hover:text-zinc-300">
+                    Universe of Reality
+                  </Link>
+                  . We manage our products and services as best as possible,
+                  with certain rules deployed using code on the blockchain, as
+                  our infinite gratitude. We hope that what we manage can
+                  continuously drive various revenues, and form values to be
+                  given back to all who have supported and expected us since day
+                  one.
                 </p>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   Concretely, we pull some of the resulting revenue and formed
@@ -150,9 +153,8 @@ export default function OurProfile() {
                   of us can claim the sharing profits, proof that{" "}
                   <Link
                     target="_blank"
-                    href="https://iqraa.straight-line.org/the-kings/01-the-project.../how-is-the-journey#id-12th-stage-keep-playing-learning-and-working-47-on-web3-for-the-king-and-so-on"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    href="https://docs.endhonesa.com/01-the-project.../how-is-the-journey#id-12th-stage-keep-playing-learning-and-working-47-on-web3-for-the-king-and-so-on"
+                    className="underline duration-500 hover:text-zinc-300">
                     The 12th Stage
                   </Link>{" "}
                   is in its continued execution. Enjoy the benefits from us, by
@@ -182,14 +184,15 @@ export default function OurProfile() {
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   <Link
                     href="/"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
-                    Prof. NOTA Inc.
+                    className="underline duration-500 hover:text-zinc-300">
+                    Prof. NOTA v11.11
                   </Link>
                 </p>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   ==== 47 =======
                 </p>
+
+                {/* Here will be a button to claim the receipt. */}
               </article>
             </Card>
           </div>
@@ -209,14 +212,15 @@ export default function OurProfile() {
                     </p>
                   </Link>
                 </div> */}
-                <div className="mt-4 md:mt-8 grid grid-cols-1">
-                  <Connected />
+
+                <div className="my-4 md:my-8 grid grid-cols-1">
+                  <AccessButton />
                 </div>
+
+                {account && <OurProducts />}
               </article>
             </Card>
           </div>
-
-          {account && <OurProducts />}
 
           <div className="w-full h-px bg-zinc-800" />
         </div>

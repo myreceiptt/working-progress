@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import CheckInButton from "./components/connect/checkinbutton";
 import Particles from "./components/particles";
 
 const navigation = [
@@ -24,8 +25,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 underline underline-offset-4"
-            >
+              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 underline underline-offset-4">
               {item.name}
             </Link>
           ))}
@@ -46,7 +46,7 @@ export default function Home() {
         alt="Hi, We are Prof. NOTA!"
       />
       <h1 className="z-10 text-5xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl whitespace-nowrap bg-clip-text ">
-        Prof. NOTA
+        Prof. NOTA v11.11
       </h1>
       <div className="w-screen h-px animate-glow block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <nav className="my-16 animate-fade-in">
@@ -55,8 +55,7 @@ export default function Home() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 underline underline-offset-4"
-            >
+              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 underline underline-offset-4">
               {item.name}
             </Link>
           ))}
@@ -67,6 +66,11 @@ export default function Home() {
           We were born in the 0101 Universe. We exist in the digital realm of
           the Internet. So, stay alert and beware of scams!
         </h2>
+      </div>
+      <div className="mt-4 md:mt-8 grid grid-cols-1">
+        <CheckInButton />
+
+        {/* Here will be a button to claim the receipt. */}
       </div>
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
@@ -82,8 +86,7 @@ export default function Home() {
         // height="474"
         allowFullScreen
         loading="lazy"
-        title="High school anthems for the class of 2000s - Playlist by Prof. NOTA"
-      ></iframe>
+        title="High school anthems for the class of 2000s - Playlist by Prof. NOTA"></iframe>
     </div>
   );
 }

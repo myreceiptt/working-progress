@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Connected from "../../components/connect";
+import Connected from "../../components/connect/accessbutton";
 import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
 import { useActiveAccount } from "thirdweb/react";
@@ -20,10 +20,10 @@ export default function SkateShopDotID() {
               <>
                 <div className="flex justify-between gap-2 items-center">
                   <span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
-                    <time dateTime={new Date("2024-08-29").toISOString()}>
+                    <time dateTime={new Date("2024-09-30").toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: "medium",
-                      }).format(new Date("2024-08-29"))}
+                      }).format(new Date("2024-09-30"))}
                     </time>
                   </span>
                   <span className="text-zinc-500 text-xs  flex items-center gap-1">
@@ -37,84 +37,55 @@ export default function SkateShopDotID() {
                   SKATESHOP.ID
                 </h1>
                 <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                  SKATESHOP in ENDHONESA or SKATESHOP.ID will bring you all the
-                  best skateboarding goods from 0101 Universe. So our
-                  skateboarding life will be free since we are anonymous. We
-                  will be a legion if we do not forgive and we do not forget.{" "}
+                  In The Story, skateboarding is a limitless vehicle on the
+                  surface of The Melting Land (0101). In Reality, that
+                  limitlessness manifests as SKATESHOP in ENDHONESA
+                  (SKATESHOP.ID): a production–distribution–retail chain that
+                  maintains the bridge between work ↔ body and story ↔ street.
+                </p>
+                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                  Each product item can contain artifacts/utilities recognized
+                  by ENDHONESA.COM (SBT claims, content access, or story lines).
+                </p>
+                <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                   <Link
-                    href="https://iqraa.straight-line.org/the-kings/04-the-12th-stage.../skateshop.id"
+                    href="https://docs.endhonesa.com/04-the-12th-stage.../skateshop.id"
                     target="_blank"
-                    className="underline duration-500 hover:text-zinc-300"
-                  >
+                    className="underline duration-500 hover:text-zinc-300">
                     ALL HAIL SKATEBOARDING!!!!
                   </Link>
                 </p>
-                <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-decimal">
+                <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-disc">
                   <li className="mt-2">
-                    Online skateboard shop multi-vendor.
+                    Main Site:
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Currencies for transaction using $HAIL, $OiOi, $NOTA,
-                        $POL, $XTZ, $ETH, $BTC, and FIAT with 7.4747% fee per
-                        transaction, and 47.4747% of the fee, per transaction,
-                        goes to the treasury.
+                        <code>https://skateshop.id</code>
                       </li>
                       <li className="mt-2 ml-4">
-                        Here is the URL link of the dApp:{" "}
-                        <Link
-                          href="https://shop.skateshop.id/"
-                          target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          SHOP.SKATESHOP.ID
-                        </Link>
+                        Explains what SKATESHOP.ID is and how it works, plus a
+                        Tenant Directory.
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
-                    Online skateboard shop development and operation.
+                    Tenant Sites:
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        In addition to being an online shop, we provide
-                        solutions for any skateboard shop in ENDHONESA for the
-                        development and operation of their online skateboard
-                        shop.
+                        <code>https://tenant.skateshop.id</code>
                       </li>
                       <li className="mt-2 ml-4">
-                        Min. fee per project only 999 $HAIL, or 1 $OiOi, or 909
-                        $NOTA, or 747 $POL, or 747 $XTZ, or 0.747 $ETH, and
-                        11.1111% of the fee, per project, goes to the treasury.
-                      </li>
-                      <li className="mt-2 ml-4">
-                        <Link
-                          href="/contact"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          Contact Prof. NOTA Inc.
-                        </Link>{" "}
-                        to talk about this with our online and offline
-                        firewalls.
+                        Each tenant has its own catalog, cart, checkout, and
+                        dashboard.
                       </li>
                     </ul>
                   </li>
                   <li className="mt-2">
-                    Subdomain provider for any online skateboard shop in
-                    ENDHONESA.
+                    SSO/SA-centric:
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        We will provide free subdomains for any online
-                        skateboard shop as our support, contribution, and
-                        dedication to this skateboarding community.
-                      </li>
-                      <li className="mt-2 ml-4">
-                        <Link
-                          href="/contact"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
-                          Contact Prof. NOTA Inc.
-                        </Link>{" "}
-                        to talk about this with our online and offline
-                        firewalls.
+                        Log in to SKATESHOP.ID using the same account as
+                        ENDHONESA.COM (Smart Account; EOA/Email can be linked).
                       </li>
                     </ul>
                   </li>
@@ -125,13 +96,14 @@ export default function SkateShopDotID() {
                 <div className="absolute bottom-4 md:bottom-8">
                   <Link
                     href="/profile#prodserv"
-                    className="hover:underline duration-500 hover:text-zinc-300"
-                  >
+                    className="hover:underline duration-500 hover:text-zinc-300">
                     <p className="block text-zinc-200 hover:text-zinc-50 text-sm">
                       <span aria-hidden="true">&larr;</span> Back to Profile
                     </p>
                   </Link>
                 </div>
+
+                {/* Here will be a button to claim the receipt. */}
               </>
             )}
           </article>

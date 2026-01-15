@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nota.straight-line.org"),
+  metadataBase: new URL("https://nota.endhonesa.com"),
   title: {
     template: "%s | Beware of Scams!", // Included on each child page
     default: "The Currencies for Prof. NOTA Inc.", // Title on each page
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
     "Only $HAIL, $OiOi, and $NOTA Fungible Tokens are valid for all activities.", // Description for each page
   // applicationName: "Prof. NOTA's Working Progress",
   authors: [
-    { name: "MyReceipt", url: "https://www.straight-line.org" },
-    { name: "Prof. NOTA", url: "https://prompt.straight-line.org" },
+    { name: "MyReceipt", url: "https://www.endhonesa.com" },
+    { name: "Prof. NOTA", url: "https://prompt.endhonesa.com" },
   ],
   // manifest: "/manifest.webmanifest",
   // generator: "Breads Factory",
@@ -60,18 +60,18 @@ export const metadata: Metadata = {
     title: "The Currencies for Prof. NOTA Inc.", // Title on each page
     description:
       "Only $HAIL, $OiOi, and $NOTA Fungible Tokens are valid for all activities.", // Description on each page
-    url: "https://nota.straight-line.org/profile/currencies", // URL for each page
+    url: "https://nota.endhonesa.com/profile/currencies", // URL for each page
     siteName: "Prof. NOTA's Working Progress",
     locale: "en-US",
     images: [
       {
-        url: "https://nota.straight-line.org/images/the-currencies-for-prof-nota-inc.jpg", // Must be an absolute URL
+        url: "https://nota.endhonesa.com/images/the-currencies-for-prof-nota-inc.jpg", // Must be an absolute URL
         width: 1920,
         height: 1080,
         alt: "The Currencies of ENDHONESA the Only Country", // Alternate text for image
       },
       {
-        url: "https://nota.straight-line.org/images/the-currencies-for-prof-nota-inc.jpg", // Must be an absolute URL
+        url: "https://nota.endhonesa.com/images/the-currencies-for-prof-nota-inc.jpg", // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: "The Currencies of ENDHONESA the Only Country", // Alternate text for image
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     ],
     videos: [
       {
-        url: "https://nota.straight-line.org/video/images/the-currencies-for-prof-nota-inc.mp4", // Must be an absolute URL
+        url: "https://nota.endhonesa.com/video/images/the-currencies-for-prof-nota-inc.mp4", // Must be an absolute URL
         width: 800,
         height: 600,
       },
@@ -97,7 +97,7 @@ export const metadata: Metadata = {
     description:
       "Hi, X People! Only $HAIL, $OiOi, and $NOTA Fungible Tokens are valid for all activities.", // Description on each page
     images: [
-      "https://nota.straight-line.org/images/the-currencies-for-prof-nota-inc.jpg",
+      "https://nota.endhonesa.com/images/the-currencies-for-prof-nota-inc.jpg",
     ], // Must be an absolute URL
   },
   // icons: {

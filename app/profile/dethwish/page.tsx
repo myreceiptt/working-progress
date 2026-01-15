@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Connected from "../../components/connect";
+import Connected from "../../components/connect/accessbutton";
 import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
 import { useActiveAccount } from "thirdweb/react";
@@ -50,10 +50,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-1/21.-deth-wish"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/21.-deth-wish"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -69,10 +68,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/13.-2nd-deth-wish"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/13.-2nd-deth-wish"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           2nd /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -83,15 +81,22 @@ export default function OurDethWish() {
                     3rd /ˈdeTH ˌwiSH/, the third collection.
                     <ul className="list-disc">
                       <li className="mt-2 ml-4">
-                        Too early now for this third collection.
+                        Will be released soon on BASE, but too early now for
+                        this third collection. Stay tune and{" "}
+                        <Link
+                          href="https://base.app/profile/endhonesa.eth?tab=posts"
+                          target="_blank"
+                          className="underline duration-500 hover:text-zinc-300">
+                          follow Prof. NOTA in Base App
+                        </Link>
+                        .
                       </li>
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/12.-3rd-deth-wish"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/12.-3rd-deth-wish"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           3rd /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -107,10 +112,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/11.-4th-deth-wish"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/11.-4th-deth-wish"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           4th /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -126,10 +130,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/10.-5th-deth-wish"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/10.-5th-deth-wish"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           5th /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -145,10 +148,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/09.-6th-deth-wish"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/09.-6th-deth-wish"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           6th /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -164,10 +166,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/08.-deth-wish-x"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/08.-deth-wish-x"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           /ˈdeTH ˌwiSH/ -X- on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -183,10 +184,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/07.-deth-wish-y"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/07.-deth-wish-y"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           /ˈdeTH ˌwiSH/ -Y- on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -202,10 +202,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/06.-deth-wish-z"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/06.-deth-wish-z"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           /ˈdeTH ˌwiSH/ -Z- on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -221,10 +220,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/05.-deth-wish-body"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/05.-deth-wish-body"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           /ˈdeTH ˌwiSH/ BODY on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -240,10 +238,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/04.-deth-wish-mind"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/04.-deth-wish-mind"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           /ˈdeTH ˌwiSH/ MIND on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -259,10 +256,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/03.-deth-wish-hearth"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/03.-deth-wish-hearth"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           /ˈdeTH ˌwiSH/ HEARTH on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -278,10 +274,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/02.-deth-wish-soul"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/02.-deth-wish-soul"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           /ˈdeTH ˌwiSH/ SOUL on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -297,10 +292,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/01.-last-deth-wish"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/01.-last-deth-wish"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           LAST /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -316,10 +310,9 @@ export default function OurDethWish() {
                       <li className="mt-2 ml-4">
                         Release information:{" "}
                         <Link
-                          href="https://iqraa.straight-line.org/the-kings/02-the-creations.../waivfves-2/00.-final-deth-wish"
+                          href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/00.-final-deth-wish"
                           target="_blank"
-                          className="underline duration-500 hover:text-zinc-300"
-                        >
+                          className="underline duration-500 hover:text-zinc-300">
                           FINAL /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
                         </Link>
                         .
@@ -333,13 +326,14 @@ export default function OurDethWish() {
                 <div className="absolute bottom-4 md:bottom-8">
                   <Link
                     href="/profile#prodserv"
-                    className="hover:underline duration-500 hover:text-zinc-300"
-                  >
+                    className="hover:underline duration-500 hover:text-zinc-300">
                     <p className="block text-zinc-200 hover:text-zinc-50 text-sm">
                       <span aria-hidden="true">&larr;</span> Back to Profile
                     </p>
                   </Link>
                 </div>
+
+                {/* Here will be a button to claim the receipt. */}
               </>
             )}
           </article>
