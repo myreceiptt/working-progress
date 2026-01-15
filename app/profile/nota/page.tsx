@@ -10,10 +10,10 @@ export default function ProfessorNOTA() {
 
   return (
     <div className="px-6 pt-20 pb-10 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
-      <div className="w-full mx-auto lg:mx-0">
+      <div className="grid grid-cols-1 mx-auto">
         <Card>
           <article className="relative w-full h-full p-4 md:p-8">
-            <div className="mt-b md:mb-8 grid grid-cols-1">
+            <div className="my-4 md:my-8 grid grid-cols-1">
               <Connected />
             </div>
             {account && (
