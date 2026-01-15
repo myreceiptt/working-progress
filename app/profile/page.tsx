@@ -1,13 +1,13 @@
 "use client";
+import { Eye } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { useActiveAccount } from "thirdweb/react";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
-import { Eye } from "lucide-react";
 import AccessButton from "../components/connect/accessbutton";
 import OurProducts from "../components/products";
-import { useActiveAccount } from "thirdweb/react";
 
 export default function OurProfile() {
   const account = useActiveAccount();
