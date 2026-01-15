@@ -13,7 +13,7 @@ export const Footer: React.FC<Props> = ({ views }) => {
   return (
     <footer
       ref={ref}
-      className="relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black"
+      className="relative isolate overflow-hidden bg-linear-to-tl from-black via-zinc-900 to-black"
     >
       <div
         className={`fixed inset-x-0 bottom-0 z-50 backdrop-blur duration-200 border-t-2 ${

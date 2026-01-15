@@ -137,8 +137,7 @@ export default function RootLayout({
       <body
         className={`bg-black ${
           process.env.NODE_ENV === "development" ? "debug-screens" : undefined
-        }`}
-      >
+        }`}>
         <ThirdwebProvider>{children}</ThirdwebProvider>
       </body>
     </html>
