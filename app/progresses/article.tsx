@@ -1,4 +1,4 @@
-import type { Progress } from "@/.contentlayer/generated";
+import type { Progress } from "@/lib/content";
 import Link from "next/link";
 import { Eye } from "lucide-react";
 

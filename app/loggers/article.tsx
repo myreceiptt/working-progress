@@ -1,4 +1,4 @@
-import type { Logger } from "@/.contentlayer/generated";
+import type { Logger } from "@/lib/content";
 import Link from "next/link";
 import { Eye } from "lucide-react";
 

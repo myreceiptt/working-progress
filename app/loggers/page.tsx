@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { allLoggers } from "contentlayer/generated";
+import { getAllLoggers } from "@/lib/content";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
@@ -12,6 +12,7 @@ const redis = Redis.fromEnv();
 
 export const revalidate = 60;
 export default async function LoggersPage() {
+  const allLoggers = await getAllLoggers();
   const views = (
     await redis.mget<number[]>(
       ...allLoggers.map((p) => ["pageviews", "loggers", p.slug].join(":"))

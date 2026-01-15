@@ -1,4 +1,4 @@
-import type { Story } from "@/.contentlayer/generated";
+import type { Story } from "@/lib/content";
 import Link from "next/link";
 import { Eye } from "lucide-react";
 

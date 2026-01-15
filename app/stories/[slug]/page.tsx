@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { allStories } from "contentlayer/generated";
+import { getAllStories, getStoryBySlug } from "@/lib/content";
 import { Mdx } from "@/app/components/mdx";
 import { Header } from "./header";
 import { Footer } from "./footer";
@@ -18,6 +18,7 @@ type Props = {
 const redis = Redis.fromEnv();
 
 export async function generateStaticParams(): Promise<Props["params"][]> {
+  const allStories = await getAllStories();
   return allStories
     .filter((p) => p.published)
     .map((p) => ({
@@ -26,8 +27,8 @@ export async function generateStaticParams(): Promise<Props["params"][]> {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const slug = params?.slug;
-  const story = allStories.find((story) => story.slug === slug);
+  const { slug } = params;
+  const story = await getStoryBySlug(slug);
 
   if (!story) {
     notFound();
@@ -144,8 +145,8 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function PostPage({ params }: Props) {
-  const slug = params?.slug;
-  const story = allStories.find((story) => story.slug === slug);
+  const { slug } = params;
+  const story = await getStoryBySlug(slug);
 
   if (!story) {
     notFound();
@@ -160,7 +161,7 @@ export default async function PostPage({ params }: Props) {
       <ReportView slug={story.slug} />
 
       <article className="px-4 pt-12 pb-24 mx-auto prose prose-zinc prose-quoteless">
-        <Mdx code={story.body.code} />
+        <Mdx source={story.body} />
       </article>
       <Footer views={views} />
     </div>
