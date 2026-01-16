@@ -27,7 +27,7 @@ export async function generateStaticParams(): Promise<Props["params"][]> {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const { slug } = params;
+  const { slug } = await params;
   const story = await getStoryBySlug(slug);
 
   if (!story) {
@@ -145,7 +145,7 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function PostPage({ params }: Props) {
-  const { slug } = params;
+  const { slug } = await params;
   const story = await getStoryBySlug(slug);
 
   if (!story) {
@@ -160,7 +160,7 @@ export default async function PostPage({ params }: Props) {
       <Header story={story} views={views} />
       <ReportView slug={story.slug} />
 
-      <article className="px-4 pt-12 pb-24 mx-auto prose prose-zinc prose-quoteless">
+      <article className="px-4 pt-12 pb-24 mx-auto max-w-4xl prose prose-zinc prose-quoteless">
         <Mdx source={story.body} />
       </article>
       <Footer views={views} />

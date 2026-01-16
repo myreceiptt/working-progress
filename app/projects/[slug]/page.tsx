@@ -27,7 +27,7 @@ export async function generateStaticParams(): Promise<Props["params"][]> {
 }
 
 export async function generateMetadata({ params }: Props) {
-  const { slug } = params;
+  const { slug } = await params;
   const project = await getProjectBySlug(slug);
 
   if (!project) {
@@ -147,7 +147,7 @@ export async function generateMetadata({ params }: Props) {
 }
 
 export default async function PostPage({ params }: Props) {
-  const { slug } = params;
+  const { slug } = await params;
   const project = await getProjectBySlug(slug);
 
   if (!project) {
@@ -162,7 +162,7 @@ export default async function PostPage({ params }: Props) {
       <Header project={project} views={views} />
       <ReportView slug={project.slug} />
 
-      <article className="px-4 pt-12 pb-24 mx-auto prose prose-zinc prose-quoteless">
+      <article className="px-4 pt-12 pb-24 mx-auto max-w-4xl prose prose-zinc prose-quoteless">
         <Mdx source={project.body} />
       </article>
       <Footer views={views} />
