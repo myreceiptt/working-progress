@@ -47,7 +47,7 @@ export default function AccessButton() {
       }}
       detailsButton={{
         connectedAccountAvatarUrl: "/1.21.jpeg",
-        connectedAccountName: "Hello, Prof. NOTA!",
+        connectedAccountName: "OiOi, Prof. NOTA!",
         displayBalanceToken: {
           [base.id]: "0xa3c0d70358eb07c7b8f879a7bb3a4340ac6c4c8f",
         },
