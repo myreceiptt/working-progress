@@ -64,7 +64,7 @@ export default function BreadsFactory() {
                 </Link>{" "}
                 is a factory that produces Programmed Bread (tokenized assets)
                 with a Framework of Playing, Learning, and Working or PLW.
-                Here's what's trying to be provided and built in:
+                Here&apos;s what&apos;s trying to be provided and built in:
               </p>
               <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-decimal">
                 <li className="mt-2">

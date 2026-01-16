@@ -48,7 +48,7 @@ export default async function ProgressesPage() {
             Version Control
           </h2>
           <p className="mt-4 text-zinc-400">
-            It's our version progress. It's our working progress, not our work
+            It&apos;s our version progress. It&apos;s our working progress, not our work
             in progress.
           </p>
         </div>

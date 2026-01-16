@@ -57,7 +57,7 @@ export default function ENDHONESAdotCom() {
               </h1>
               <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                 One domain, four halls. All woven from The Library as the source
-                of truth that "feeds" the other three halls: The Chronicle, The
+                of truth that &quot;feeds&quot; the other three halls: The Chronicle, The
                 Works, and The Market. All trade would always proceed properly
                 and as well as possible according to the resulting revenue and
                 formed value by respective residents of{" "}
@@ -75,7 +75,7 @@ export default function ENDHONESAdotCom() {
                   <ul className="list-disc">
                     <li className="mt-2 ml-4">
                       The canonical portal on ENDHONESA (Network‑State), Prof.
-                      NOTA Inc.'s form of government, and Government (47 HFP) —
+                      NOTA Inc.&apos;s form of government, and Government (47 HFP) —
                       complete with house rules, ethics, and official narratives
                       that always refer to The Library.
                     </li>
@@ -132,7 +132,7 @@ export default function ENDHONESAdotCom() {
                   The Library — Archives & Sources (GitHub/GitBook‑sync)
                   <ul className="list-disc">
                     <li className="mt-2 ml-4">
-                      Markdown Warehouse: The KING’s NFTs Project, SOPs, drafts,
+                      Markdown Warehouse: The KING&apos;s NFTs Project, SOPs, drafts,
                       educational materials, research, Breads Factory releases,
                       partner working documents, and more. This is the reference
                       center; the other three halls always link back to it.

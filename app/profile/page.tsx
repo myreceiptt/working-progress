@@ -103,7 +103,7 @@ export default function OurProfile() {
                     target="_blank"
                     href="https://docs.endhonesa.com/01-the-project.../how-is-the-journey#id-7th-stage-the-sanctuary-of-the-kings-world-postponed"
                     className="underline duration-500 hover:text-zinc-300">
-                    The KING’s World
+                    The KING&apos;s World
                   </Link>{" "}
                   to execute{" "}
                   <Link
@@ -165,7 +165,7 @@ export default function OurProfile() {
                 <p className="my-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   But, we have many things to do and complete. All require our
                   hard work, smart work, and of course, our energy and time. So,
-                  expect us, and please stay alert! Beware of scams! Let's hack
+                  expect us, and please stay alert! Beware of scams! Let&apos;s hack
                   them all, ethically!
                 </p>
                 <Image

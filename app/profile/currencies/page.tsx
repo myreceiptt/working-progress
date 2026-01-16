@@ -80,7 +80,7 @@ export default function TheCurrencies() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/polygon-usdoioi-fts"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        Polygon $OiOi on GitBook of The KING's NFTs
+                        Polygon $OiOi on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -100,7 +100,7 @@ export default function TheCurrencies() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/tezos-usdhail-fts"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        Tezos $HAIL on GitBook of The KING's NFTs
+                        Tezos $HAIL on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -120,7 +120,7 @@ export default function TheCurrencies() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/tezos-usdoioi-fts"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        Tezos $OiOi on GitBook of The KING's NFTs
+                        Tezos $OiOi on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -140,7 +140,7 @@ export default function TheCurrencies() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/tezos-usdnota-fts"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        Tezos $NOTA on GitBook of The KING's NFTs
+                        Tezos $NOTA on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -160,7 +160,7 @@ export default function TheCurrencies() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/ethereum-usdoioi-fts"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        Ethereum L2 $OiOi on GitBook of The KING's NFTs
+                        Ethereum L2 $OiOi on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
