@@ -40,7 +40,7 @@ const products = [
     // href: "#prodserv",
     label: "Prof. NOTA",
     handle: "Professor NOTA",
-    status: "Active (LTS))",
+    status: "Active (LTS)",
   },
   {
     icon: <Factory size={20} />,
@@ -62,7 +62,7 @@ const products = [
 
 export default function OurProducts() {
   return (
-    <div className="grid grid-cols-1 gap-4 md:gap-8 mx-auto md:grid-cols-3">
+    <div className="relative w-full h-full pt-4 md:pt-8 grid grid-cols-1 gap-4 md:gap-8 mx-auto md:grid-cols-3">
       {products.map((s) => (
         <Card key={s.label}>
           <Link

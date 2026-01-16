@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { getAllLoggers } from "@/lib/content";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
@@ -57,8 +56,7 @@ export default async function LoggersPage() {
             Glitchy records of our events occurring in{" "}
             <Link
               href="#"
-              className="underline duration-500 hover:text-zinc-300"
-            >
+              className="underline duration-500 hover:text-zinc-300">
               0101 Universe
             </Link>
             ...
@@ -91,8 +89,7 @@ export default async function LoggersPage() {
                 </div>
                 <h2
                   id="featured-post"
-                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
-                >
+                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
                   {featured.title}
                 </h2>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
@@ -173,8 +170,7 @@ export default async function LoggersPage() {
                 </div>
                 <h2
                   id="running-post"
-                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
-                >
+                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
                   {running.title}
                 </h2>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">

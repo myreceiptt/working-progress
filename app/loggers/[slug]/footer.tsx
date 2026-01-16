@@ -13,15 +13,13 @@ export const Footer: React.FC<Props> = ({ views }) => {
   return (
     <footer
       ref={ref}
-      className="relative isolate overflow-hidden bg-linear-to-tl from-black via-zinc-900 to-black"
-    >
+      className="relative isolate overflow-hidden bg-linear-to-tl from-black via-zinc-900 to-black">
       <div
         className={`fixed inset-x-0 bottom-0 z-50 backdrop-blur duration-200 border-t-2 ${
           isIntersecting
             ? "bg-white/10 border-zinc-800"
             : "bg-zinc-900/0 border-transparent"
-        }`}
-      >
+        }`}>
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <Link
             href="/loggers"
@@ -29,8 +27,7 @@ export const Footer: React.FC<Props> = ({ views }) => {
               isIntersecting
                 ? "text-zinc-600 hover:text-zinc-900"
                 : "text-zinc-400 hover:text-zinc-100"
-            } `}
-          >
+            } `}>
             <ArrowLeft className="w-6 h-6 " />
           </Link>
 
@@ -41,8 +38,7 @@ export const Footer: React.FC<Props> = ({ views }) => {
                 isIntersecting
                   ? "text-zinc-600 hover:text-zinc-900"
                   : "text-zinc-400 hover:text-zinc-100"
-              } `}
-            >
+              } `}>
               <Eye className="w-5 h-5" />{" "}
               {Intl.NumberFormat("en-US", { notation: "compact" }).format(
                 views
@@ -57,7 +53,7 @@ export const Footer: React.FC<Props> = ({ views }) => {
                 } `}
               />
             </Link>
-            <Link target="_blank" href="mailto:nota@straight-line.org">
+            <Link target="_blank" href="mailto:nota@endhonesa.com">
               <Mail
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
