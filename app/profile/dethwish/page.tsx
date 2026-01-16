@@ -71,7 +71,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-1/21.-deth-wish"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        /ˈdeTH ˌwiSH/ on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -89,7 +89,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/13.-2nd-deth-wish"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        2nd /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        2nd /ˈdeTH ˌwiSH/ on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -115,7 +115,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/12.-3rd-deth-wish"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        3rd /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        3rd /ˈdeTH ˌwiSH/ on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -133,7 +133,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/11.-4th-deth-wish"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        4th /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        4th /ˈdeTH ˌwiSH/ on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -151,7 +151,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/10.-5th-deth-wish"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        5th /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        5th /ˈdeTH ˌwiSH/ on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -169,7 +169,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/09.-6th-deth-wish"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        6th /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        6th /ˈdeTH ˌwiSH/ on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -187,7 +187,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/08.-deth-wish-x"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        /ˈdeTH ˌwiSH/ -X- on GitBook of The KING's NFTs
+                        /ˈdeTH ˌwiSH/ -X- on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -205,7 +205,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/07.-deth-wish-y"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        /ˈdeTH ˌwiSH/ -Y- on GitBook of The KING's NFTs
+                        /ˈdeTH ˌwiSH/ -Y- on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -223,7 +223,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/06.-deth-wish-z"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        /ˈdeTH ˌwiSH/ -Z- on GitBook of The KING's NFTs
+                        /ˈdeTH ˌwiSH/ -Z- on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -241,7 +241,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/05.-deth-wish-body"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        /ˈdeTH ˌwiSH/ BODY on GitBook of The KING's NFTs
+                        /ˈdeTH ˌwiSH/ BODY on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -259,7 +259,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/04.-deth-wish-mind"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        /ˈdeTH ˌwiSH/ MIND on GitBook of The KING's NFTs
+                        /ˈdeTH ˌwiSH/ MIND on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -277,7 +277,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/03.-deth-wish-hearth"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        /ˈdeTH ˌwiSH/ HEARTH on GitBook of The KING's NFTs
+                        /ˈdeTH ˌwiSH/ HEARTH on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -295,7 +295,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/02.-deth-wish-soul"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        /ˈdeTH ˌwiSH/ SOUL on GitBook of The KING's NFTs
+                        /ˈdeTH ˌwiSH/ SOUL on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -313,7 +313,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/01.-last-deth-wish"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        LAST /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        LAST /ˈdeTH ˌwiSH/ on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>
@@ -331,7 +331,7 @@ export default function OurDethWish() {
                         href="https://docs.endhonesa.com/02-the-creations.../waivfves-2/00.-final-deth-wish"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        FINAL /ˈdeTH ˌwiSH/ on GitBook of The KING's NFTs
+                        FINAL /ˈdeTH ˌwiSH/ on GitBook of The KING&apos;s NFTs
                       </Link>
                       .
                     </li>

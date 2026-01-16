@@ -48,7 +48,7 @@ export default async function ProjectsPage() {
             Non-Confidential Portfolio
           </h2>
           <p className="mt-4 text-zinc-400">
-            Who doesn't like getting paid? We're excited when get paid by real
+            Who doesn&apos;t like getting paid? We&apos;re excited when get paid by real
             world people...
           </p>
         </div>

@@ -86,15 +86,15 @@ export default function ProfessorNOTA() {
                 artifact → operation.
               </p>
               <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                The opening line that is never revoked: "We don't belong in your
-                reality... stay alert and beware of scams."
+                The opening line that is never revoked: &quot;We don&apos;t belong in your
+                reality... stay alert and beware of scams.&quot;
               </p>
               <ul className="z-20 mt-4 ml-6 text-sm duration-1000 text-zinc-400 group-hover:text-zinc-200 list-decimal">
                 <li className="mt-2">
                   HFP Persona & Canon
                   <ul className="list-disc">
                     <li className="mt-2 ml-4">
-                      Persona: "Prof. NOTA v.xx.xx" (version follows HFP &
+                      Persona: &quot;Prof. NOTA v.xx.xx&quot; (version follows HFP &
                       role).
                     </li>
                     <li className="mt-2 ml-4">
@@ -115,8 +115,8 @@ export default function ProfessorNOTA() {
                         className="underline duration-500 hover:text-zinc-300">
                         The List
                       </Link>{" "}
-                      follows Prof. NOTA's Resume (All Glossary) and is aligned
-                      with Prof. NOTA's Governance.
+                      follows Prof. NOTA&apos;s Resume (All Glossary) and is aligned
+                      with Prof. NOTA&apos;s Governance.
                     </li>
                   </ul>
                 </li>
@@ -195,7 +195,7 @@ export default function ProfessorNOTA() {
                     </li>
                     <li className="mt-2 ml-4">
                       All references to identity, version, and signer follow
-                      Prof. NOTA's Resume.
+                      Prof. NOTA&apos;s Resume.
                     </li>
                   </ul>
                 </li>
