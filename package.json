@@ -30,11 +30,12 @@
     "rehype-slug": "^6.0.0",
     "remark-gfm": "3.0.1",
     "shiki": "3.21.0",
-    "thirdweb": "^5.117.1",
+    "thirdweb": "^5.117.2",
     "typescript": "^5.9.3",
     "webpack": "^5.104.1"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@opentelemetry/api": "1.4.1",
     "@tailwindcss/line-clamp": "^0.4.4",
     "@tailwindcss/postcss": "4.1.18",
@@ -43,7 +44,6 @@
     "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
     "autoprefixer": "^10.4.23",
-    "@eslint/eslintrc": "^3.3.1",
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.1.2",
     "postcss": "^8.5.6",
