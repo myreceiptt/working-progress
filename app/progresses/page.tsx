@@ -110,7 +110,15 @@ export default async function ProgressesPage() {
 
         <div className="w-full h-px bg-zinc-800" />
 
-        <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 mx-auto md:hidden">
+          {sorted.map((progress) => (
+            <Card key={progress.slug}>
+              <Article progress={progress} views={views[progress.slug] ?? 0} />
+            </Card>
+          ))}
+        </div>
+
+        <div className="hidden md:grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
           <div className="grid grid-cols-1 gap-4">
             {sorted
               .filter((_, i) => i % 3 === 0)
@@ -148,7 +156,7 @@ export default async function ProgressesPage() {
               ))}
           </div>
         </div>
-        
+
         <div className="w-full h-px bg-zinc-800" />
       </div>
       <BottomNavigation />
