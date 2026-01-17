@@ -33,7 +33,7 @@ export const Footer: React.FC<Props> = ({ views }) => {
             <Link target="_blank" href="https://github.com/myreceiptt">
               <GitBranch className="w-6 h-6 duration-200 hover:font-medium text-zinc-600 hover:text-zinc-900" />
             </Link>
-            <Link target="_blank" href="mailto:nota@straight-line.org">
+            <Link target="_blank" href="mailto:nota@endhonesa.com">
               <Mail className="w-6 h-6 duration-200 hover:font-medium text-zinc-600 hover:text-zinc-900" />
             </Link>
             <Link target="_blank" href="https://twitter.com/MyReceiptTT">

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	viewBox="0 0 200 200">
+	<defs>
+		<radialGradient id="bgGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+			<stop offset="0%" style="stop-color:rgb(111,111,111);stop-opacity:1" />
+			<stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:1" />
+		</radialGradient>
+	</defs>
+	<rect width="200" height="200" fill="url(#bgGradient)" />
+	<g id="spinGroup" transform-origin="100 100">
+		<circle cx="100" cy="100" r="50" fill="none" stroke="white" stroke-width="4"
+			stroke-dasharray="5, 10" />
+		<animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0"
+			dur="74s" repeatCount="indefinite" />
+	</g>
+	<g id="spinGroup" transform-origin="100 100">
+		<circle cx="100" cy="100" r="30" fill="rgba(255,255,255,0.3)" stroke="white"
+			stroke-width="2" />
+		<line x1="130.0" y1="100.0" x2="160.0" y2="100.0" stroke="white" stroke-width="1" />
+		<line x1="128.97777650567028" y1="107.76456494514815" x2="157.95555301134056"
+			y2="115.5291298902963" stroke="white" stroke-width="1" />
+		<line x1="125.9807687475051" y1="114.99998850961767" x2="151.9615374950102"
+			y2="129.99997701923533" stroke="white" stroke-width="1" />
+		<line x1="121.21321750837679" y1="121.21318936280673" x2="142.42643501675357"
+			y2="142.42637872561346" stroke="white" stroke-width="1" />
+		<line x1="115.00002298075586" y1="125.98074884557403" x2="130.00004596151172"
+			y2="151.96149769114805" stroke="white" stroke-width="1" />
+		<line x1="107.7646033927073" y1="128.97776620365963" x2="115.5292067854146"
+			y2="157.95553240731925" stroke="white" stroke-width="1" />
+		<line x1="100.0000398038469" y1="129.9999999999736" x2="100.0000796076938"
+			y2="159.9999999999472" stroke="white" stroke-width="1" />
+		<line x1="92.23547350242467" y1="128.9777868076299" x2="84.47094700484934"
+			y2="157.95557361525982" stroke="white" stroke-width="1" />
+		<line x1="85.00004596154692" y1="125.98078864939043" x2="70.00009192309385"
+			y2="151.96157729878087" stroke="white" stroke-width="1" />
+		<line x1="78.78683878280069" y1="121.21324565390951" x2="57.573677565601365"
+			y2="142.42649130781902" stroke="white" stroke-width="1" />
+		<line x1="74.01927105640277" y1="115.00005745186763" x2="48.03854211280555"
+			y2="130.00011490373527" stroke="white" stroke-width="1" />
+		<line x1="71.02224409840204" y1="107.76464184025278" x2="42.04448819680407"
+			y2="115.52928368050556" stroke="white" stroke-width="1" />
+		<line x1="70.00000000010562" y1="100.0000796076938" x2="40.000000000211244"
+			y2="100.0001592153876" stroke="white" stroke-width="1" />
+		<line x1="71.02220289046146" y1="92.23551195001116" x2="42.04440578092291"
+			y2="84.47102390002232" stroke="white" stroke-width="1" />
+		<line x1="74.01919144876996" y1="85.00008043273792" x2="48.03838289753992"
+			y2="70.00016086547583" stroke="white" stroke-width="1" />
+		<line x1="78.78672620059513" y1="78.78686692844542" x2="57.57345240119025"
+			y2="57.57373385689084" stroke="white" stroke-width="1" />
+		<line x1="84.99990807704698" y1="74.01929095842533" x2="69.99981615409398"
+			y2="48.03858191685066" stroke="white" stroke-width="1" />
+		<line x1="92.23531971221541" y1="71.0222544005147" x2="84.47063942443081"
+			y2="42.04450880102941" stroke="white" stroke-width="1" />
+		<line x1="99.99988058845929" y1="70.00000000023765" x2="99.99976117691857"
+			y2="40.0000000004753" stroke="white" stroke-width="1" />
+		<line x1="107.76444960238868" y1="71.02219258860384" x2="115.52889920477736"
+			y2="42.04438517720768" stroke="white" stroke-width="1" />
+		<line x1="114.9998850960447" y1="74.0191715469761" x2="129.9997701920894"
+			y2="48.0383430939522" stroke="white" stroke-width="1" />
+		<line x1="121.21310492587249" y1="78.7866980551371" x2="142.42620985174497"
+			y2="57.573396110274174" stroke="white" stroke-width="1" />
+		<line x1="125.9806891395064" y1="84.99987360598803" x2="151.9613782790128"
+			y2="69.99974721197607" stroke="white" stroke-width="1" />
+		<line x1="128.9777352973216" y1="92.23528126469725" x2="157.9554705946432"
+			y2="84.4705625293945" stroke="white" stroke-width="1" />
+		<animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0"
+			dur="47s" repeatCount="indefinite" />
+	</g>
+	<circle cx="11" cy="174" r="7" fill="#999999" opacity="0.8">
+		<animate
+			attributeName="fill-opacity"
+			from="1"
+			to="0"
+			dur="1s"
+			repeatCount="indefinite" />
+	</circle>
+	<circle cx="147" cy="47" r="9" fill="#888888" opacity="0.8">
+		<animate
+			attributeName="fill-opacity"
+			from="1"
+			to="0"
+			dur="1.11s"
+			repeatCount="indefinite" />
+	</circle>
+	<circle cx="40" cy="112" r="14" fill="green" opacity="0.8" />
+	<circle cx="27" cy="95" r="6" fill="yellow" opacity="0.8" />
+	<circle cx="122" cy="172" r="14" fill="purple" opacity="0.8" />
+
+	<circle cx="79" cy="165" r="11" fill="blue" opacity="0.8" />
+	<circle cx="58" cy="87" r="8" fill="green" opacity="0.8" />
+	<circle cx="30" cy="63" r="14" fill="green" opacity="0.8" />
+	<circle cx="62" cy="152" r="13" fill="red" opacity="0.8" />
+	<g id="counterSpinGroup" transform-origin="100 100">
+		<circle cx="109" cy="99" r="5" fill="#000000" opacity="0.8" />
+		<circle cx="139" cy="98" r="30" fill="none" stroke="red" stroke-width="2" />
+		<animateTransform attributeName="transform" type="rotate" from="0 9 -1" to="360 9 -1"
+			dur="11s" repeatCount="indefinite" />
+	</g>
+</svg>

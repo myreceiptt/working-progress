@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { getAllStories } from "@/lib/content";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
@@ -11,7 +10,6 @@ import { Eye } from "lucide-react";
 const redis = Redis.fromEnv();
 
 export const revalidate = 60;
-
 export default async function StoriesPage() {
   const allStories = await getAllStories();
   const views = (
@@ -23,9 +21,10 @@ export default async function StoriesPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allStories.find((story) => story.slug === "0002")!;
-  const top2 = allStories.find((story) => story.slug === "0001")!;
-  const top3 = allStories.find((story) => story.slug === "0000")!;
+  const featured = allStories.find((story) => story.slug === "0007")!;
+  const top2 = allStories.find((story) => story.slug === "0006")!;
+  const top3 = allStories.find((story) => story.slug === "0005")!;
+
   const sorted = allStories
     .filter((p) => p.published)
     .filter(
@@ -44,7 +43,7 @@ export default async function StoriesPage() {
     <div className="relative pb-16">
       <Navigation />
       <div className="px-6 pt-20 pb-10 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
-        <div className="max-w-2xl mx-auto lg:mx-0">
+        <div className="max-w-2xl mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
             0101 Collection
           </h2>
@@ -58,6 +57,7 @@ export default async function StoriesPage() {
             . These are our origin receipts...
           </p>
         </div>
+
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-4 md:gap-8 mx-auto lg:grid-cols-2 ">
@@ -109,9 +109,18 @@ export default async function StoriesPage() {
             ))}
           </div>
         </div>
-        <div className="hidden w-full h-px md:block bg-zinc-800" />
 
-        <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
+        <div className="w-full h-px bg-zinc-800" />
+
+        <div className="grid grid-cols-1 gap-4 mx-auto md:hidden">
+          {sorted.map((story) => (
+            <Card key={story.slug}>
+              <Article story={story} views={views[story.slug] ?? 0} />
+            </Card>
+          ))}
+        </div>
+
+        <div className="hidden md:grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
           <div className="grid grid-cols-1 gap-4">
             {sorted
               .filter((_, i) => i % 3 === 0)
@@ -140,6 +149,7 @@ export default async function StoriesPage() {
               ))}
           </div>
         </div>
+
         <div className="w-full h-px bg-zinc-800" />
       </div>
       <BottomNavigation />

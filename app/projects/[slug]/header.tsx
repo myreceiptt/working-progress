@@ -78,7 +78,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
                 } `}
               />
             </Link>
-            <Link target="_blank" href="mailto:nota@straight-line.org">
+            <Link target="_blank" href="mailto:nota@endhonesa.com">
               <Mail
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
