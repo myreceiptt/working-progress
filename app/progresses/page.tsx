@@ -21,9 +21,9 @@ export default async function ProgressesPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProgresses.find((progress) => progress.slug === "7.74")!;
-  const top2 = allProgresses.find((progress) => progress.slug === "7.47")!;
-  const top3 = allProgresses.find((progress) => progress.slug === "4.74")!;
+  const featured = allProgresses.find((progress) => progress.slug === "running")!;
+  const top2 = allProgresses.find((progress) => progress.slug === "7.77")!;
+  const top3 = allProgresses.find((progress) => progress.slug === "7.74")!;
 
   const sorted = allProgresses
     .filter((p) => p.published)
