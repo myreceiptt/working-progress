@@ -6,6 +6,7 @@ import { Footer } from "./footer";
 import "../../components/mdx.css";
 import { ReportView } from "../../../util/view";
 import { Redis } from "@upstash/redis";
+import TinyWrapper from "./tiny-wrapper";
 
 export const revalidate = 60;
 
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: Props) {
   // const publishedAt = new Date(project.date:).toISOString();
 
   return {
-    metadataBase: new URL("https://nota.straight-line.org"),
+    metadataBase: new URL("https://nota.endhonesa.com"),
     title: {
       template: "%s | Beware of Scams!", // Included on each child page
       default: "Log of " + logger.title, // Title on each page
@@ -46,8 +47,8 @@ export async function generateMetadata({ params }: Props) {
     description: logger.description, // Description for each page
     // applicationName: "Prof. NOTA's Working Progress",
     authors: [
-      { name: "MyReceipt", url: "https://www.straight-line.org" },
-      { name: "Prof. NOTA", url: "https://prompt.straight-line.org" },
+      { name: "MyReceipt", url: "https://www.endhonesa.com" },
+      { name: "Prof. NOTA", url: "https://prompt.endhonesa.com" },
     ],
     // manifest: "/manifest.webmanifest",
     // generator: "Breads Factory",
@@ -95,18 +96,18 @@ export async function generateMetadata({ params }: Props) {
     openGraph: {
       title: "Log of " + logger.title, // Title on each page
       description: logger.description, // Description on each page
-      url: ("https://nota.straight-line.org/loggers/" + slug) as string, // URL for each page
+      url: ("https://nota.endhonesa.com/loggers/" + slug) as string, // URL for each page
       siteName: "Prof. NOTA's Working Progress",
       locale: "en-US",
       images: [
         {
-          url: "https://nota.straight-line.org/images/about-prof-nota-inc.jpg", // Must be an absolute URL
+          url: "https://nota.endhonesa.com/images/about-prof-nota-inc.jpg", // Must be an absolute URL
           width: 1920,
           height: 1080,
           alt: "We Are Prof. NOTA Inc.", // Alternate text for image
         },
         {
-          url: "https://nota.straight-line.org/images/about-prof-nota-inc.jpg", // Must be an absolute URL
+          url: "https://nota.endhonesa.com/images/about-prof-nota-inc.jpg", // Must be an absolute URL
           width: 1800,
           height: 1600,
           alt: "We Are Prof. NOTA Inc.", // Alternate text for image
@@ -114,7 +115,7 @@ export async function generateMetadata({ params }: Props) {
       ],
       videos: [
         {
-          url: "https://nota.straight-line.org/video/images/about-prof-nota-inc.mp4", // Must be an absolute URL
+          url: "https://nota.endhonesa.com/video/images/about-prof-nota-inc.mp4", // Must be an absolute URL
           width: 800,
           height: 600,
         },
@@ -130,7 +131,7 @@ export async function generateMetadata({ params }: Props) {
       creatorId: "@MyReceiptTT",
       title: "Log of " + logger.title, // Title on each page
       description: logger.description, // Description on each page
-      images: ["https://nota.straight-line.org/images/about-prof-nota-inc.jpg"], // Must be an absolute URL
+      images: ["https://nota.endhonesa.com/images/about-prof-nota-inc.jpg"], // Must be an absolute URL
     },
     // icons: {
     //   shortcut: "/favicon.ico",
@@ -160,8 +161,10 @@ export default async function PostPage({ params }: Props) {
       <Header logger={logger} views={views} />
       <ReportView slug={logger.slug} />
 
-      <article className="px-4 pt-12 pb-24 mx-auto max-w-4xl prose prose-zinc prose-quoteless">
-        <Mdx source={logger.body} />
+      <article className="px-4 py-12 mx-auto max-w-4xl prose prose-zinc prose-quoteless">
+        <TinyWrapper>
+          <Mdx source={logger.body} />
+        </TinyWrapper>
       </article>
       <Footer views={views} />
     </div>

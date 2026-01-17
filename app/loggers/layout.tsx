@@ -6,8 +6,7 @@ export const metadata: Metadata = {
     template: "%s | Beware of Scams!", // Included on each child page
     default: "Logs of Prof. NOTA Inc.", // Title on each page
   },
-  description:
-    "Glitchy records of our events occurring in 0101 Universe...", // Description for each page
+  description: "Glitchy records of our events occurring in 0101 Universe...", // Description for each page
   // applicationName: "Prof. NOTA's Working Progress",
   authors: [
     { name: "MyReceipt", url: "https://www.endhonesa.com" },
@@ -58,8 +57,7 @@ export const metadata: Metadata = {
   // },
   openGraph: {
     title: "Logs of Prof. NOTA Inc.", // Title on each page
-    description:
-      "Glitchy records of our events occurring in 0101 Universe...", // Description on each page
+    description: "Glitchy records of our events occurring in 0101 Universe...", // Description on each page
     url: "https://nota.endhonesa.com/loggers", // URL for each page
     siteName: "Prof. NOTA's Working Progress",
     locale: "en-US",
