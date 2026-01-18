@@ -5,6 +5,7 @@ import {
   http,
   isAddress,
   type Address,
+  type Chain,
 } from "viem";
 import { privateKeyToAccount } from "viem/accounts";
 import { base, baseSepolia, mainnet, optimism, celo } from "viem/chains";
@@ -27,7 +28,7 @@ const monad = defineChain({
   },
 });
 
-const chainById = {
+const chainById: Record<number, Chain> = {
   [base.id]: base,
   [baseSepolia.id]: baseSepolia,
   [mainnet.id]: mainnet,
