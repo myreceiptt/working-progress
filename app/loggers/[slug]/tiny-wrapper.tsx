@@ -37,6 +37,8 @@ export default function TinyWrapper({ children }: TinyWrapperProps) {
 
       <div className="mb-24 grid grid-cols-1 rounded-lg border border-zinc-600">
         <CheckInButton />
+
+        {/* Here will be a button to claim the receipt. */}
       </div>
     </div>
   );

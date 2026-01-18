@@ -1,0 +1,94 @@
+<svg
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+  role="img"
+  aria-label="Welcome, Prof. NOTA!"
+>
+  <rect width="200" height="200" fill="#000000" stroke="#747474" stroke-width="4">
+    <animate
+      attributeName="fill"
+      values="#000000;#08101c;#12243f;#08101c;#000000"
+      dur="4s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+  <g>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#0f1b33" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#13244a" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#1a2f66" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#20408a" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#2b73ff" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="8s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#4f86ff" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="9s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="9s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#6aa0ff" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="10s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#8fb6ff" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="7s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#b3d3ff" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#2b73ff" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="100" cy="100" r="0" fill="none" stroke="#1d55bf" stroke-width="2">
+      <animate attributeName="r" from="0" to="100" dur="11s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" from="1" to="0" dur="11s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <line x1="24" y1="74" x2="176" y2="74" stroke="#2b73ff" stroke-width="1" stroke-opacity="0.4">
+    <animate attributeName="stroke-opacity" values="0.1;0.9;0.1" dur="3s" repeatCount="indefinite" />
+  </line>
+  <line x1="24" y1="126" x2="176" y2="126" stroke="#2b73ff" stroke-width="1" stroke-opacity="0.4">
+    <animate attributeName="stroke-opacity" values="0.9;0.1;0.9" dur="3s" repeatCount="indefinite" />
+  </line>
+
+  <text
+    x="100"
+    y="110"
+    text-anchor="middle"
+    fill="#2b73ff"
+    font-family="ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+    font-size="14"
+    font-weight="600"
+    letter-spacing="0.4"
+  >
+    February 29, 1992
+  </text>
+  <text
+    x="192"
+    y="14"
+    text-anchor="end"
+    fill="#2b73ff"
+    font-family="ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+    font-size="4.24"
+    font-weight="600"
+    letter-spacing="0.3"
+  >
+    The Mandriva
+  </text>
+</svg>

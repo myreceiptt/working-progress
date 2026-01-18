@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import CheckInButton from "./components/connect/checkinbutton";
+import MintReceiptButton from "./components/receipts/mint-receipt-button";
 import Particles from "./components/particles";
 
 const navigation = [
@@ -69,8 +70,9 @@ export default function Home() {
       </div>
       <div className="mt-4 md:mt-8 grid grid-cols-1 animate-fade-in">
         <CheckInButton />
-
-        {/* Here will be a button to claim the receipt. */}
+        <div className="mt-4 grid grid-cols-1">
+          <MintReceiptButton receiptId={1} mintLabel="Mint Receipt" />
+        </div>
       </div>
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
