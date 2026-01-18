@@ -34,31 +34,28 @@ export default function MintReceiptButton({
   const chainId = walletChain?.id ?? getNotaReceiptDefaultChainId();
   const receiptContract = useMemo(
     () => getNotaReceiptContract(chainId),
-    [chainId],
+    [chainId]
   );
   const readContract = useMemo(
     () =>
-      receiptContract ??
-      getNotaReceiptContract(getNotaReceiptDefaultChainId()),
-    [receiptContract],
+      receiptContract ?? getNotaReceiptContract(getNotaReceiptDefaultChainId()),
+    [receiptContract]
   );
   const safeReadContract = readContract!;
   const receiptContractAddress = getNotaReceiptContractAddress(chainId);
   const contractReady = Boolean(receiptContract && receiptContractAddress);
 
-  const { data: balance, refetch } = useReadContract(
-    {
-      contract: safeReadContract,
-      method: "balanceOf",
-      params: [
-        address ?? "0x0000000000000000000000000000000000000000",
-        BigInt(receiptId),
-      ],
-      queryOptions: {
-        enabled: Boolean(address && contractReady && readContract),
-      },
+  const { data: balance, refetch } = useReadContract({
+    contract: safeReadContract,
+    method: "balanceOf",
+    params: [
+      address ?? "0x0000000000000000000000000000000000000000",
+      BigInt(receiptId),
+    ],
+    queryOptions: {
+      enabled: Boolean(address && contractReady && readContract),
     },
-  );
+  });
 
   const alreadyMinted = useMemo(() => {
     if (!balance) {
@@ -121,17 +118,16 @@ export default function MintReceiptButton({
   return (
     <div className="grid gap-2">
       <button
-        className="rounded-md border border-zinc-600 bg-black px-4 py-2 text-sm font-semibold text-zinc-100 hover:border-zinc-400 disabled:cursor-not-allowed disabled:opacity-60"
+        className="rounded-md border border-zinc-600 bg-black px-4 py-2 text-sm font-semibold text-zinc-100 cursor-pointer hover:border-zinc-400 disabled:cursor-not-allowed disabled:opacity-60"
         onClick={handleMint}
-        disabled={!contractReady || alreadyMinted || isLoading}
-      >
+        disabled={!contractReady || alreadyMinted || isLoading}>
         {!contractReady
           ? "Unavailable on this chain"
           : alreadyMinted
-            ? mintedLabel
-            : isLoading
-              ? "Minting..."
-              : mintLabel}
+          ? mintedLabel
+          : isLoading
+          ? "Minting..."
+          : mintLabel}
       </button>
       {error ? <p className="text-xs text-red-400">{error}</p> : null}
     </div>
