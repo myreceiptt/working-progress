@@ -219,8 +219,6 @@ export default function ReceiptAdminPage() {
     router.replace(`?${params.toString()}`, { scroll: false });
   };
 
-  const tabIndex = activeTab === "existing" ? 1 : 0;
-
   return (
     <div className="relative pb-16">
       <Navigation />
