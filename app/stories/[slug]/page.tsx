@@ -162,7 +162,7 @@ export default async function PostPage({ params }: Props) {
       <ReportView slug={story.slug} />
 
       <article className="px-4 py-12 mx-auto max-w-4xl prose prose-zinc prose-quoteless">
-        <TinyWrapper>
+        <TinyWrapper receiptId={story.receiptId}>
           <Mdx source={story.body} />
         </TinyWrapper>
       </article>

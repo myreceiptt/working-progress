@@ -6,6 +6,7 @@ import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
 import { useActiveAccount } from "thirdweb/react";
 import CheckInButton from "@/app/components/connect/checkinbutton";
+import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
 
 export default function OurDethWish() {
   const account = useActiveAccount();
@@ -355,8 +356,9 @@ export default function OurDethWish() {
         )}
         <div className="mt-4 md:mt-8 grid grid-cols-1">
           <CheckInButton />
-
-          {/* Here will be a button to claim the receipt. */}
+          <div className="mt-4 grid grid-cols-1">
+            <MintReceiptButton receiptId={3} mintLabel="Mint Receipt" />
+          </div>
         </div>
       </div>
     </div>

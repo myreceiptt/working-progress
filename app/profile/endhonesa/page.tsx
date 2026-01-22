@@ -6,6 +6,7 @@ import { Card } from "../../components/card";
 import { Eye } from "lucide-react";
 import { useActiveAccount } from "thirdweb/react";
 import CheckInButton from "@/app/components/connect/checkinbutton";
+import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
 
 export default function ENDHONESAdotCom() {
   const account = useActiveAccount();
@@ -57,10 +58,10 @@ export default function ENDHONESAdotCom() {
               </h1>
               <p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
                 One domain, four halls. All woven from The Library as the source
-                of truth that &quot;feeds&quot; the other three halls: The Chronicle, The
-                Works, and The Market. All trade would always proceed properly
-                and as well as possible according to the resulting revenue and
-                formed value by respective residents of{" "}
+                of truth that &quot;feeds&quot; the other three halls: The
+                Chronicle, The Works, and The Market. All trade would always
+                proceed properly and as well as possible according to the
+                resulting revenue and formed value by respective residents of{" "}
                 <Link
                   href="https://docs.endhonesa.com/04-the-12th-stage.../endhonesa.com"
                   target="_blank"
@@ -75,9 +76,9 @@ export default function ENDHONESAdotCom() {
                   <ul className="list-disc">
                     <li className="mt-2 ml-4">
                       The canonical portal on ENDHONESA (Network‑State), Prof.
-                      NOTA Inc.&apos;s form of government, and Government (47 HFP) —
-                      complete with house rules, ethics, and official narratives
-                      that always refer to The Library.
+                      NOTA Inc.&apos;s form of government, and Government (47
+                      HFP) — complete with house rules, ethics, and official
+                      narratives that always refer to The Library.
                     </li>
                     <li className="mt-2 ml-4">
                       Here is the URL link to the hall:{" "}
@@ -132,10 +133,11 @@ export default function ENDHONESAdotCom() {
                   The Library — Archives & Sources (GitHub/GitBook‑sync)
                   <ul className="list-disc">
                     <li className="mt-2 ml-4">
-                      Markdown Warehouse: The KING&apos;s NFTs Project, SOPs, drafts,
-                      educational materials, research, Breads Factory releases,
-                      partner working documents, and more. This is the reference
-                      center; the other three halls always link back to it.
+                      Markdown Warehouse: The KING&apos;s NFTs Project, SOPs,
+                      drafts, educational materials, research, Breads Factory
+                      releases, partner working documents, and more. This is the
+                      reference center; the other three halls always link back
+                      to it.
                     </li>
                     <li className="mt-2 ml-4">
                       Here is the URL link to the hall:{" "}
@@ -161,16 +163,15 @@ export default function ENDHONESAdotCom() {
                   </p>
                 </Link>
               </div>
-
-              {/* Here will be a button to claim the receipt. */}
             </article>
           </Card>
         )}
 
         <div className="mt-4 md:mt-8 grid grid-cols-1">
           <CheckInButton />
-
-          {/* Here will be a button to claim the receipt. */}
+          <div className="mt-4 grid grid-cols-1">
+            <MintReceiptButton receiptId={5} mintLabel="Mint Receipt" />
+          </div>
         </div>
       </div>
     </div>

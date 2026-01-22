@@ -21,6 +21,7 @@ import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 import AccessButton from "../components/connect/accessbutton";
 import CheckInButton from "../components/connect/checkinbutton";
+import MintReceiptButton from "../components/receipts/mint-receipt-button";
 
 const socials = [
   {
@@ -122,9 +123,7 @@ export default function OurContact() {
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 mx-auto">
-          <div className="my-4 md:my-8 grid grid-cols-1">
-            <AccessButton />
-          </div>
+          <AccessButton />
 
           {!account && (
             <Card>
@@ -174,8 +173,9 @@ export default function OurContact() {
 
           <div className="mt-4 md:mt-8 grid grid-cols-1">
             <CheckInButton />
-
-            {/* Here will be a button to claim the receipt. */}
+            <div className="mt-4 grid grid-cols-1">
+              <MintReceiptButton receiptId={9} mintLabel="Mint Receipt" />
+            </div>
           </div>
         </div>
 

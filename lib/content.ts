@@ -8,6 +8,7 @@ type BaseFrontmatter = {
   date?: string;
   published?: boolean;
   gambar?: string;
+  receiptId?: number;
 };
 
 export type Logger = BaseFrontmatter & {
