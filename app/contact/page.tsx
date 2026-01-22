@@ -123,9 +123,7 @@ export default function OurContact() {
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 mx-auto">
-          <div className="my-4 md:my-8 grid grid-cols-1">
-            <AccessButton />
-          </div>
+          <AccessButton />
 
           {!account && (
             <Card>

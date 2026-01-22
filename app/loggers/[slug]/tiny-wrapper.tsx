@@ -4,12 +4,14 @@ import { useActiveAccount } from "thirdweb/react";
 import AccessButton from "@/app/components/connect/accessbutton";
 import CheckInButton from "@/app/components/connect/checkinbutton";
 import { Card } from "@/app/components/card";
+import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
 
 type TinyWrapperProps = {
   children: React.ReactNode;
+  receiptId?: number;
 };
 
-export default function TinyWrapper({ children }: TinyWrapperProps) {
+export default function TinyWrapper({ children, receiptId }: TinyWrapperProps) {
   const account = useActiveAccount();
 
   return (
@@ -35,10 +37,14 @@ export default function TinyWrapper({ children }: TinyWrapperProps) {
         </Card>
       )}
 
-      <div className="mb-24 grid grid-cols-1 rounded-lg border border-zinc-600">
+      <div className="mb-24 grid grid-cols-1 rounded-lg">
         <CheckInButton />
 
-        {/* Here will be a button to claim the receipt. */}
+        {receiptId ? (
+          <div className="mt-4 grid grid-cols-1">
+            <MintReceiptButton receiptId={receiptId} mintLabel="Mint Receipt" />
+          </div>
+        ) : null}
       </div>
     </div>
   );

@@ -164,7 +164,7 @@ export default async function PostPage({ params }: Props) {
       <ReportView slug={progress.slug} />
 
       <article className="px-4 py-12 mx-auto max-w-4xl prose prose-zinc prose-quoteless">
-        <TinyWrapper>
+        <TinyWrapper receiptId={progress.receiptId}>
           <Mdx source={progress.body} />
         </TinyWrapper>
       </article>

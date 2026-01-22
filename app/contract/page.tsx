@@ -17,6 +17,7 @@ import {
 } from "thirdweb/react";
 import AccessButton from "@/app/components/connect/accessbutton";
 import CheckInButton from "@/app/components/connect/checkinbutton";
+import MintReceiptButton from "../components/receipts/mint-receipt-button";
 import { getNotaReceiptContract } from "@/lib/receipt-contract";
 import { getNotaReceiptDefaultChainId } from "@/lib/nota-receipt-config";
 import { Navigation } from "../components/nav";
@@ -25,13 +26,14 @@ import { Card } from "../components/card";
 import MetadataTab from "../components/tabs/Metadata";
 import ExistingTab from "../components/tabs/Existing";
 
-const adminAddresses =
-  (process.env.NEXT_PUBLIC_NOTA_RECEIPT_ADMINS ??
-    process.env.NEXT_PUBLIC_RECEIPT_ADMINS ??
-    "")
-    .split(",")
-    .map((value) => value.trim().toLowerCase())
-    .filter(Boolean);
+const adminAddresses = (
+  process.env.NEXT_PUBLIC_NOTA_RECEIPT_ADMINS ??
+  process.env.NEXT_PUBLIC_RECEIPT_ADMINS ??
+  ""
+)
+  .split(",")
+  .map((value) => value.trim().toLowerCase())
+  .filter(Boolean);
 
 type FormState = {
   id: string;
@@ -58,20 +60,17 @@ export default function ReceiptAdminPage() {
   const [status, setStatus] = useState<string | null>(null);
   const [selectedTokenId, setSelectedTokenId] = useState<string>("new");
   const chainId = walletChain?.id ?? getNotaReceiptDefaultChainId();
-  const contract = useMemo(
-    () => getNotaReceiptContract(chainId),
-    [chainId],
-  );
+  const contract = useMemo(() => getNotaReceiptContract(chainId), [chainId]);
   const readContract = useMemo(
     () => contract ?? getNotaReceiptContract(getNotaReceiptDefaultChainId()),
-    [contract],
+    [contract]
   );
   const safeReadContract = readContract!;
   const contractReady = Boolean(contract);
   const address = account?.address;
   const tabParam = searchParams?.get("tab");
   const [activeTab, setActiveTab] = useState<TabKey>(
-    tabParam === "existing" ? "existing" : "metadata",
+    tabParam === "existing" ? "existing" : "metadata"
   );
 
   const { data: isAdmin } = useReadContract({
@@ -122,7 +121,9 @@ export default function ReceiptAdminPage() {
     method: "getNOTAMetadata",
     params: [BigInt(selectedTokenIdNumber)],
     queryOptions: {
-      enabled: Boolean(contractReady && readContract && selectedTokenId !== "new"),
+      enabled: Boolean(
+        contractReady && readContract && selectedTokenId !== "new"
+      ),
     },
   });
 
@@ -232,12 +233,11 @@ export default function ReceiptAdminPage() {
             Create receipt metadata, then mint one edition for your wallet.
           </p>
         </div>
+
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 mx-auto">
-          <div className="my-4 md:my-8 grid grid-cols-1">
-            <AccessButton />
-          </div>
+          <AccessButton />
 
           {(!account || !adminGate || !contractReady) && (
             <Card>
@@ -257,58 +257,62 @@ export default function ReceiptAdminPage() {
           )}
 
           {account && adminGate && contractReady && (
-            <div className="grid grid-cols-1 gap-6 text-zinc-200">
-              <div className="relative inline-flex max-w-xl rounded-full border border-zinc-800 bg-black/60 p-1">
-                <span
-                  className="absolute inset-y-1 left-1 w-[calc(50%-0.5rem)] rounded-full bg-zinc-800/80 transition-transform duration-300"
-                  style={{
-                    transform: `translateX(${tabIndex * 100}%)`,
-                  }}
-                />
-                <button
-                  className={`relative z-10 rounded-full px-4 py-2 text-sm font-semibold transition ${
-                    activeTab === "metadata"
-                      ? "text-zinc-100"
-                      : "text-zinc-400 hover:text-zinc-200"
-                  }`}
-                  type="button"
-                  onClick={() => setTab("metadata")}
-                >
-                  Metadata
-                </button>
-                <button
-                  className={`relative z-10 rounded-full px-4 py-2 text-sm font-semibold transition ${
-                    activeTab === "existing"
-                      ? "text-zinc-100"
-                      : "text-zinc-400 hover:text-zinc-200"
-                  }`}
-                  type="button"
-                  onClick={() => setTab("existing")}
-                >
-                  Existing
-                </button>
-              </div>
+            <div className="relative w-full h-full pt-4 md:pt-8 grid grid-cols-1 gap-4 md:gap-8 mx-auto">
+              <Card>
+                <div className="grid grid-cols-1 gap-6 text-zinc-200">
+                  <div className="grid gap-4 rounded-md px-6 pt-6">
+                    <div className="relative inline-flex w-full rounded-full border border-zinc-800 bg-black/60 p-1">
+                      <button
+                        className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 ${
+                          activeTab === "metadata"
+                            ? "bg-zinc-800/80 text-zinc-100"
+                            : "text-zinc-400 hover:text-zinc-200"
+                        }`}
+                        type="button"
+                        onClick={() => setTab("metadata")}>
+                        Metadata
+                      </button>
+                      <button
+                        className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 ${
+                          activeTab === "existing"
+                            ? "bg-zinc-800/80 text-zinc-100"
+                            : "text-zinc-400 hover:text-zinc-200"
+                        }`}
+                        type="button"
+                        onClick={() => setTab("existing")}>
+                        Existing
+                      </button>
+                    </div>
+                  </div>
 
-              {activeTab === "metadata" ? (
-                <MetadataTab
-                  form={form}
-                  status={status}
-                  isLoading={isLoading}
-                  onSubmit={handleCreate}
-                  onChange={handleChange}
-                  tokenIds={sortedTokenIds}
-                  selectedTokenId={selectedTokenId}
-                  onSelectTokenId={setSelectedTokenId}
-                  nextTokenId={nextTokenId}
-                />
-              ) : (
-                <ExistingTab tokenIds={[...(tokenIds ?? [])]} contract={contract!} />
-              )}
+                  {activeTab === "metadata" ? (
+                    <MetadataTab
+                      form={form}
+                      status={status}
+                      isLoading={isLoading}
+                      onSubmit={handleCreate}
+                      onChange={handleChange}
+                      tokenIds={sortedTokenIds}
+                      selectedTokenId={selectedTokenId}
+                      onSelectTokenId={setSelectedTokenId}
+                      nextTokenId={nextTokenId}
+                    />
+                  ) : (
+                    <ExistingTab
+                      tokenIds={[...(tokenIds ?? [])]}
+                      contract={contract!}
+                    />
+                  )}
+                </div>
+              </Card>
             </div>
           )}
 
           <div className="mt-4 md:mt-8 grid grid-cols-1">
             <CheckInButton />
+            <div className="mt-4 grid grid-cols-1">
+              <MintReceiptButton receiptId={83} mintLabel="Mint Receipt" />
+            </div>
           </div>
         </div>
 
