@@ -25,6 +25,7 @@ import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 import MetadataTab from "../components/tabs/Metadata";
 import ExistingTab from "../components/tabs/Existing";
+import OwnedTab from "../components/tabs/Owned";
 
 const adminAddresses = (
   process.env.NEXT_PUBLIC_NOTA_RECEIPT_ADMINS ??
@@ -42,7 +43,7 @@ type FormState = {
   pageUrl: string;
   imageSvg: string;
 };
-type TabKey = "metadata" | "existing";
+type TabKey = "metadata" | "existing" | "owned";
 
 export default function ReceiptAdminPage() {
   const account = useActiveAccount();
@@ -70,7 +71,7 @@ export default function ReceiptAdminPage() {
   const address = account?.address;
   const tabParam = searchParams?.get("tab");
   const [activeTab, setActiveTab] = useState<TabKey>(
-    tabParam === "existing" ? "existing" : "metadata"
+    tabParam === "existing" || tabParam === "owned" ? tabParam : "metadata"
   );
 
   const { data: isAdmin } = useReadContract({
@@ -143,10 +144,14 @@ export default function ReceiptAdminPage() {
       return;
     }
     const nextTab = searchParams.get("tab");
-    if (nextTab === "existing" || nextTab === "metadata") {
+    if (nextTab === "existing" || nextTab === "metadata" || nextTab === "owned") {
+      if (!adminGate && nextTab !== "owned") {
+        setActiveTab("owned");
+        return;
+      }
       setActiveTab(nextTab);
     }
-  }, [searchParams]);
+  }, [adminGate, searchParams]);
 
   useEffect(() => {
     if (selectedTokenId === "new") {
@@ -210,6 +215,9 @@ export default function ReceiptAdminPage() {
   };
 
   const setTab = (nextTab: TabKey) => {
+    if (!adminGate && nextTab !== "owned") {
+      return;
+    }
     setActiveTab(nextTab);
     if (!searchParams) {
       return;
@@ -235,9 +243,11 @@ export default function ReceiptAdminPage() {
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 mx-auto">
-          <AccessButton />
+          <div className="mb-4 md:mb-8 grid grid-cols-1">
+            <AccessButton />
+          </div>
 
-          {(!account || !adminGate || !contractReady) && (
+          {!account && (
             <Card>
               <article className="relative w-full h-full">
                 <div className="flex justify-between gap-2 items-center">
@@ -254,36 +264,50 @@ export default function ReceiptAdminPage() {
             </Card>
           )}
 
-          {account && adminGate && contractReady && (
+          {account && contractReady && (
             <div className="relative w-full h-full pt-4 md:pt-8 grid grid-cols-1 gap-4 md:gap-8 mx-auto">
               <Card>
                 <div className="grid grid-cols-1 gap-6 text-zinc-200">
-                  <div className="grid gap-4 rounded-md px-6 pt-6">
+                  <div className="grid gap-4 rounded-md px-4 md:px-8 pt-4 md:pt-8">
                     <div className="relative inline-flex w-full rounded-full border border-zinc-800 bg-black/60 p-1">
+                      {adminGate && (
+                        <>
+                          <button
+                            className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 ${
+                              activeTab === "metadata"
+                                ? "bg-zinc-800/80 text-zinc-100"
+                                : "text-zinc-400 hover:text-zinc-200"
+                            }`}
+                            type="button"
+                            onClick={() => setTab("metadata")}>
+                            Metadata
+                          </button>
+                          <button
+                            className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 ${
+                              activeTab === "existing"
+                                ? "bg-zinc-800/80 text-zinc-100"
+                                : "text-zinc-400 hover:text-zinc-200"
+                            }`}
+                            type="button"
+                            onClick={() => setTab("existing")}>
+                            Existing
+                          </button>
+                        </>
+                      )}
                       <button
                         className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 ${
-                          activeTab === "metadata"
+                          activeTab === "owned"
                             ? "bg-zinc-800/80 text-zinc-100"
                             : "text-zinc-400 hover:text-zinc-200"
                         }`}
                         type="button"
-                        onClick={() => setTab("metadata")}>
-                        Metadata
-                      </button>
-                      <button
-                        className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 ${
-                          activeTab === "existing"
-                            ? "bg-zinc-800/80 text-zinc-100"
-                            : "text-zinc-400 hover:text-zinc-200"
-                        }`}
-                        type="button"
-                        onClick={() => setTab("existing")}>
-                        Existing
+                        onClick={() => setTab("owned")}>
+                        Owned
                       </button>
                     </div>
                   </div>
 
-                  {activeTab === "metadata" ? (
+                  {adminGate && activeTab === "metadata" ? (
                     <MetadataTab
                       form={form}
                       status={status}
@@ -295,8 +319,13 @@ export default function ReceiptAdminPage() {
                       onSelectTokenId={setSelectedTokenId}
                       nextTokenId={nextTokenId}
                     />
-                  ) : (
+                  ) : adminGate && activeTab === "existing" ? (
                     <ExistingTab
+                      tokenIds={[...(tokenIds ?? [])]}
+                      contract={contract!}
+                    />
+                  ) : (
+                    <OwnedTab
                       tokenIds={[...(tokenIds ?? [])]}
                       contract={contract!}
                     />
@@ -309,7 +338,7 @@ export default function ReceiptAdminPage() {
           <div className="mt-4 md:mt-8 grid grid-cols-1">
             <CheckInButton />
             <div className="mt-4 grid grid-cols-1">
-              <MintReceiptButton receiptId={83} mintLabel="Mint Receipt" />
+              <MintReceiptButton receiptId={83} mintLabel="Mint Receipt (NFT)" />
             </div>
           </div>
         </div>

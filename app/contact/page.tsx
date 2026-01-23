@@ -123,7 +123,9 @@ export default function OurContact() {
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 mx-auto">
-          <AccessButton />
+          <div className="mb-4 md:mb-8 grid grid-cols-1">
+            <AccessButton />
+          </div>
 
           {!account && (
             <Card>
@@ -174,7 +176,7 @@ export default function OurContact() {
           <div className="mt-4 md:mt-8 grid grid-cols-1">
             <CheckInButton />
             <div className="mt-4 grid grid-cols-1">
-              <MintReceiptButton receiptId={9} mintLabel="Mint Receipt" />
+              <MintReceiptButton receiptId={9} mintLabel="Mint Receipt (NFT)" />
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import CheckInButton from "./components/connect/checkinbutton";
@@ -71,7 +71,7 @@ export default function Home() {
       <div className="mt-4 md:mt-8 grid grid-cols-1 animate-fade-in">
         <CheckInButton />
         <div className="mt-4 grid grid-cols-1">
-          <MintReceiptButton receiptId={1} mintLabel="Mint Receipt" />
+          <MintReceiptButton receiptId={1} mintLabel="Mint Receipt (NFT)" />
         </div>
       </div>
       <nav className="my-16 animate-fade-in">

@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import { useReadContract } from "thirdweb/react";
+import { useActiveAccount, useReadContract } from "thirdweb/react";
 import ReceiptImage from "../receipts/receipt-image";
 import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
+import ReadReceiptButton from "@/app/components/receipts/read-receipt-button";
 import type { getNotaReceiptContract } from "@/lib/receipt-contract";
 
-type ExistingTabProps = {
+type OwnedTabProps = {
   tokenIds: bigint[];
   contract: NonNullable<ReturnType<typeof getNotaReceiptContract>>;
 };
@@ -14,9 +15,11 @@ type ExistingTabProps = {
 function TokenRow({
   tokenId,
   contract,
+  address,
 }: {
   tokenId: bigint;
   contract: NonNullable<ReturnType<typeof getNotaReceiptContract>>;
+  address: `0x${string}`;
 }) {
   const idNumber = Number(tokenId);
   const { data } = useReadContract({
@@ -28,11 +31,22 @@ function TokenRow({
     },
   });
 
+  const { data: balance } = useReadContract({
+    contract,
+    method: "balanceOf",
+    params: [address, tokenId],
+    queryOptions: {
+      enabled: Boolean(contract && address),
+    },
+  });
+
   if (!data) {
     return (
       <div className="text-sm text-zinc-400">Loading token #{idNumber}...</div>
     );
   }
+
+  const owned = balance ? balance > BigInt(0) : false;
 
   return (
     <div className="flex flex-col gap-2">
@@ -53,16 +67,34 @@ function TokenRow({
         </Link>
       </div>
       <div className="mt-2 grid grid-cols-1">
-        <MintReceiptButton receiptId={idNumber} mintLabel="Mint 1 for Admin" />
+        {owned ? (
+          <MintReceiptButton
+            receiptId={idNumber}
+            mintedLabel="Receipt Minted"
+            mintLabel="Receipt Minted"
+          />
+        ) : (
+          <ReadReceiptButton href={data.pageUrl} />
+        )}
       </div>
     </div>
   );
 }
 
-export default function ExistingTab({ tokenIds, contract }: ExistingTabProps) {
+export default function OwnedTab({ tokenIds, contract }: OwnedTabProps) {
+  const account = useActiveAccount();
+  const address = account?.address as `0x${string}` | undefined;
   const displayTokenIds = [...tokenIds].reverse();
+
+  if (!address) {
+    return (
+      <div className="text-sm text-zinc-400">
+        Connect wallet to see owned receipts.
+      </div>
+    );
+  }
+
   return (
-    // <div className="grid gap-4 rounded-md p-4 md:p-8">
     <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 md:gap-8 rounded-md p-4 md:p-8 relative w-full h-full mx-auto">
       {displayTokenIds.length ? (
         <>
@@ -71,6 +103,7 @@ export default function ExistingTab({ tokenIds, contract }: ExistingTabProps) {
               key={tokenId.toString()}
               tokenId={tokenId}
               contract={contract}
+              address={address}
             />
           ))}
         </>

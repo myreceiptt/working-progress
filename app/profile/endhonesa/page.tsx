@@ -170,7 +170,7 @@ export default function ENDHONESAdotCom() {
         <div className="mt-4 md:mt-8 grid grid-cols-1">
           <CheckInButton />
           <div className="mt-4 grid grid-cols-1">
-            <MintReceiptButton receiptId={5} mintLabel="Mint Receipt" />
+            <MintReceiptButton receiptId={5} mintLabel="Mint Receipt (NFT)" />
           </div>
         </div>
       </div>

@@ -167,7 +167,7 @@ export default function SkateShopDotID() {
         <div className="mt-4 md:mt-8 grid grid-cols-1">
           <CheckInButton />
           <div className="mt-4 grid grid-cols-1">
-            <MintReceiptButton receiptId={4} mintLabel="Mint Receipt" />
+            <MintReceiptButton receiptId={4} mintLabel="Mint Receipt (NFT)" />
           </div>
         </div>
       </div>

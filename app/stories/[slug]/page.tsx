@@ -157,7 +157,7 @@ export default async function PostPage({ params }: Props) {
     (await redis.get<number>(["pageviews", "stories", slug].join(":"))) ?? 0;
 
   return (
-    <div className="bg-zinc-50 min-h-screen">
+    <div className="bg-zinc-400 min-h-screen">
       <Header story={story} views={views} />
       <ReportView slug={story.slug} />
 

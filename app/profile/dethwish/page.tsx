@@ -357,7 +357,7 @@ export default function OurDethWish() {
         <div className="mt-4 md:mt-8 grid grid-cols-1">
           <CheckInButton />
           <div className="mt-4 grid grid-cols-1">
-            <MintReceiptButton receiptId={3} mintLabel="Mint Receipt" />
+            <MintReceiptButton receiptId={3} mintLabel="Mint Receipt (NFT)" />
           </div>
         </div>
       </div>

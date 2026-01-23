@@ -36,9 +36,7 @@ export default function MetadataTab({
   nextTokenId,
 }: MetadataTabProps) {
   return (
-    <form
-      className="grid gap-4 rounded-md p-6"
-      onSubmit={onSubmit}>
+    <form className="grid gap-4 rounded-md p-4 md:p-8" onSubmit={onSubmit}>
       <div className="grid gap-2">
         <label className="text-sm text-zinc-400">Token ID</label>
         <select

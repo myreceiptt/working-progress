@@ -16,7 +16,7 @@ export default function TinyWrapper({ children, receiptId }: TinyWrapperProps) {
 
   return (
     <div className="grid grid-cols-1 gap-4 md:gap-8">
-      <div className="mt-6 grid grid-cols-1 rounded-lg border border-zinc-600">
+      <div className="mt-6 grid grid-cols-1 rounded-lg">
         <AccessButton />
       </div>
 
@@ -42,7 +42,7 @@ export default function TinyWrapper({ children, receiptId }: TinyWrapperProps) {
 
         {receiptId ? (
           <div className="mt-4 grid grid-cols-1">
-            <MintReceiptButton receiptId={receiptId} mintLabel="Mint Receipt" />
+            <MintReceiptButton receiptId={receiptId} mintLabel="Mint Receipt (NFT)" />
           </div>
         ) : null}
       </div>
