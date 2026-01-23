@@ -4,9 +4,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nota.endhonesa.com"),
   title: {
     template: "%s | NOTA Receipts",
-    default: "NOTA Receipt Admin",
+    default: "NOTA Receipt Dashboard",
   },
-  description: "Admin console for NOTA content receipt metadata and minting.",
+  description: "Contract dashboard for NOTA content receipt smart contract.",
   authors: [
     { name: "MyReceipt", url: "https://www.endhonesa.com" },
     { name: "Prof. NOTA", url: "https://prompt.endhonesa.com" },
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     canonical: "/contract",
   },
   openGraph: {
-    title: "NOTA Receipt Admin",
-    description: "Admin console for NOTA content receipt metadata and minting.",
+    title: "NOTA Receipt Dashboard",
+    description: "Contract dashboard for NOTA content receipt smart contract.",
     url: "https://nota.endhonesa.com/contract",
     siteName: "Prof. NOTA's Working Progress",
     locale: "en-US",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: "https://nota.endhonesa.com/og.png",
         width: 1200,
         height: 630,
-        alt: "NOTA Receipt Admin",
+        alt: "NOTA Receipt Dashboard",
       },
     ],
     type: "website",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
     siteId: "@MyReceiptTT",
     creator: "@MyReceiptTT",
     creatorId: "@MyReceiptTT",
-    title: "NOTA Receipt Admin",
-    description: "Admin console for NOTA content receipt metadata and minting.",
+    title: "NOTA Receipt Dashboard",
+    description: "Contract dashboard for NOTA content receipt smart contract.",
     images: ["https://nota.endhonesa.com/og.png"],
   },
 };
