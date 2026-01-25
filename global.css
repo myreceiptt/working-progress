@@ -74,6 +74,46 @@
   }
 }
 
+@keyframes modal-in {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes modal-out {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+}
+
+@keyframes backdrop-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes backdrop-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @layer utilities {
   .animate-fade-in {
     animation: fade-in 3s ease-in-out forwards;
@@ -93,6 +133,22 @@
   }
   .animate-glow {
     animation: glow 3s ease-in-out infinite;
+  }
+
+  .animate-modal-in {
+    animation: modal-in 240ms ease-out forwards;
+  }
+
+  .animate-modal-out {
+    animation: modal-out 200ms ease-in forwards;
+  }
+
+  .animate-backdrop-in {
+    animation: backdrop-in 200ms ease-out forwards;
+  }
+
+  .animate-backdrop-out {
+    animation: backdrop-out 160ms ease-in forwards;
   }
 }
 

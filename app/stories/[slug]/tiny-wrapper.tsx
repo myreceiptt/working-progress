@@ -5,6 +5,7 @@ import AccessButton from "@/app/components/connect/accessbutton";
 import CheckInButton from "@/app/components/connect/checkinbutton";
 import { Card } from "@/app/components/card";
 import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "@/app/components/receipts/preview-receipt-button";
 
 type TinyWrapperProps = {
   children: React.ReactNode;
@@ -41,7 +42,8 @@ export default function TinyWrapper({ children, receiptId }: TinyWrapperProps) {
         <CheckInButton />
 
         {receiptId ? (
-          <div className="mt-4 grid grid-cols-1">
+          <div className="mt-4 grid grid-cols-1 gap-2">
+            <PreviewReceiptButton receiptId={receiptId} />
             <MintReceiptButton receiptId={receiptId} mintLabel="Mint Receipt (NFT)" />
           </div>
         ) : null}

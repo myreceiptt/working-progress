@@ -7,6 +7,7 @@ import { Eye } from "lucide-react";
 import { useActiveAccount } from "thirdweb/react";
 import CheckInButton from "@/app/components/connect/checkinbutton";
 import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "@/app/components/receipts/preview-receipt-button";
 
 export default function OurDethWish() {
   const account = useActiveAccount();
@@ -100,8 +101,8 @@ export default function OurDethWish() {
                   3rd /ˈdeTH ˌwiSH/, the third collection.
                   <ul className="list-disc">
                     <li className="mt-2 ml-4">
-                      Will be released soon on BASE, but too early now for this
-                      third collection. Stay tune and{" "}
+                      Will be released soon on BASE, but too early for now. Stay
+                      tune and{" "}
                       <Link
                         href="https://base.app/profile/endhonesa.eth?tab=posts"
                         target="_blank"
@@ -356,7 +357,8 @@ export default function OurDethWish() {
         )}
         <div className="mt-4 md:mt-8 grid grid-cols-1">
           <CheckInButton />
-          <div className="mt-4 grid grid-cols-1">
+          <div className="mt-4 grid grid-cols-1 gap-2">
+            <PreviewReceiptButton receiptId={3} />
             <MintReceiptButton receiptId={3} mintLabel="Mint Receipt (NFT)" />
           </div>
         </div>

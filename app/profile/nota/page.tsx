@@ -7,6 +7,7 @@ import { Eye } from "lucide-react";
 import { useActiveAccount } from "thirdweb/react";
 import CheckInButton from "@/app/components/connect/checkinbutton";
 import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "@/app/components/receipts/preview-receipt-button";
 
 export default function ProfessorNOTA() {
   const account = useActiveAccount();
@@ -230,7 +231,8 @@ export default function ProfessorNOTA() {
 
         <div className="mt-4 md:mt-8 grid grid-cols-1">
           <CheckInButton />
-          <div className="mt-4 grid grid-cols-1">
+          <div className="mt-4 grid grid-cols-1 gap-2">
+            <PreviewReceiptButton receiptId={6} />
             <MintReceiptButton receiptId={6} mintLabel="Mint Receipt (NFT)" />
           </div>
         </div>

@@ -2,16 +2,28 @@
 
 import { useMemo } from "react";
 import Image from "next/image";
-import { useActiveAccount, useActiveWalletChain, useReadContract } from "thirdweb/react";
-import { getNotaReceiptContract } from "@/lib/receipt-contract";
+import {
+  useActiveAccount,
+  useActiveWalletChain,
+  useReadContract,
+} from "thirdweb/react";
+import {
+  getNotaReceiptContract,
+  getNotaReceiptContractAddress,
+} from "@/lib/receipt-contract";
 import { getNotaReceiptDefaultChainId } from "@/lib/nota-receipt-config";
 
 type ReceiptImageProps = {
   receiptId: number;
   className?: string;
+  imageClassName?: string;
 };
 
-export default function ReceiptImage({ receiptId, className }: ReceiptImageProps) {
+export default function ReceiptImage({
+  receiptId,
+  className,
+  imageClassName,
+}: ReceiptImageProps) {
   const account = useActiveAccount();
   const walletChain = useActiveWalletChain();
   const chainId = walletChain?.id ?? getNotaReceiptDefaultChainId();
@@ -19,8 +31,10 @@ export default function ReceiptImage({ receiptId, className }: ReceiptImageProps
     () => getNotaReceiptContract(chainId),
     [chainId]
   );
+  const contractAddress = getNotaReceiptContractAddress(chainId);
   const readContract = useMemo(
-    () => receiptContract ?? getNotaReceiptContract(getNotaReceiptDefaultChainId()),
+    () =>
+      receiptContract ?? getNotaReceiptContract(getNotaReceiptDefaultChainId()),
     [receiptContract]
   );
   const safeReadContract = readContract!;
@@ -50,24 +64,27 @@ export default function ReceiptImage({ receiptId, className }: ReceiptImageProps
     }
   }, [tokenUri]);
 
-  if (!account || !receiptImage) {
+  if (!account || !receiptImage || !contractAddress) {
     return null;
   }
 
   return (
     <a
-      href={`https://opensea.io/item/base/0xe238ea14365d382dec620dba01a3bbfb91e28a34/${receiptId}`}
+      href={`https://opensea.io/item/base/${contractAddress}/${receiptId}`}
       target="_blank"
       rel="noreferrer"
       className={className}
     >
       <Image
         src={receiptImage}
-        alt="Welcome Receipt"
+        alt={`Receipt #${receiptId}`}
         width={400}
         height={400}
         unoptimized
-        className="h-auto w-full max-w-sm place-self-center rounded-md border border-zinc-800 bg-black/40 p-2"
+        className={
+          imageClassName ??
+          "h-auto w-full max-w-sm place-self-center rounded-md border border-zinc-800 bg-black/40 p-2"
+        }
       />
     </a>
   );

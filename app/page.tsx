@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import CheckInButton from "./components/connect/checkinbutton";
 import MintReceiptButton from "./components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "./components/receipts/preview-receipt-button";
 import Particles from "./components/particles";
 
 const navigation = [
@@ -46,8 +47,8 @@ export default function Home() {
         height={111}
         alt="Hi, We are Prof. NOTA!"
       />
-      <h1 className="z-10 text-5xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl whitespace-nowrap bg-clip-text ">
-        Prof. NOTA v11.11
+      <h1 className="text-5xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl whitespace-nowrap bg-clip-text ">
+        Prof. NOTA
       </h1>
       <div className="w-screen h-px block animate-fade-right bg-linear-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <nav className="my-16 animate-fade-in">
@@ -70,7 +71,8 @@ export default function Home() {
       </div>
       <div className="mt-4 md:mt-8 grid grid-cols-1 animate-fade-in">
         <CheckInButton />
-        <div className="mt-4 grid grid-cols-1">
+        <div className="mt-4 grid grid-cols-1 gap-2">
+          <PreviewReceiptButton receiptId={1} />
           <MintReceiptButton receiptId={1} mintLabel="Mint Receipt (NFT)" />
         </div>
       </div>
@@ -81,14 +83,6 @@ export default function Home() {
           </li>
         </ul>
       </nav>
-      <iframe
-        className="hidden absolute top-0 items-center w-full h-1/4 px-4"
-        src="https://open.spotify.com/embed/playlist/0DQja3HX6MsLGtDl30DHFW?utm_source=generator&theme=0"
-        // width="747"
-        // height="474"
-        allowFullScreen
-        loading="lazy"
-        title="High school anthems for the class of 2000s - Playlist by Prof. NOTA"></iframe>
     </div>
   );
 }
