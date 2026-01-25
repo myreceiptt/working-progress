@@ -37,9 +37,10 @@ export default function PreviewReceiptButton({
           "rounded-md border border-zinc-600 bg-black px-4 py-2 text-sm font-semibold text-zinc-100 cursor-pointer hover:border-zinc-400 disabled:cursor-not-allowed disabled:opacity-60"
         }
         onClick={() => setOpen(true)}
-        disabled={!contractReady}
-      >
-        {contractReady ? "Preview Receipt" : "Preview unavailable on this chain"}
+        disabled={!contractReady}>
+        {contractReady
+          ? "Preview Receipt"
+          : "Preview unavailable on this chain"}
       </button>
       <ReceiptPreviewModal
         open={open}
@@ -49,4 +50,3 @@ export default function PreviewReceiptButton({
     </>
   );
 }
-

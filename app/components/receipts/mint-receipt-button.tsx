@@ -29,12 +29,7 @@ export default function MintReceiptButton({
   const walletChain = useActiveWalletChain();
   const [error, setError] = useState<string | null>(null);
   const [status, setStatus] = useState<
-    | "idle"
-    | "awaiting_wallet"
-    | "sending"
-    | "confirming"
-    | "success"
-    | "error"
+    "idle" | "awaiting_wallet" | "sending" | "confirming" | "success" | "error"
   >("idle");
   const [dotCount, setDotCount] = useState(1);
   const { mutate: sendTx, isPending: isLoading } = useSendTransaction();
@@ -175,7 +170,7 @@ export default function MintReceiptButton({
     : mintLabel;
 
   return (
-    <div className="grid gap-2">
+    <>
       <button
         className="rounded-md border border-zinc-600 bg-black px-4 py-2 text-sm font-semibold text-zinc-100 cursor-pointer hover:border-zinc-400 disabled:cursor-not-allowed disabled:opacity-60"
         onClick={handleMint}
@@ -190,6 +185,6 @@ export default function MintReceiptButton({
         {buttonLabel}
       </button>
       {error ? <p className="text-xs text-red-400">{error}</p> : null}
-    </div>
+    </>
   );
 }
