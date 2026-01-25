@@ -67,12 +67,12 @@ export default function Home() {
           the Internet. So, stay alert and beware of scams!
         </h2>
 
-        <div className="mt-4 md:mt-8 grid grid-cols-1 gap-2 sm:px-40 md:px-60 lg:px-80 xl:px-96">
+        <div className="mt-4 md:mt-8 grid grid-cols-1 gap-2 px-10 sm:px-40 md:px-60 lg:px-80 xl:px-96">
           <PreviewReceiptButton receiptId={1} />
           <MintReceiptButton receiptId={1} mintLabel="Mint Receipt (NFT)" />
         </div>
 
-        <ul className="flex items-center justify-center gap-4">
+        <ul className="mt-4 md:mt-8 flex items-center justify-center gap-4">
           {bottomnav.map((item) => (
             <Link
               key={item.href}

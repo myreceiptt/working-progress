@@ -94,7 +94,7 @@ export default function ReceiptPreviewModal({
         <div className="flex items-start justify-between gap-4">
           <div className="min-w-0">
             <div className="truncate text-xs md:text-sm text-zinc-400">
-              Receipt Preview
+              Receipt ID - Title
             </div>
             <div className="truncate text-sm md:text-base text-zinc-100">
               ID #{receiptId}
