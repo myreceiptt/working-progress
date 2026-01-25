@@ -18,6 +18,7 @@ import {
 import AccessButton from "@/app/components/connect/accessbutton";
 import CheckInButton from "@/app/components/connect/checkinbutton";
 import MintReceiptButton from "../components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "../components/receipts/preview-receipt-button";
 import { getNotaReceiptContract } from "@/lib/receipt-contract";
 import { getNotaReceiptDefaultChainId } from "@/lib/nota-receipt-config";
 import { Navigation } from "../components/nav";
@@ -144,7 +145,11 @@ export default function ReceiptAdminPage() {
       return;
     }
     const nextTab = searchParams.get("tab");
-    if (nextTab === "existing" || nextTab === "metadata" || nextTab === "owned") {
+    if (
+      nextTab === "existing" ||
+      nextTab === "metadata" ||
+      nextTab === "owned"
+    ) {
       if (!adminGate && nextTab !== "owned") {
         setActiveTab("owned");
         return;
@@ -233,10 +238,10 @@ export default function ReceiptAdminPage() {
       <div className="px-6 pt-20 pb-10 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
         <div className="max-w-2xl mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
-            Receipt Admin
+            Receipt Dashboard
           </h2>
           <p className="mt-4 text-zinc-400">
-            Create receipt metadata, then mint one edition for your wallet.
+            Manage all the content receipts of this web app.
           </p>
         </div>
 
@@ -273,7 +278,7 @@ export default function ReceiptAdminPage() {
                       {adminGate && (
                         <>
                           <button
-                            className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 ${
+                            className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
                               activeTab === "metadata"
                                 ? "bg-zinc-800/80 text-zinc-100"
                                 : "text-zinc-400 hover:text-zinc-200"
@@ -283,7 +288,7 @@ export default function ReceiptAdminPage() {
                             Metadata
                           </button>
                           <button
-                            className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 ${
+                            className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
                               activeTab === "existing"
                                 ? "bg-zinc-800/80 text-zinc-100"
                                 : "text-zinc-400 hover:text-zinc-200"
@@ -295,7 +300,7 @@ export default function ReceiptAdminPage() {
                         </>
                       )}
                       <button
-                        className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 ${
+                        className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
                           activeTab === "owned"
                             ? "bg-zinc-800/80 text-zinc-100"
                             : "text-zinc-400 hover:text-zinc-200"
@@ -337,8 +342,12 @@ export default function ReceiptAdminPage() {
 
           <div className="mt-4 md:mt-8 grid grid-cols-1">
             <CheckInButton />
-            <div className="mt-4 grid grid-cols-1">
-              <MintReceiptButton receiptId={83} mintLabel="Mint Receipt (NFT)" />
+            <div className="mt-4 grid grid-cols-1 gap-2">
+              <PreviewReceiptButton receiptId={83} />
+              <MintReceiptButton
+                receiptId={83}
+                mintLabel="Mint Receipt (NFT)"
+              />
             </div>
           </div>
         </div>

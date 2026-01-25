@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useReadContract } from "thirdweb/react";
 import ReceiptImage from "../receipts/receipt-image";
 import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "@/app/components/receipts/preview-receipt-button";
 import type { getNotaReceiptContract } from "@/lib/receipt-contract";
 
 type ExistingTabProps = {
@@ -52,7 +53,8 @@ function TokenRow({
           {data.name} Page.
         </Link>
       </div>
-      <div className="mt-2 grid grid-cols-1">
+      <div className="mt-2 grid grid-cols-1 gap-2">
+        <PreviewReceiptButton receiptId={idNumber} />
         <MintReceiptButton receiptId={idNumber} mintLabel="Mint 1 for Admin" />
       </div>
     </div>

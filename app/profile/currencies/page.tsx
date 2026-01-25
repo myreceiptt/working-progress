@@ -7,6 +7,7 @@ import { Eye } from "lucide-react";
 import { useActiveAccount } from "thirdweb/react";
 import CheckInButton from "@/app/components/connect/checkinbutton";
 import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "@/app/components/receipts/preview-receipt-button";
 
 export default function TheCurrencies() {
   const account = useActiveAccount();
@@ -187,7 +188,8 @@ export default function TheCurrencies() {
 
         <div className="mt-4 md:mt-8 grid grid-cols-1">
           <CheckInButton />
-          <div className="mt-4 grid grid-cols-1">
+          <div className="mt-4 grid grid-cols-1 gap-2">
+            <PreviewReceiptButton receiptId={8} />
             <MintReceiptButton receiptId={8} mintLabel="Mint Receipt (NFT)" />
           </div>
         </div>

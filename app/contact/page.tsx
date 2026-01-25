@@ -22,6 +22,7 @@ import { Card } from "../components/card";
 import AccessButton from "../components/connect/accessbutton";
 import CheckInButton from "../components/connect/checkinbutton";
 import MintReceiptButton from "../components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "../components/receipts/preview-receipt-button";
 
 const socials = [
   {
@@ -175,7 +176,8 @@ export default function OurContact() {
 
           <div className="mt-4 md:mt-8 grid grid-cols-1">
             <CheckInButton />
-            <div className="mt-4 grid grid-cols-1">
+            <div className="mt-4 grid grid-cols-1 gap-2">
+              <PreviewReceiptButton receiptId={9} />
               <MintReceiptButton receiptId={9} mintLabel="Mint Receipt (NFT)" />
             </div>
           </div>

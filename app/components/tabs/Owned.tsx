@@ -5,6 +5,7 @@ import { useActiveAccount, useReadContract } from "thirdweb/react";
 import ReceiptImage from "../receipts/receipt-image";
 import MintReceiptButton from "@/app/components/receipts/mint-receipt-button";
 import ReadReceiptButton from "@/app/components/receipts/read-receipt-button";
+import PreviewReceiptButton from "@/app/components/receipts/preview-receipt-button";
 import type { getNotaReceiptContract } from "@/lib/receipt-contract";
 
 type OwnedTabProps = {
@@ -66,7 +67,8 @@ function TokenRow({
           {data.name} Page.
         </Link>
       </div>
-      <div className="mt-2 grid grid-cols-1">
+      <div className="mt-2 grid grid-cols-1 gap-2">
+        <PreviewReceiptButton receiptId={idNumber} />
         {owned ? (
           <MintReceiptButton
             receiptId={idNumber}

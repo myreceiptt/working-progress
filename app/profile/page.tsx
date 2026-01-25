@@ -10,6 +10,7 @@ import AccessButton from "../components/connect/accessbutton";
 import OurProducts from "../components/products";
 import CheckInButton from "../components/connect/checkinbutton";
 import MintReceiptButton from "../components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "../components/receipts/preview-receipt-button";
 
 export default function OurProfile() {
   const account = useActiveAccount();
@@ -199,7 +200,8 @@ export default function OurProfile() {
 
             <div className="mt-4 md:mt-8 grid grid-cols-1">
               <CheckInButton />
-              <div className="mt-4 grid grid-cols-1">
+              <div className="mt-4 grid grid-cols-1 gap-2">
+                <PreviewReceiptButton receiptId={2} />
                 <MintReceiptButton receiptId={2} mintLabel="Mint Receipt (NFT)" />
               </div>
             </div>
