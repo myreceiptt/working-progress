@@ -1,0 +1,406 @@
+<svg
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    width="200"
+    height="200"
+    fill="#000000"
+    stroke="#747474"
+    stroke-width="4" />
+  <animate
+    attributeName="fill-opacity"
+    from="0"
+    to="1"
+    dur="1s"
+    repeatCount="indefinite" />
+  <g>
+    <rect x="20" y="200" width="5" height="5" fill="#999999">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="0,-200"
+        dur="5s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="5s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="50" y="0" width="7" height="7" fill="#888888">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="0,200"
+        dur="6s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="6s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="0" y="100" width="6" height="6" fill="#777777">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="200,0"
+        dur="4s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="4s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="200" y="110" width="4" height="4" fill="red">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="-200,0"
+        dur="3s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="3s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="0" y="0" width="5" height="5" fill="#666666">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="200,200"
+        dur="7s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="7s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="200" y="200" width="6" height="6" fill="#555555">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="-200,-200"
+        dur="8s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="8s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="200" y="10" width="4" height="4" fill="red">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="-200,200"
+        dur="9s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="9s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="10" y="200" width="7" height="7" fill="#444444">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="200,-200"
+        dur="10s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="10s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="200" y="80" width="5" height="5" fill="#333333">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="-200,0"
+        dur="11s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="11s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="60" y="200" width="4" height="4" fill="#222222">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="0,-200"
+        dur="1s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="1s"
+        repeatCount="indefinite" />
+    </rect>
+    <rect x="90" y="0" width="6" height="6" fill="#111111">
+      <animateTransform
+        attributeName="transform"
+        type="translate"
+        from="0,0"
+        to="0,200"
+        dur="2s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="fill-opacity"
+        from="1"
+        to="0"
+        dur="2s"
+        repeatCount="indefinite" />
+    </rect>
+  </g>
+  <g>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="#111111"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="5s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="5s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="#222222"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="6s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="6s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="#333333"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="4s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="4s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="red"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="1s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="1s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="#444444"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="8s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="8s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="#555555"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="9s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="9s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="red"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="10s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="10s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="#666666"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="7s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="7s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="#777777"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="3s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="3s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="#888888"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="2s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="2s"
+        repeatCount="indefinite" />
+    </circle>
+    <circle
+      cx="100"
+      cy="100"
+      r="0"
+      fill="none"
+      stroke="#999999"
+      stroke-width="2">
+      <animate
+        attributeName="r"
+        from="0"
+        to="100"
+        dur="11s"
+        repeatCount="indefinite" />
+      <animate
+        attributeName="stroke-opacity"
+        from="1"
+        to="0"
+        dur="11s"
+        repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>
