@@ -27,6 +27,7 @@ import { Card } from "../components/card";
 import MetadataTab from "../components/tabs/Metadata";
 import ExistingTab from "../components/tabs/Existing";
 import OwnedTab from "../components/tabs/Owned";
+import AdminTab from "../components/tabs/Admin";
 
 const adminAddresses = (
   process.env.NEXT_PUBLIC_NOTA_RECEIPT_ADMINS ??
@@ -44,14 +45,22 @@ type FormState = {
   pageUrl: string;
   imageSvg: string;
 };
-type TabKey = "metadata" | "existing" | "owned";
+type TabKey = "metadata" | "existing" | "admin" | "owned";
+type MetadataSaveStatus =
+  | "idle"
+  | "unavailable"
+  | "saving"
+  | "awaiting_wallet"
+  | "confirming"
+  | "error";
 
 export default function ReceiptAdminPage() {
   const account = useActiveAccount();
   const router = useRouter();
   const searchParams = useSearchParams();
   const walletChain = useActiveWalletChain();
-  const { mutate: sendTx, isPending: isLoading } = useSendTransaction();
+  const { mutateAsync: sendTxAsync, isPending: isLoading } =
+    useSendTransaction();
   const [form, setForm] = useState<FormState>({
     id: "",
     name: "",
@@ -60,6 +69,9 @@ export default function ReceiptAdminPage() {
     imageSvg: "",
   });
   const [status, setStatus] = useState<string | null>(null);
+  const [metadataSaveStatus, setMetadataSaveStatus] =
+    useState<MetadataSaveStatus>("idle");
+  const [metadataDotCount, setMetadataDotCount] = useState(1);
   const [selectedTokenId, setSelectedTokenId] = useState<string>("new");
   const chainId = walletChain?.id ?? getNotaReceiptDefaultChainId();
   const contract = useMemo(() => getNotaReceiptContract(chainId), [chainId]);
@@ -72,7 +84,9 @@ export default function ReceiptAdminPage() {
   const address = account?.address;
   const tabParam = searchParams?.get("tab");
   const [activeTab, setActiveTab] = useState<TabKey>(
-    tabParam === "existing" || tabParam === "owned" ? tabParam : "metadata"
+    tabParam === "existing" || tabParam === "admin" || tabParam === "owned"
+      ? tabParam
+      : "metadata"
   );
 
   const { data: isAdmin } = useReadContract({
@@ -118,14 +132,12 @@ export default function ReceiptAdminPage() {
     return Number.isFinite(parsed) ? parsed : nextTokenId;
   }, [nextTokenId, selectedTokenId]);
 
-  const { data: selectedMeta } = useReadContract({
+  const { data: selectedMeta, refetch: refetchSelectedMeta } = useReadContract({
     contract: safeReadContract,
     method: "getNOTAMetadata",
     params: [BigInt(selectedTokenIdNumber)],
     queryOptions: {
-      enabled: Boolean(
-        contractReady && readContract && selectedTokenId !== "new"
-      ),
+      enabled: Boolean(contractReady && readContract),
     },
   });
 
@@ -147,6 +159,7 @@ export default function ReceiptAdminPage() {
     const nextTab = searchParams.get("tab");
     if (
       nextTab === "existing" ||
+      nextTab === "admin" ||
       nextTab === "metadata" ||
       nextTab === "owned"
     ) {
@@ -189,17 +202,19 @@ export default function ReceiptAdminPage() {
   const handleCreate = async (event: FormEvent) => {
     event.preventDefault();
     if (!contractReady || !contract) {
+      setMetadataSaveStatus("unavailable");
       return;
     }
-    setStatus(null);
 
     const id = Number(form.id);
     if (!Number.isFinite(id)) {
       setStatus("Token ID must be a number.");
+      setMetadataSaveStatus("error");
       return;
     }
 
     try {
+      setMetadataSaveStatus("saving");
       const transaction = prepareContractCall({
         contract,
         method: "setNOTAMetadata",
@@ -211,13 +226,84 @@ export default function ReceiptAdminPage() {
           form.pageUrl,
         ],
       });
-      await sendTx(transaction);
-      setStatus("Metadata saved.");
+      setMetadataSaveStatus("awaiting_wallet");
+      await sendTxAsync(transaction);
+      setMetadataSaveStatus("confirming");
+
+      const expected = {
+        name: form.name,
+        description: form.description,
+        imageSvg: form.imageSvg,
+        pageUrl: form.pageUrl,
+      };
+
+      for (let attempt = 0; attempt < 25; attempt += 1) {
+        const result = await refetchSelectedMeta?.();
+        const nextMeta = result?.data ?? selectedMeta;
+        if (
+          nextMeta &&
+          nextMeta.name === expected.name &&
+          nextMeta.description === expected.description &&
+          nextMeta.imageSvg === expected.imageSvg &&
+          nextMeta.pageUrl === expected.pageUrl
+        ) {
+          break;
+        }
+        await new Promise((resolve) => setTimeout(resolve, 1200));
+      }
+
       await refetch?.();
+      setStatus("Metadata saved.");
+      setMetadataSaveStatus("idle");
     } catch (error) {
       setStatus(error instanceof Error ? error.message : "Failed to save.");
+      setMetadataSaveStatus("error");
     }
   };
+
+  useEffect(() => {
+    if (metadataSaveStatus !== "confirming") {
+      setMetadataDotCount(1);
+      return;
+    }
+    const interval = setInterval(() => {
+      setMetadataDotCount((prev) => (prev >= 7 ? 1 : prev + 1));
+    }, 350);
+    return () => clearInterval(interval);
+  }, [metadataSaveStatus]);
+
+  const metadataSubmitLabel = useMemo(() => {
+    if (!contractReady) {
+      return "Unavailable on this chain";
+    }
+    if (metadataSaveStatus === "error") {
+      return "Failed. Try Again!";
+    }
+    if (metadataSaveStatus === "awaiting_wallet") {
+      return "Confirm in wallet...";
+    }
+    if (metadataSaveStatus === "saving") {
+      return "Saving...";
+    }
+    if (metadataSaveStatus === "confirming") {
+      return ".".repeat(metadataDotCount);
+    }
+    return "Save Metadata";
+  }, [contractReady, metadataDotCount, metadataSaveStatus]);
+
+  const metadataSubmitDisabled = useMemo(() => {
+    if (!contractReady) {
+      return true;
+    }
+    if (
+      metadataSaveStatus === "saving" ||
+      metadataSaveStatus === "awaiting_wallet" ||
+      metadataSaveStatus === "confirming"
+    ) {
+      return true;
+    }
+    return false;
+  }, [contractReady, metadataSaveStatus]);
 
   const setTab = (nextTab: TabKey) => {
     if (!adminGate && nextTab !== "owned") {
@@ -274,11 +360,11 @@ export default function ReceiptAdminPage() {
               <Card>
                 <div className="grid grid-cols-1 gap-6 text-zinc-200">
                   <div className="grid gap-4 rounded-md px-4 md:px-8 pt-4 md:pt-8">
-                    <div className="relative inline-flex w-full rounded-full border border-zinc-800 bg-black/60 p-1">
+                    <div className="relative inline-grid w-full grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1 rounded-md border border-zinc-800 bg-black/60 p-1">
                       {adminGate && (
                         <>
                           <button
-                            className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
+                            className={`relative z-10 flex-1 rounded-md border border-zinc-600 px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
                               activeTab === "metadata"
                                 ? "bg-zinc-800/80 text-zinc-100"
                                 : "text-zinc-400 hover:text-zinc-200"
@@ -288,7 +374,7 @@ export default function ReceiptAdminPage() {
                             Metadata
                           </button>
                           <button
-                            className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
+                            className={`relative z-10 flex-1 rounded-md border border-zinc-600 px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
                               activeTab === "existing"
                                 ? "bg-zinc-800/80 text-zinc-100"
                                 : "text-zinc-400 hover:text-zinc-200"
@@ -297,10 +383,20 @@ export default function ReceiptAdminPage() {
                             onClick={() => setTab("existing")}>
                             Existing
                           </button>
+                          <button
+                            className={`relative z-10 flex-1 rounded-md border border-zinc-600 px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
+                              activeTab === "admin"
+                                ? "bg-zinc-800/80 text-zinc-100"
+                                : "text-zinc-400 hover:text-zinc-200"
+                            }`}
+                            type="button"
+                            onClick={() => setTab("admin")}>
+                            Admin
+                          </button>
                         </>
                       )}
                       <button
-                        className={`relative z-10 flex-1 rounded-full px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
+                        className={`relative z-10 flex-1 rounded-md border border-zinc-600 px-4 py-2 text-center text-sm font-semibold transition-colors duration-500 cursor-pointer ${
                           activeTab === "owned"
                             ? "bg-zinc-800/80 text-zinc-100"
                             : "text-zinc-400 hover:text-zinc-200"
@@ -316,7 +412,8 @@ export default function ReceiptAdminPage() {
                     <MetadataTab
                       form={form}
                       status={status}
-                      isLoading={isLoading}
+                      submitLabel={metadataSubmitLabel}
+                      submitDisabled={metadataSubmitDisabled || isLoading}
                       onSubmit={handleCreate}
                       onChange={handleChange}
                       tokenIds={sortedTokenIds}
@@ -328,6 +425,11 @@ export default function ReceiptAdminPage() {
                     <ExistingTab
                       tokenIds={[...(tokenIds ?? [])]}
                       contract={contract!}
+                    />
+                  ) : adminGate && activeTab === "admin" ? (
+                    <AdminTab
+                      contract={contract!}
+                      adminAddresses={adminAddresses}
                     />
                   ) : (
                     <OwnedTab

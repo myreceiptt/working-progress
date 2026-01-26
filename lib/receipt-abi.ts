@@ -131,4 +131,11 @@ export const receiptAbi = [
     inputs: [{ name: "id", type: "uint256" }],
     outputs: [{ name: "", type: "string" }],
   },
+  {
+    type: "function",
+    name: "withdraw",
+    stateMutability: "nonpayable",
+    inputs: [{ name: "to", type: "address" }],
+    outputs: [],
+  },
 ] as const;

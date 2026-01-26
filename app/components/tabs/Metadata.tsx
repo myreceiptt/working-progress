@@ -13,7 +13,8 @@ type FormState = {
 type MetadataTabProps = {
   form: FormState;
   status: string | null;
-  isLoading: boolean;
+  submitLabel: string;
+  submitDisabled: boolean;
   onSubmit: (event: FormEvent) => void;
   onChange: (
     key: keyof FormState
@@ -27,7 +28,8 @@ type MetadataTabProps = {
 export default function MetadataTab({
   form,
   status,
-  isLoading,
+  submitLabel,
+  submitDisabled,
   onSubmit,
   onChange,
   tokenIds,
@@ -96,14 +98,20 @@ export default function MetadataTab({
           onChange={onChange("imageSvg")}
           placeholder="<svg ...></svg>"
         />
+        {status ? (
+          <div className="text-xs text-zinc-500">{status}</div>
+        ) : (
+          <div className="text-xs text-zinc-500">
+            {"Don't forget to save it first."}
+          </div>
+        )}
       </div>
       <button
         className="rounded-md border border-zinc-600 bg-black px-4 py-2 text-sm font-semibold text-zinc-100 cursor-pointer hover:border-zinc-400 disabled:cursor-not-allowed disabled:opacity-60"
         type="submit"
-        disabled={isLoading}>
-        {isLoading ? "Saving..." : "Save Metadata"}
+        disabled={submitDisabled}>
+        {submitLabel}
       </button>
-      {status ? <p className="text-xs text-zinc-400">{status}</p> : null}
     </form>
   );
 }
