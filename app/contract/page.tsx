@@ -19,6 +19,7 @@ import AccessButton from "@/app/components/connect/accessbutton";
 import CheckInButton from "@/app/components/connect/checkinbutton";
 import MintReceiptButton from "../components/receipts/mint-receipt-button";
 import PreviewReceiptButton from "../components/receipts/preview-receipt-button";
+import ReadAllButton from "../components/receipts/read-all-button";
 import { getNotaReceiptContract } from "@/lib/receipt-contract";
 import { getNotaReceiptDefaultChainId } from "@/lib/nota-receipt-config";
 import { Navigation } from "../components/nav";
@@ -82,6 +83,7 @@ export default function ReceiptAdminPage() {
   const safeReadContract = readContract!;
   const contractReady = Boolean(contract);
   const address = account?.address;
+  const zeroAddress = "0x0000000000000000000000000000000000000000";
   const tabParam = searchParams?.get("tab");
   const [activeTab, setActiveTab] = useState<TabKey>(
     tabParam === "existing" || tabParam === "admin" || tabParam === "owned"
@@ -97,6 +99,39 @@ export default function ReceiptAdminPage() {
       enabled: Boolean(address && contractReady && readContract),
     },
   });
+
+  const requiredReceiptIds = useMemo(
+    () => Array.from({ length: 82 }, (_, index) => BigInt(index + 1)),
+    []
+  );
+  const requiredReceiptAccounts = useMemo(
+    () => requiredReceiptIds.map(() => address ?? zeroAddress),
+    [address, requiredReceiptIds, zeroAddress]
+  );
+
+  const { data: requiredReceiptBalances } = useReadContract({
+    contract: safeReadContract,
+    method: "balanceOfBatch",
+    params: [requiredReceiptAccounts, requiredReceiptIds],
+    queryOptions: {
+      enabled: Boolean(address && contractReady && readContract),
+    },
+  });
+
+  const canMintReceipt84 = useMemo(() => {
+    if (!address) {
+      return false;
+    }
+    if (!requiredReceiptBalances?.length) {
+      return false;
+    }
+    return requiredReceiptBalances.every((balance) => {
+      if (typeof balance === "bigint") {
+        return balance > BigInt(0);
+      }
+      return BigInt(balance) > BigInt(0);
+    });
+  }, [address, requiredReceiptBalances]);
 
   const { data: tokenIds, refetch } = useReadContract({
     contract: safeReadContract,
@@ -445,11 +480,15 @@ export default function ReceiptAdminPage() {
           <div className="mt-4 md:mt-8 grid grid-cols-1">
             <CheckInButton />
             <div className="mt-4 grid grid-cols-1 gap-2">
-              <PreviewReceiptButton receiptId={83} />
-              <MintReceiptButton
-                receiptId={83}
-                mintLabel="Mint Receipt (NFT)"
-              />
+              <PreviewReceiptButton receiptId={84} />
+              {canMintReceipt84 ? (
+                <MintReceiptButton
+                  receiptId={84}
+                  mintLabel="Mint Receipt (NFT)"
+                />
+              ) : (
+                <ReadAllButton />
+              )}
             </div>
           </div>
         </div>

@@ -84,6 +84,16 @@ export const receiptAbi = [
   },
   {
     type: "function",
+    name: "balanceOfBatch",
+    stateMutability: "view",
+    inputs: [
+      { name: "accounts", type: "address[]" },
+      { name: "ids", type: "uint256[]" },
+    ],
+    outputs: [{ name: "", type: "uint256[]" }],
+  },
+  {
+    type: "function",
     name: "admins",
     stateMutability: "view",
     inputs: [{ name: "account", type: "address" }],

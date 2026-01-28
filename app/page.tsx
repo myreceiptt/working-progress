@@ -1,10 +1,21 @@
 "use client";
+import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  useActiveAccount,
+  useActiveWalletChain,
+  useReadContract,
+} from "thirdweb/react";
 import CheckInButton from "./components/connect/checkinbutton";
 import MintReceiptButton from "./components/receipts/mint-receipt-button";
 import PreviewReceiptButton from "./components/receipts/preview-receipt-button";
 import Particles from "./components/particles";
+import {
+  getNotaReceiptContract,
+  getNotaReceiptContractAddress,
+} from "@/lib/receipt-contract";
+import { getNotaReceiptDefaultChainId } from "@/lib/nota-receipt-config";
 
 const navigation = [
   { name: "{ prof. }", href: "/profile" },
@@ -19,6 +30,33 @@ const bottomnav = [
 ];
 
 export default function Home() {
+  const account = useActiveAccount();
+  const walletChain = useActiveWalletChain();
+  const address = account?.address;
+  const chainId = walletChain?.id ?? getNotaReceiptDefaultChainId();
+
+  const receiptContract = useMemo(
+    () => getNotaReceiptContract(chainId),
+    [chainId],
+  );
+  const readContract = useMemo(
+    () =>
+      receiptContract ?? getNotaReceiptContract(getNotaReceiptDefaultChainId()),
+    [receiptContract],
+  );
+  const safeReadContract = readContract!;
+  const receiptContractAddress = getNotaReceiptContractAddress(chainId);
+  const contractReady = Boolean(receiptContract && receiptContractAddress);
+
+  const { data: isAdmin } = useReadContract({
+    contract: safeReadContract,
+    method: "admins",
+    params: [address ?? "0x0000000000000000000000000000000000000000"],
+    queryOptions: {
+      enabled: Boolean(address && contractReady && readContract),
+    },
+  });
+
   return (
     <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-hidden bg-linear-to-tl from-black via-zinc-600/20 to-black">
       <Particles
@@ -70,6 +108,15 @@ export default function Home() {
         <div className="mt-4 md:mt-8 grid grid-cols-1 gap-2 px-10 sm:px-40 md:px-60 lg:px-80 xl:px-96">
           <PreviewReceiptButton receiptId={1} />
           <MintReceiptButton receiptId={1} mintLabel="Mint Receipt (NFT)" />
+          {Boolean(isAdmin) ? (
+            <>
+              <PreviewReceiptButton receiptId={83} />
+              <MintReceiptButton
+                receiptId={83}
+                mintLabel="Mint Receipt (NFT)"
+              />
+            </>
+          ) : null}
         </div>
 
         <ul className="mt-4 md:mt-8 flex items-center justify-center gap-4">
