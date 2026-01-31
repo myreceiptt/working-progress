@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import { getAllProjects } from "@/lib/content";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
@@ -22,9 +21,10 @@ export default async function ProjectsPage() {
     return acc;
   }, {} as Record<string, number>);
 
-  const featured = allProjects.find((project) => project.slug === "11")!;
-  const top2 = allProjects.find((project) => project.slug === "10")!;
-  const top3 = allProjects.find((project) => project.slug === "09")!;
+  const featured = allProjects.find((project) => project.slug === "running")!;
+  const top2 = allProjects.find((project) => project.slug === "14")!;
+  const top3 = allProjects.find((project) => project.slug === "13")!;
+
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
@@ -43,15 +43,16 @@ export default async function ProjectsPage() {
     <div className="relative pb-16">
       <Navigation />
       <div className="px-6 pt-20 pb-10 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
-        <div className="max-w-2xl mx-auto lg:mx-0">
+        <div className="max-w-2xl mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
             Non-Confidential Portfolio
           </h2>
           <p className="mt-4 text-zinc-400">
-            Who doesn't like getting paid? We're excited when get paid by real
-            world people...
+            Who doesn&apos;t like getting paid? We&apos;re excited when get paid
+            by real world people...
           </p>
         </div>
+
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-4 md:gap-8 mx-auto lg:grid-cols-2 ">
@@ -80,8 +81,7 @@ export default async function ProjectsPage() {
 
                 <h2
                   id="featured-post"
-                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
-                >
+                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
                   {featured.title}
                 </h2>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
@@ -104,9 +104,18 @@ export default async function ProjectsPage() {
             ))}
           </div>
         </div>
-        <div className="hidden w-full h-px md:block bg-zinc-800" />
 
-        <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
+        <div className="w-full h-px bg-zinc-800" />
+
+        <div className="grid grid-cols-1 gap-4 mx-auto md:hidden">
+          {sorted.map((project) => (
+            <Card key={project.slug}>
+              <Article project={project} views={views[project.slug] ?? 0} />
+            </Card>
+          ))}
+        </div>
+
+        <div className="hidden md:grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
           <div className="grid grid-cols-1 gap-4">
             {sorted
               .filter((_, i) => i % 3 === 0)
@@ -135,6 +144,7 @@ export default async function ProjectsPage() {
               ))}
           </div>
         </div>
+
         <div className="w-full h-px bg-zinc-800" />
       </div>
       <BottomNavigation />

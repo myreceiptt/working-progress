@@ -4,21 +4,25 @@ import {
   Castle,
   Receipt,
   X,
-  Github,
+  GitBranch,
   Mail,
-  Youtube,
-  Facebook,
-  Instagram,
+  MonitorPlay,
+  Users,
+  UserCheck,
   AtSign,
   PhoneIncoming,
   Send,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { useActiveAccount } from "thirdweb/react";
 import { Navigation } from "../components/nav";
 import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 import AccessButton from "../components/connect/accessbutton";
+import CheckInButton from "../components/connect/checkinbutton";
+import MintReceiptButton from "../components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "../components/receipts/preview-receipt-button";
 
 const socials = [
   {
@@ -40,7 +44,7 @@ const socials = [
     handle: "$endhonesa",
   },
   {
-    icon: <Github size={20} />,
+    icon: <GitBranch size={20} />,
     href: "https://github.com/myreceiptt",
     label: "Github",
     handle: "myreceiptt",
@@ -58,19 +62,19 @@ const socials = [
     handle: "nota@",
   },
   {
-    icon: <Youtube size={20} />,
+    icon: <MonitorPlay size={20} />,
     href: "https://www.youtube.com/@MyReceipt/",
     label: "YouTube",
     handle: "@MyReceipt",
   },
   {
-    icon: <Facebook size={20} />,
+    icon: <Users size={20} />,
     href: "https://www.facebook.com/myreceiptt",
     label: "Facebook",
     handle: "myreceiptt",
   },
   {
-    icon: <Instagram size={20} />,
+    icon: <UserCheck size={20} />,
     href: "https://instagram.com/MyReceipt",
     label: "Instagram",
     handle: "@MyReceipt",
@@ -102,7 +106,7 @@ export default function OurContact() {
     <div className="relative pb-16">
       <Navigation />
       <div className="px-6 pt-20 pb-10 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
-        <div className="max-w-2xl mx-auto lg:mx-0">
+        <div className="max-w-2xl mx-0">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
             Track Us
           </h2>
@@ -116,88 +120,72 @@ export default function OurContact() {
             .
           </p>
         </div>
+
         <div className="w-full h-px bg-zinc-800" />
+
         <div className="grid grid-cols-1 mx-auto">
-          <Card>
-            <article className="relative w-full h-full p-4 md:p-8">
-              <div className="my-4 md:my-8 grid grid-cols-1">
-                <AccessButton />
-              </div>
+          <div className="mb-4 md:mb-8 grid grid-cols-1">
+            <AccessButton />
+          </div>
 
-              {account && (
-                <div className="grid grid-cols-1 gap-4 md:gap-8 mx-auto md:grid-cols-3">
-                  {socials.map((s) => (
-                    <Card key={s.label}>
-                      <Link
-                        href={s.href}
-                        target="_blank"
-                        className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 sm:py-8 md:pt-12 md:pb-16 lg:pb-28 xl:pb-44">
-                        <span
-                          className="absolute w-px h-2/3 bg-linear-to-b from-zinc-500 via-zinc-500/50 to-transparent"
-                          aria-hidden="true"
-                        />
-                        <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
-                          {s.icon}
-                        </span>{" "}
-                        <div className="z-10 flex flex-col items-center">
-                          <span className="lg:text-lg font-medium duration-150 xl:text-xl text-zinc-200 group-hover:text-white font-display">
-                            {s.handle}
-                          </span>
-                          <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-                            {s.label}
-                          </span>
-                        </div>
-                      </Link>
-                    </Card>
-                  ))}
+          {!account && (
+            <Card>
+              <article className="relative w-full h-full">
+                <div className="flex justify-between gap-2 items-center">
+                  <Image
+                    src="/images/about-prof-nota-inc.jpg"
+                    alt="Prof. NOTA Inc. Contact"
+                    width={1600}
+                    height={900}
+                    className="h-auto w-full object-cover"
+                    priority
+                  />
                 </div>
-              )}
+              </article>
+            </Card>
+          )}
 
-              {/* Here will be a button to claim the receipt. */}
-            </article>
-          </Card>
+          {account && (
+            <div className="relative w-full h-full pt-4 md:pt-8 grid grid-cols-1 gap-4 md:gap-8 mx-auto md:grid-cols-3">
+              {socials.map((s) => (
+                <Card key={s.label}>
+                  <Link
+                    href={s.href}
+                    target="_blank"
+                    className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 sm:py-8 md:pt-12 md:pb-16 lg:pb-28 xl:pb-44">
+                    <span
+                      className="absolute w-px h-2/3 bg-linear-to-b from-zinc-500 via-zinc-500/50 to-transparent"
+                      aria-hidden="true"
+                    />
+                    <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
+                      {s.icon}
+                    </span>{" "}
+                    <div className="z-10 flex flex-col items-center">
+                      <span className="lg:text-lg font-medium duration-150 xl:text-xl text-zinc-200 group-hover:text-white font-display">
+                        {s.handle}
+                      </span>
+                      <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
+                        {s.label}
+                      </span>
+                    </div>
+                  </Link>
+                </Card>
+              ))}
+            </div>
+          )}
+
+          <div className="mt-4 md:mt-8 grid grid-cols-1">
+            <CheckInButton />
+            <div className="mt-4 grid grid-cols-1 gap-2">
+              <PreviewReceiptButton receiptId={9} />
+              <MintReceiptButton receiptId={9} mintLabel="Mint Receipt (NFT)" />
+            </div>
+          </div>
         </div>
-        <div className="w-full h-px bg-zinc-800" />
-        {/* <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 "></div> */}
-        {/* <div className="hidden w-full h-px md:block bg-zinc-800" /> */}
 
-        {/* <div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3"></div> */}
+        <div className="w-full h-px bg-zinc-800" />
       </div>
       <BottomNavigation />
     </div>
-
-    // <div className=" bg-linear-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
-    //   <Navigation />
-    //   <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
-    //     <div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
-    //       {socials.map((s) => (
-    //         <Card>
-    //           <Link
-    //             href={s.href}
-    //             target="_blank"
-    //             className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
-    //           >
-    //             <span
-    //               className="absolute w-px h-2/3 bg-linear-to-b from-zinc-500 via-zinc-500/50 to-transparent"
-    //               aria-hidden="true"
-    //             />
-    //             <span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
-    //               {s.icon}
-    //             </span>{" "}
-    //             <div className="z-10 flex flex-col items-center">
-    //               <span className="lg:text-lg font-medium duration-150 xl:text-xl text-zinc-200 group-hover:text-white font-display">
-    //                 {s.handle}
-    //               </span>
-    //               <span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-    //                 {s.label}
-    //               </span>
-    //             </div>
-    //           </Link>
-    //         </Card>
-    //       ))}
-    //     </div>
-    //   </div>
-    //   <BottomNavigation />
-    // </div>
   );
 }

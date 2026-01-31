@@ -1,8 +1,21 @@
+"use client";
+import { useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
+import {
+  useActiveAccount,
+  useActiveWalletChain,
+  useReadContract,
+} from "thirdweb/react";
 import CheckInButton from "./components/connect/checkinbutton";
+import MintReceiptButton from "./components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "./components/receipts/preview-receipt-button";
 import Particles from "./components/particles";
+import {
+  getNotaReceiptContract,
+  getNotaReceiptContractAddress,
+} from "@/lib/receipt-contract";
+import { getNotaReceiptDefaultChainId } from "@/lib/nota-receipt-config";
 
 const navigation = [
   { name: "{ prof. }", href: "/profile" },
@@ -17,9 +30,43 @@ const bottomnav = [
 ];
 
 export default function Home() {
+  const account = useActiveAccount();
+  const walletChain = useActiveWalletChain();
+  const address = account?.address;
+  const chainId = walletChain?.id ?? getNotaReceiptDefaultChainId();
+
+  const receiptContract = useMemo(
+    () => getNotaReceiptContract(chainId),
+    [chainId],
+  );
+  const readContract = useMemo(
+    () =>
+      receiptContract ?? getNotaReceiptContract(getNotaReceiptDefaultChainId()),
+    [receiptContract],
+  );
+  const safeReadContract = readContract!;
+  const receiptContractAddress = getNotaReceiptContractAddress(chainId);
+  const contractReady = Boolean(receiptContract && receiptContractAddress);
+
+  const { data: isAdmin } = useReadContract({
+    contract: safeReadContract,
+    method: "admins",
+    params: [address ?? "0x0000000000000000000000000000000000000000"],
+    queryOptions: {
+      enabled: Boolean(address && contractReady && readContract),
+    },
+  });
+
   return (
     <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-hidden bg-linear-to-tl from-black via-zinc-600/20 to-black">
-      <nav className="my-16 animate-fade-in">
+      <Particles
+        className="absolute inset-0 -z-10 animate-fade-in"
+        quantity={1111}
+        staticity={47}
+        ease={11}
+      />
+
+      <nav className="my-8 md:my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
           {navigation.map((item) => (
             <Link
@@ -30,14 +77,14 @@ export default function Home() {
             </Link>
           ))}
         </ul>
+
+        <div className="mt-4 md:mt-8 grid grid-cols-1">
+          <CheckInButton />
+        </div>
       </nav>
-      <div className="w-screen h-px animate-glow block animate-fade-left bg-linear-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={1111}
-        staticity={47}
-        ease={11}
-      />
+
+      <div className="w-screen h-px block animate-fade-left bg-linear-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 mb-2" />
+
       <Image
         src="/og.png"
         priority={true}
@@ -45,12 +92,34 @@ export default function Home() {
         height={111}
         alt="Hi, We are Prof. NOTA!"
       />
-      <h1 className="z-10 text-5xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl whitespace-nowrap bg-clip-text ">
-        Prof. NOTA v11.11
+
+      <h1 className="text-5xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl whitespace-nowrap bg-clip-text ">
+        Prof. NOTA
       </h1>
-      <div className="w-screen h-px animate-glow block animate-fade-right bg-linear-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center justify-center gap-4">
+
+      <div className="w-screen h-px block animate-fade-right bg-linear-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0 mt-2" />
+
+      <nav className="my-8 md:my-16 animate-fade-in">
+        <h2 className="text-center text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-10 sm:px-40 md:px-60 lg:px-80 xl:px-96">
+          We were born in the 0101 Universe. We exist in the digital realm of
+          the Internet. So, stay alert and beware of scams!
+        </h2>
+
+        <div className="mt-4 md:mt-8 grid grid-cols-1 gap-2 px-10 sm:px-40 md:px-60 lg:px-80 xl:px-96">
+          <PreviewReceiptButton receiptId={1} />
+          <MintReceiptButton receiptId={1} mintLabel="Mint Receipt (NFT)" />
+          {Boolean(isAdmin) ? (
+            <>
+              <PreviewReceiptButton receiptId={83} />
+              <MintReceiptButton
+                receiptId={83}
+                mintLabel="Mint Receipt (NFT)"
+              />
+            </>
+          ) : null}
+        </div>
+
+        <ul className="mt-4 md:mt-8 flex items-center justify-center gap-4">
           {bottomnav.map((item) => (
             <Link
               key={item.href}
@@ -60,33 +129,12 @@ export default function Home() {
             </Link>
           ))}
         </ul>
-      </nav>
-      <div className="text-center animate-fade-in">
-        <h2 className="text-sm duration-500 text-zinc-500 hover:text-zinc-300 px-10 sm:px-40 md:px-60 lg:px-80 xl:px-96">
-          We were born in the 0101 Universe. We exist in the digital realm of
-          the Internet. So, stay alert and beware of scams!
-        </h2>
-      </div>
-      <div className="mt-4 md:mt-8 grid grid-cols-1 animate-fade-in">
-        <CheckInButton />
-
-        {/* Here will be a button to claim the receipt. */}
-      </div>
-      <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center justify-center gap-4">
+        <ul className="flex items-center justify-center gap-4 mt-4 md:mt-8">
           <li className="text-sm font-semibold duration-500 text-zinc-500 hover:text-zinc-300">
             Copyleft (ɔ) since 1980 Prof. NOTA Inc.
           </li>
         </ul>
       </nav>
-      <iframe
-        className="hidden absolute top-0 items-center w-full h-1/4 px-4"
-        src="https://open.spotify.com/embed/playlist/0DQja3HX6MsLGtDl30DHFW?utm_source=generator&theme=0"
-        // width="747"
-        // height="474"
-        allowFullScreen
-        loading="lazy"
-        title="High school anthems for the class of 2000s - Playlist by Prof. NOTA"></iframe>
     </div>
   );
 }

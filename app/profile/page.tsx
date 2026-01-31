@@ -8,6 +8,9 @@ import { BottomNavigation } from "../components/navbott";
 import { Card } from "../components/card";
 import AccessButton from "../components/connect/accessbutton";
 import OurProducts from "../components/products";
+import CheckInButton from "../components/connect/checkinbutton";
+import MintReceiptButton from "../components/receipts/mint-receipt-button";
+import PreviewReceiptButton from "../components/receipts/preview-receipt-button";
 
 export default function OurProfile() {
   const account = useActiveAccount();
@@ -17,7 +20,7 @@ export default function OurProfile() {
       <div className="relative pb-16">
         <Navigation />
         <div className="px-6 pt-20 pb-10 mx-auto space-y-4 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 md:pb-12 lg:pt-32 lg:pb-16">
-          <div className="max-w-2xl mx-auto lg:mx-0">
+          <div className="max-w-2xl mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
               Our Profile
             </h2>
@@ -31,6 +34,7 @@ export default function OurProfile() {
               . We exist in the digital realm of the Internet.
             </p>
           </div>
+
           <div className="w-full h-px bg-zinc-800" />
 
           <div className="grid grid-cols-1 mx-auto">
@@ -101,7 +105,7 @@ export default function OurProfile() {
                     target="_blank"
                     href="https://docs.endhonesa.com/01-the-project.../how-is-the-journey#id-7th-stage-the-sanctuary-of-the-kings-world-postponed"
                     className="underline duration-500 hover:text-zinc-300">
-                    The KING’s World
+                    The KING&apos;s World
                   </Link>{" "}
                   to execute{" "}
                   <Link
@@ -163,7 +167,7 @@ export default function OurProfile() {
                 <p className="my-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   But, we have many things to do and complete. All require our
                   hard work, smart work, and of course, our energy and time. So,
-                  expect us, and please stay alert! Beware of scams! Let's hack
+                  expect us, and please stay alert! Beware of scams! Let&apos;s hack
                   them all, ethically!
                 </p>
                 <Image
@@ -191,35 +195,35 @@ export default function OurProfile() {
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
                   ==== 47 =======
                 </p>
-
-                {/* Here will be a button to claim the receipt. */}
               </article>
             </Card>
+
+            <div className="mt-4 md:mt-8 grid grid-cols-1">
+              <CheckInButton />
+              <div className="mt-4 grid grid-cols-1 gap-2">
+                <PreviewReceiptButton receiptId={2} />
+                <MintReceiptButton receiptId={2} mintLabel="Mint Receipt (NFT)" />
+              </div>
+            </div>
           </div>
-          <div className="hidden w-full h-px md:block bg-zinc-800" />
 
-          <div id="prodserv" className="grid grid-cols-1 mx-auto">
-            <Card>
-              <article className="relative w-full h-full p-4 md:p-8">
-                <h2 className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display">
-                  Products and Services
-                </h2>
-                {/* <div className="mb-4 md:mb-8">
-                  <Link href="#prodserv">
-                    <p className="text-zinc-200 hover:text-zinc-50 lg:block">
-                      Products and Services{" "}
-                      <span aria-hidden="true">&darr;&darr;</span>
-                    </p>
-                  </Link>
-                </div> */}
+          <div id="prodserv" className="w-full h-px bg-zinc-800" />
 
-                <div className="my-4 md:my-8 grid grid-cols-1">
-                  <AccessButton />
-                </div>
+          <div className="pt-10 md:pt-12 lg:pt-16 max-w-2xl mx-0">
+            <h2 className="text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl">
+              Our Products
+            </h2>
+            <p className="mt-4 text-zinc-400">
+              Our products are goods and services, or a combination of them.
+            </p>
+          </div>
 
-                {account && <OurProducts />}
-              </article>
-            </Card>
+          <div className="w-full h-px bg-zinc-800" />
+
+          <div className="grid grid-cols-1 mx-auto">
+            <AccessButton />
+
+            {account && <OurProducts />}
           </div>
 
           <div className="w-full h-px bg-zinc-800" />

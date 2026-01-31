@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Eye, Github, Twitter, Mail } from "lucide-react";
+import { ArrowLeft, Eye, GitBranch, X, Mail } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -28,15 +28,11 @@ export const Header: React.FC<Props> = ({ logger, views }) => {
   return (
     <header
       ref={ref}
-      className="relative isolate overflow-hidden bg-linear-to-tl from-black via-zinc-900 to-black"
-    >
+      className="relative isolate overflow-hidden bg-linear-to-tl from-black via-zinc-900 to-black">
       <div
-        className={`fixed inset-x-0 top-0 z-50 backdrop-blur duration-200 border-b-2 ${
-          isIntersecting
-            ? "bg-zinc-900/0 border-transparent"
-            : "bg-white/10 border-zinc-800"
-        }`}
-      >
+        className={`fixed inset-x-0 top-0 z-50 backdrop-blur duration-200 border-b-2 border-zinc-800 ${
+          isIntersecting ? "bg-zinc-900/0" : "bg-white/10"
+        }`}>
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <div className="flex justify-between gap-8">
             <span
@@ -45,15 +41,14 @@ export const Header: React.FC<Props> = ({ logger, views }) => {
                 isIntersecting
                   ? " text-zinc-400 hover:text-zinc-100"
                   : "text-zinc-600 hover:text-zinc-900"
-              } `}
-            >
+              } `}>
               <Eye className="w-5 h-5" />{" "}
               {Intl.NumberFormat("en-US", { notation: "compact" }).format(
                 views
               )}
             </span>
             <Link target="_blank" href="https://github.com/myreceiptt">
-              <Github
+              <GitBranch
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
                     ? " text-zinc-400 hover:text-zinc-100"
@@ -61,7 +56,7 @@ export const Header: React.FC<Props> = ({ logger, views }) => {
                 } `}
               />
             </Link>
-            <Link target="_blank" href="mailto:nota@straight-line.org">
+            <Link target="_blank" href="mailto:nota@endhonesa.com">
               <Mail
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
@@ -71,7 +66,7 @@ export const Header: React.FC<Props> = ({ logger, views }) => {
               />
             </Link>
             <Link target="_blank" href="https://twitter.com/MyReceiptTT">
-              <Twitter
+              <X
                 className={`w-6 h-6 duration-200 hover:font-medium ${
                   isIntersecting
                     ? " text-zinc-400 hover:text-zinc-100"
@@ -87,8 +82,7 @@ export const Header: React.FC<Props> = ({ logger, views }) => {
               isIntersecting
                 ? " text-zinc-400 hover:text-zinc-100"
                 : "text-zinc-600 hover:text-zinc-900"
-            } `}
-          >
+            } `}>
             <ArrowLeft className="w-6 h-6 " />
           </Link>
         </div>

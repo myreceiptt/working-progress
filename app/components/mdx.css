@@ -45,3 +45,7 @@
 [data-rehype-pretty-code-title] + pre {
   margin-top: 0;
 }
+.mdx a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
