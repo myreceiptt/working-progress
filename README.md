@@ -2,7 +2,7 @@
 
 [WORKING PROGRESS](https://nota.endhonesa.com)
 
-It's our working progress, it's not our work in progress, since if our work on our project isn’t finished yet, it’s not our working progress but our work in progress.
+It's our working progress, it's not our work in progress since if our work on our project isn't finished yet, it's not our working progress but our work in progress.
 
 ## About This Repo
 
