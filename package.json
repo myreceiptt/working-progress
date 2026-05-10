@@ -29,7 +29,7 @@
     "rehype-pretty-code": "^0.14.3",
     "rehype-slug": "^6.0.0",
     "remark-gfm": "4.0.1",
-    "shiki": "3.21.0",
+    "shiki": "4.0.2",
     "thirdweb": "^5.119.4",
     "typescript": "^5.9.3",
     "viem": "^2.48.11",
