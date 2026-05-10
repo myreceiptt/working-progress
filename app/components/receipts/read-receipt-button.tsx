@@ -10,7 +10,7 @@ type ReadReceiptButtonProps = {
 
 export default function ReadReceiptButton({
   href,
-  label = "Read the Page and Claim",
+  label = "Read and Claim",
   className,
 }: ReadReceiptButtonProps) {
   return (

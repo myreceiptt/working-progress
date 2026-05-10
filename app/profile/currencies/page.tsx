@@ -86,7 +86,7 @@ export default function TheCurrencies() {
                       </Link>
                       .
                     </li>
-                    <li className="mt-2 ml-4">Status: Deprecated (Obsolete)</li>
+                    <li className="mt-2 ml-4">Status: Deprecated (Obsolete since 2024)</li>
                   </ul>
                 </li>
                 <li className="mt-2">
@@ -106,7 +106,7 @@ export default function TheCurrencies() {
                       </Link>
                       .
                     </li>
-                    <li className="mt-2 ml-4">Status: Deprecated (Obsolete)</li>
+                    <li className="mt-2 ml-4">Status: Deprecated (Obsolete since 2024)</li>
                   </ul>
                 </li>
                 <li className="mt-2">
@@ -126,7 +126,7 @@ export default function TheCurrencies() {
                       </Link>
                       .
                     </li>
-                    <li className="mt-2 ml-4">Status: Deprecated (Obsolete)</li>
+                    <li className="mt-2 ml-4">Status: Deprecated (Obsolete since 2024)</li>
                   </ul>
                 </li>
                 <li className="mt-2">
@@ -146,15 +146,15 @@ export default function TheCurrencies() {
                       </Link>
                       .
                     </li>
-                    <li className="mt-2 ml-4">Status: Deprecated (Obsolete)</li>
+                    <li className="mt-2 ml-4">Status: Deprecated (Obsolete since 2024)</li>
                   </ul>
                 </li>
                 <li className="mt-2">
                   Ethereum L2 $OiOi fungible tokens.
                   <ul className="list-disc">
                     <li className="mt-2 ml-4">
-                      Max. supply is 47,474,747 $OiOi. No pre-sale, only
-                      airdropped or rewarded, and no LP on release.
+                      Max. supply is 47,474,747 $OiOi. Open pre-sale, airdropped
+                      or rewarded, and no LP on release.
                     </li>
                     <li className="mt-2 ml-4">
                       Launching information:{" "}
@@ -166,7 +166,7 @@ export default function TheCurrencies() {
                       </Link>
                       .
                     </li>
-                    <li className="mt-2 ml-4">Status: Active Mature (LTS)</li>
+                    <li className="mt-2 ml-4">Status: Active Mature (LTS since 2024)</li>
                   </ul>
                 </li>
               </ul>

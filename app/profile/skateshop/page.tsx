@@ -118,7 +118,7 @@ export default function SkateShopDotID() {
                   Tenant Sites:
                   <ul className="list-disc">
                     <li className="mt-2 ml-4">
-                      <code>https://tenant.skateshop.id</code>
+                      <code>https://&lt;tenant-name&gt;.skateshop.id</code>
                     </li>
                     <li className="mt-2 ml-4">
                       Each tenant has its own catalog, cart, checkout, and

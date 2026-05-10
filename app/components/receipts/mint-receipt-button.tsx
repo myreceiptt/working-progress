@@ -187,7 +187,7 @@ export default function MintReceiptButton({
         }>
         {buttonLabel}
       </button>
-      {error ? <p className="text-xs text-red-400">{error}</p> : null}
+      {/* {error ? <p className="text-xs text-red-400">{error}</p> : null} */}
     </>
   );
 }

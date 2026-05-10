@@ -101,13 +101,13 @@ export default function OurDethWish() {
                   3rd /ˈdeTH ˌwiSH/, the third collection.
                   <ul className="list-disc">
                     <li className="mt-2 ml-4">
-                      Will be released soon on BASE, but too early for now. Stay
-                      tune and{" "}
+                      Will be released soon, but too early for now. Stay tune
+                      and{" "}
                       <Link
-                        href="https://base.app/profile/endhonesa.eth?tab=posts"
+                        href="https://x.com/MyReceiptTT"
                         target="_blank"
                         className="underline duration-500 hover:text-zinc-300">
-                        follow Prof. NOTA in Base App
+                        follow Prof. NOTA on X.com
                       </Link>
                       .
                     </li>

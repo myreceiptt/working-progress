@@ -27,9 +27,9 @@ import PreviewReceiptButton from "../components/receipts/preview-receipt-button"
 const socials = [
   {
     icon: <Square size={20} />,
-    href: "https://base.app/profile/endhonesa.eth?tab=posts",
+    href: "https://base.app/profile/myreceipt.eth?tab=posts",
     label: "Base App",
-    handle: "endhonesa.eth",
+    handle: "myreceipt.eth",
   },
   {
     icon: <Castle size={20} />,
@@ -39,9 +39,9 @@ const socials = [
   },
   {
     icon: <Receipt size={20} />,
-    href: "https://zora.co/@endhonesa",
-    label: "Zora Coin",
-    handle: "$endhonesa",
+    href: "https://talent.app/myreceipt.eth",
+    label: "Talent App",
+    handle: "myreceipt.eth",
   },
   {
     icon: <GitBranch size={20} />,
