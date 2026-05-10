@@ -14,7 +14,7 @@
     "@upstash/redis": "^1.38.0",
     "@vercel/analytics": "^2.0.1",
     "@vercel/edge-config": "^1.4.3",
-    "esbuild": "^0.27.2",
+    "esbuild": "^0.28.0",
     "framer-motion": "^12.38.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^1.14.0",
