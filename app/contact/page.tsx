@@ -4,6 +4,7 @@ import {
   Castle,
   Receipt,
   X,
+  BotMessageSquare,
   GitBranch,
   Mail,
   MonitorPlay,
@@ -25,29 +26,35 @@ import MintReceiptButton from "../components/receipts/mint-receipt-button";
 import PreviewReceiptButton from "../components/receipts/preview-receipt-button";
 
 const socials = [
+  // {
+  //   icon: <Square size={20} />,
+  //   href: "https://base.app/profile/myreceipt.eth?tab=posts",
+  //   label: "Base App",
+  //   handle: "myreceipt.eth",
+  // },
+  // {
+  //   icon: <Castle size={20} />,
+  //   href: "https://farcaster.xyz/myreceipt.eth",
+  //   label: "Farcaster",
+  //   handle: "myreceipt.eth",
+  // },
+  // {
+  //   icon: <Receipt size={20} />,
+  //   href: "https://talent.app/myreceipt.eth",
+  //   label: "Talent App",
+  //   handle: "myreceipt.eth",
+  // },
+  // {
+  //   icon: <GitBranch size={20} />,
+  //   href: "https://github.com/myreceiptt",
+  //   label: "Github",
+  //   handle: "myreceiptt",
+  // },
   {
-    icon: <Square size={20} />,
-    href: "https://base.app/profile/myreceipt.eth?tab=posts",
-    label: "Base App",
-    handle: "myreceipt.eth",
-  },
-  {
-    icon: <Castle size={20} />,
-    href: "https://farcaster.xyz/myreceipt.eth",
-    label: "Farcaster",
-    handle: "myreceipt.eth",
-  },
-  {
-    icon: <Receipt size={20} />,
-    href: "https://talent.app/myreceipt.eth",
-    label: "Talent App",
-    handle: "myreceipt.eth",
-  },
-  {
-    icon: <GitBranch size={20} />,
-    href: "https://github.com/myreceiptt",
-    label: "Github",
-    handle: "myreceiptt",
+    icon: <BotMessageSquare size={20} />,
+    href: "https://discord.gg/5KrsT6MbFm",
+    label: "Discord",
+    handle: "Prof. NOTA",
   },
   {
     icon: <X size={20} />,
