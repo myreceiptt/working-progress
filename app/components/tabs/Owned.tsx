@@ -25,7 +25,7 @@ function OwnedTabContent({
   contract: NonNullable<ReturnType<typeof getNotaReceiptContract>>;
   address: `0x${string}`;
 }) {
-  const displayTokenIds = useMemo(() => [...tokenIds].reverse(), [tokenIds]);
+  const displayTokenIds = useMemo(() => [...tokenIds], [tokenIds]);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
   const visibleTokenIds = displayTokenIds.slice(0, visibleCount);
   const hasMore = visibleCount < displayTokenIds.length;
